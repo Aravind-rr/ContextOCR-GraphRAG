@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "expected_language": "en",
+  "minimum_language_characters": 20,
+  "dictionary_zipf_threshold": 2.0,
+  "maximum_word_length": 30,
+  "repeated_character_minimum": 4,
+  "symbol_sequence_minimum": 3,
+  "density_target_characters_per_megapixel": 80.0,
+  "quality_weights": {
+    "ocr_confidence": 0.15,
+    "character_accuracy": 0.20,
+    "word_accuracy": 0.15,
+    "valid_word_ratio": 0.10,
+    "dictionary_match_ratio": 0.08,
+    "noise_cleanliness": 0.10,
+    "artifact_cleanliness": 0.05,
+    "language_consistency": 0.07,
+    "structural_consistency": 0.05,
+    "non_alphanumeric_cleanliness": 0.03,
+    "density_quality": 0.02
+  },
+  "quality_thresholds": {
+    "high": 80.0,
+    "medium": 60.0
+  },
+  "ground_truth_directory": "./dataset/ground_truth",
+  "output_directory": "./data/evaluations",
+  "charts": {
+    "width": 900,
+    "height": 480,
+    "histogram_bins": 10
+  }
+}
