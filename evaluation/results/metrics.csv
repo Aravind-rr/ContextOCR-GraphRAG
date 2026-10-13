@@ -1,0 +1,31 @@
+document_id,input_filename,metric_status,outcome,baseline_cer,post_correction_cer,baseline_wer,post_correction_wer,absolute_cer_reduction,relative_cer_reduction,baseline_normalized_character_accuracy,post_correction_normalized_character_accuracy,errors_corrected,errors_introduced,errors_remaining,token_level_correction_accuracy,reason
+IMG001,IMG001_clinical_follow_up_note.png,MEASURED,UNCHANGED,0.15594541910331383,0.15594541910331383,0.4125,0.4125,0.0,0.0,0.8440545808966862,0.8440545808966862,0,0,33,,
+IMG002,IMG002_outpatient_review_summary.png,MEASURED,WORSENED,0.1653061224489796,0.1673469387755102,0.4647887323943662,0.4788732394366197,-0.002040816326530609,-0.012345679012345658,0.8346938775510204,0.8326530612244898,2,3,31,0.4,
+IMG003,IMG003_medication_review_record.png,MEASURED,UNCHANGED,0.20881226053639848,0.20881226053639848,0.4878048780487805,0.4878048780487805,0.0,0.0,0.7911877394636015,0.7911877394636015,0,0,40,0.0,
+IMG004,IMG004_tax_invoice.png,MEASURED,UNCHANGED,0.19111111111111112,0.19111111111111112,0.4794520547945205,0.4794520547945205,0.0,0.0,0.8088888888888889,0.8088888888888889,0,0,35,,
+IMG005,IMG005_service_receipt.png,MEASURED,WORSENED,0.17416829745596868,0.1917808219178082,0.47435897435897434,0.47435897435897434,-0.01761252446183953,-0.10112359550561797,0.8258317025440314,0.8082191780821918,1,1,36,0.5,
+IMG006,IMG006_purchase_invoice.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG007,IMG007_course_completion_certificate.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG008,IMG008_workshop_participation_certificate.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG009,IMG009_merit_certificate.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG010,IMG010_library_membership_application.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG011,IMG011_research_access_application.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG012,IMG012_student_activity_application.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG013,IMG013_quarterly_financial_summary.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG014,IMG014_department_budget_snapshot.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+IMG015,IMG015_project_expense_summary.png,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF001,PDF001_clinical_follow_up_note.pdf,MEASURED,UNCHANGED,0.07602339181286549,0.07602339181286549,0.2,0.2,0.0,0.0,0.9239766081871346,0.9239766081871346,0,0,16,,
+PDF002,PDF002_outpatient_review_summary.pdf,MEASURED,UNCHANGED,0.0836734693877551,0.0836734693877551,0.23943661971830985,0.23943661971830985,0.0,0.0,0.9163265306122449,0.9163265306122449,0,0,17,,
+PDF003,PDF003_medication_review_record.pdf,MEASURED,UNCHANGED,0.07854406130268199,0.07854406130268199,0.2073170731707317,0.2073170731707317,0.0,0.0,0.921455938697318,0.921455938697318,0,0,17,,
+PDF004,PDF004_tax_invoice.pdf,MEASURED,UNCHANGED,0.09555555555555556,0.09555555555555556,0.2465753424657534,0.2465753424657534,0.0,0.0,0.9044444444444444,0.9044444444444444,0,0,18,,
+PDF005,PDF005_service_receipt.pdf,MEASURED,UNCHANGED,0.09001956947162426,0.09001956947162426,0.2564102564102564,0.2564102564102564,0.0,0.0,0.9099804305283757,0.9099804305283757,0,0,20,,
+PDF006,PDF006_purchase_invoice.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF007,PDF007_course_completion_certificate.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF008,PDF008_workshop_participation_certificate.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF009,PDF009_merit_certificate.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF010,PDF010_library_membership_application.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF011,PDF011_research_access_application.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF012,PDF012_student_activity_application.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF013,PDF013_quarterly_financial_summary.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF014,PDF014_department_budget_snapshot.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"
+PDF015,PDF015_project_expense_summary.pdf,NOT_YET_MEASURED,,,,,,,,,,,,,,"Missing genuine output: ocr_raw.txt, corrected.txt"

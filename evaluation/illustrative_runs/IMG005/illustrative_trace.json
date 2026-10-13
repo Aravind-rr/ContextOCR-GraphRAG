@@ -1,0 +1,18 @@
+[
+  {
+    "original": "T0TAL",
+    "final": "TOTAL",
+    "intended": "TOTAL",
+    "status": "ILLUSTRATIVE_CORRECTED",
+    "error_type": "O/0 character substitution",
+    "classification": "ILLUSTRATIVE_NOT_ACTUAL_PIPELINE_EVIDENCE"
+  },
+  {
+    "original": "reciept",
+    "final": "receipt",
+    "intended": "receipt",
+    "status": "ILLUSTRATIVE_CORRECTED",
+    "error_type": "misspelling",
+    "classification": "ILLUSTRATIVE_NOT_ACTUAL_PIPELINE_EVIDENCE"
+  }
+]

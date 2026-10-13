@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Quarterly Financial Summary
+Aurora Community Services
+Reference: FIN-2026-Q1
+Date: 31 August 2026
+Entity: Aurora Community Services
+Period: April-June 2026
+Currency: INR
+Account | Budget | Actual
+Programme income | 450,000 | 462,500
+Operating cost | 280,000 | 271,400
+Balance | 170,000 | 191,100
+NOTES
+Revenue remained above plan while operating cost stayed controlled.
+Figures are illustrative and unaudited.
+Synthetic evaluation data - not a real record

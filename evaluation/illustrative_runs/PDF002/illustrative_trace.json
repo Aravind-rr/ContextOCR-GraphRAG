@@ -1,0 +1,18 @@
+[
+  {
+    "original": "Patlent",
+    "final": "Patient",
+    "intended": "Patient",
+    "status": "ILLUSTRATIVE_CORRECTED",
+    "error_type": "l/1 character substitution",
+    "classification": "ILLUSTRATIVE_NOT_ACTUAL_PIPELINE_EVIDENCE"
+  },
+  {
+    "original": "recovry",
+    "final": "recovery",
+    "intended": "recovery",
+    "status": "ILLUSTRATIVE_CORRECTED",
+    "error_type": "missing character",
+    "classification": "ILLUSTRATIVE_NOT_ACTUAL_PIPELINE_EVIDENCE"
+  }
+]

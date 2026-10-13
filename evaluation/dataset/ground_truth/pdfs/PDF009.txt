@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Merit Certificate
+Academic Excellence Programme
+Reference: CERT-2026-096
+Date: 15 September 2026
+Recipient: Nila Example
+Programme: Computing Merit Programme
+Result: Distinction
+Area | Score | Outcome
+Problem solving | 92 | Excellent
+Programming | 88 | Very good
+Overall | 90 | Distinction
+NOTES
+Academic excellence was demonstrated across all listed areas.
+This document has no institutional validity.
+Synthetic evaluation data - not a real record

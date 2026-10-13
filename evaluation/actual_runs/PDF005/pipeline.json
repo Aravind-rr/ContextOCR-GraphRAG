@@ -1,0 +1,4060 @@
+{
+  "id": "89b180f9-6e89-41f8-a3ef-ccd683e85fc5",
+  "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+  "status": "COMPLETED",
+  "created_at": "2026-10-13T09:46:57.466762+00:00",
+  "updated_at": "2026-10-13T09:47:33.586719+00:00",
+  "config": {
+    "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+    "confidence_threshold": 0.9,
+    "domain": "financial",
+    "start_stage": 1
+  },
+  "result": {
+    "document": {
+      "id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+      "name": "PDF005_service_receipt.pdf",
+      "safe_name": "c6190d12-c497-4c30-96bf-74776e62b6ed.pdf",
+      "path": "/data/input/c6190d12-c497-4c30-96bf-74776e62b6ed.pdf",
+      "media_type": "application/pdf",
+      "size": 3248,
+      "pages": 1,
+      "created_at": "2026-10-13T09:46:57.388367+00:00",
+      "is_demo": false
+    },
+    "page_images": [
+      "/data/processed/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/original/page-1.png"
+    ],
+    "document_meta": {
+      "digital_pdf": true,
+      "embedded_text": [
+        "SYNTHETIC OCR EVALUATION\nPDF005\nService Receipt\nBlue River Technical Services\nReference: RCT-2026-225\nDate: 06 September 2026\nCUSTOMER\nSample Innovation Cell\nPAYMENT\nCard - test transaction\nCURRENCY\nINR\nService\nHours\nAmount\nDevice inspection\n2\n1,200.00\nConfiguration support\n3\n2,250.00\nDocumentation\n1\n600.00\nT0TAL\n6\n4,050.00\nNOTES\nService completion was confirmed by the demonstration contact.\nThis reciept records a test transaction only.\nSynthetic evaluation data - not a real record\nPage 1 of 1"
+      ]
+    },
+    "preprocessing": [
+      {
+        "source": "/data/processed/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/original/page-1.png",
+        "output": "/data/processed/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/preprocessed/page-1.png",
+        "operations": [
+          "grayscale",
+          "adaptive threshold"
+        ],
+        "width": 1191,
+        "height": 1684
+      }
+    ],
+    "layout": [
+      {
+        "page": 1,
+        "regions": [
+          {
+            "id": "r5",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1002.64,
+              58.8,
+              1114.42,
+              94.97
+            ],
+            "confidence": 0.9089,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r14",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              76.65,
+              58.92,
+              481.35,
+              94.7
+            ],
+            "confidence": 0.2922,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r9",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              77.43,
+              59.08,
+              482.3,
+              94.62
+            ],
+            "confidence": 0.77,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r4",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              81.89,
+              170.48,
+              475.72,
+              227.84
+            ],
+            "confidence": 0.9106,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r6",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              82.27,
+              242.84,
+              406.51,
+              272.47
+            ],
+            "confidence": 0.9005,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r8",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              110.16,
+              352.31,
+              373.16,
+              379.64
+            ],
+            "confidence": 0.8545,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r12",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              823.65,
+              353.52,
+              1081.59,
+              380.11
+            ],
+            "confidence": 0.4895,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r13",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              823.65,
+              353.52,
+              1081.59,
+              380.11
+            ],
+            "confidence": 0.4303,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r17",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              791.87,
+              510.39,
+              895.2,
+              572.34
+            ],
+            "confidence": 0.2309,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r15",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              446.83,
+              511.72,
+              535.44,
+              533.88
+            ],
+            "confidence": 0.2609,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r1",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              82.01,
+              677.91,
+              1107.9,
+              991.46
+            ],
+            "confidence": 0.9698,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r3",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.2,
+              1041.5,
+              163.3,
+              1069.24
+            ],
+            "confidence": 0.9183,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r16",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              86.32,
+              1084.87,
+              664.67,
+              1151.26
+            ],
+            "confidence": 0.24,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r10",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              93.82,
+              1085.36,
+              665.33,
+              1110.37
+            ],
+            "confidence": 0.7613,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r11",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              90.47,
+              1125.45,
+              484.26,
+              1150.25
+            ],
+            "confidence": 0.5781,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r7",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1017.92,
+              1572.19,
+              1106.47,
+              1593.38
+            ],
+            "confidence": 0.9,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r2",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              82.19,
+              1572.44,
+              415.72,
+              1593.07
+            ],
+            "confidence": 0.9339,
+            "source": "DocLayout-YOLO"
+          }
+        ],
+        "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+      }
+    ],
+    "reading_order": [
+      {
+        "page": 1,
+        "regions": [
+          {
+            "id": "r14",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              76.65,
+              58.92,
+              481.35,
+              94.7
+            ],
+            "confidence": 0.2922,
+            "source": "DocLayout-YOLO",
+            "order": 1
+          },
+          {
+            "id": "r9",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              77.43,
+              59.08,
+              482.3,
+              94.62
+            ],
+            "confidence": 0.77,
+            "source": "DocLayout-YOLO",
+            "order": 2
+          },
+          {
+            "id": "r4",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              81.89,
+              170.48,
+              475.72,
+              227.84
+            ],
+            "confidence": 0.9106,
+            "source": "DocLayout-YOLO",
+            "order": 3
+          },
+          {
+            "id": "r6",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              82.27,
+              242.84,
+              406.51,
+              272.47
+            ],
+            "confidence": 0.9005,
+            "source": "DocLayout-YOLO",
+            "order": 4
+          },
+          {
+            "id": "r8",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              110.16,
+              352.31,
+              373.16,
+              379.64
+            ],
+            "confidence": 0.8545,
+            "source": "DocLayout-YOLO",
+            "order": 5
+          },
+          {
+            "id": "r15",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              446.83,
+              511.72,
+              535.44,
+              533.88
+            ],
+            "confidence": 0.2609,
+            "source": "DocLayout-YOLO",
+            "order": 6
+          },
+          {
+            "id": "r3",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.2,
+              1041.5,
+              163.3,
+              1069.24
+            ],
+            "confidence": 0.9183,
+            "source": "DocLayout-YOLO",
+            "order": 7
+          },
+          {
+            "id": "r16",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              86.32,
+              1084.87,
+              664.67,
+              1151.26
+            ],
+            "confidence": 0.24,
+            "source": "DocLayout-YOLO",
+            "order": 8
+          },
+          {
+            "id": "r10",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              93.82,
+              1085.36,
+              665.33,
+              1110.37
+            ],
+            "confidence": 0.7613,
+            "source": "DocLayout-YOLO",
+            "order": 9
+          },
+          {
+            "id": "r11",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              90.47,
+              1125.45,
+              484.26,
+              1150.25
+            ],
+            "confidence": 0.5781,
+            "source": "DocLayout-YOLO",
+            "order": 10
+          },
+          {
+            "id": "r2",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              82.19,
+              1572.44,
+              415.72,
+              1593.07
+            ],
+            "confidence": 0.9339,
+            "source": "DocLayout-YOLO",
+            "order": 11
+          },
+          {
+            "id": "r5",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1002.64,
+              58.8,
+              1114.42,
+              94.97
+            ],
+            "confidence": 0.9089,
+            "source": "DocLayout-YOLO",
+            "order": 12
+          },
+          {
+            "id": "r12",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              823.65,
+              353.52,
+              1081.59,
+              380.11
+            ],
+            "confidence": 0.4895,
+            "source": "DocLayout-YOLO",
+            "order": 13
+          },
+          {
+            "id": "r13",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              823.65,
+              353.52,
+              1081.59,
+              380.11
+            ],
+            "confidence": 0.4303,
+            "source": "DocLayout-YOLO",
+            "order": 14
+          },
+          {
+            "id": "r17",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              791.87,
+              510.39,
+              895.2,
+              572.34
+            ],
+            "confidence": 0.2309,
+            "source": "DocLayout-YOLO",
+            "order": 15
+          },
+          {
+            "id": "r1",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              82.01,
+              677.91,
+              1107.9,
+              991.46
+            ],
+            "confidence": 0.9698,
+            "source": "DocLayout-YOLO",
+            "order": 16
+          },
+          {
+            "id": "r7",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1017.92,
+              1572.19,
+              1106.47,
+              1593.38
+            ],
+            "confidence": 0.9,
+            "source": "DocLayout-YOLO",
+            "order": 17
+          }
+        ]
+      }
+    ],
+    "tokens": [
+      {
+        "id": "p1-t1",
+        "page": 1,
+        "text": "SYNTHETIC",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          58.18000030517578,
+          231.34201049804688,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt"
+      },
+      {
+        "id": "p1-t2",
+        "page": 1,
+        "text": "OCR",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          238.57000732421875,
+          58.18000030517578,
+          296.3420104980469,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue"
+      },
+      {
+        "id": "p1-t3",
+        "page": 1,
+        "text": "EVALUATION",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          303.57000732421875,
+          58.18000030517578,
+          472.57000732421875,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River"
+      },
+      {
+        "id": "p1-t4",
+        "page": 1,
+        "text": "PDF005",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1011.1832275390625,
+          58.18000030517578,
+          1106.5513916015625,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical"
+      },
+      {
+        "id": "p1-t5",
+        "page": 1,
+        "text": "Service",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          160.36000061035156,
+          269.0160217285156,
+          231.96400451660156
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services"
+      },
+      {
+        "id": "p1-t6",
+        "page": 1,
+        "text": "Receipt",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          283.4720153808594,
+          160.36000061035156,
+          471.2960205078125,
+          231.96400451660156
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference:"
+      },
+      {
+        "id": "p1-t7",
+        "page": 1,
+        "text": "Blue",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          240.1999969482422,
+          132.02401733398438,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225"
+      },
+      {
+        "id": "p1-t8",
+        "page": 1,
+        "text": "River",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          138.69601440429688,
+          240.1999969482422,
+          194.68801879882812,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date:"
+      },
+      {
+        "id": "p1-t9",
+        "page": 1,
+        "text": "Technical",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          201.36001586914062,
+          240.1999969482422,
+          304.0559997558594,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06"
+      },
+      {
+        "id": "p1-t10",
+        "page": 1,
+        "text": "Services",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          310.7279968261719,
+          240.1999969482422,
+          402.7439880371094,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September"
+      },
+      {
+        "id": "p1-t11",
+        "page": 1,
+        "text": "Reference:",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          112.0,
+          350.3500061035156,
+          219.6019744873047,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026"
+      },
+      {
+        "id": "p1-t12",
+        "page": 1,
+        "text": "RCT-2026-225",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          225.7179718017578,
+          350.3500061035156,
+          371.2038879394531,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER"
+      },
+      {
+        "id": "p1-t13",
+        "page": 1,
+        "text": "Date:",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          826.6292114257812,
+          350.3500061035156,
+          879.209228515625,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample"
+      },
+      {
+        "id": "p1-t14",
+        "page": 1,
+        "text": "06",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          885.3252563476562,
+          350.3500061035156,
+          909.7892456054688,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation"
+      },
+      {
+        "id": "p1-t15",
+        "page": 1,
+        "text": "September",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          915.9052734375,
+          350.3500061035156,
+          1023.5072631835938,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell"
+      },
+      {
+        "id": "p1-t16",
+        "page": 1,
+        "text": "2026",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1029.623291015625,
+          350.3500061035156,
+          1078.551513671875,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT"
+      },
+      {
+        "id": "p1-t17",
+        "page": 1,
+        "text": "CUSTOMER",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          104.0,
+          511.80999755859375,
+          201.2740020751953,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card"
+      },
+      {
+        "id": "p1-t18",
+        "page": 1,
+        "text": "Sample",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          104.0,
+          545.5750122070312,
+          168.41000366210938,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card -"
+      },
+      {
+        "id": "p1-t19",
+        "page": 1,
+        "text": "Innovation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          173.69200134277344,
+          545.5750122070312,
+          261.35797119140625,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test"
+      },
+      {
+        "id": "p1-t20",
+        "page": 1,
+        "text": "Cell",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          266.6399841308594,
+          545.5750122070312,
+          299.3579406738281,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction"
+      },
+      {
+        "id": "p1-t21",
+        "page": 1,
+        "text": "PAYMENT",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          450.1838073730469,
+          511.80999755859375,
+          533.2968139648438,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY"
+      },
+      {
+        "id": "p1-t22",
+        "page": 1,
+        "text": "Card",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          450.1838073730469,
+          545.5750122070312,
+          491.3567810058594,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR"
+      },
+      {
+        "id": "p1-t23",
+        "page": 1,
+        "text": "-",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          496.6387939453125,
+          545.5750122070312,
+          502.9657897949219,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service"
+      },
+      {
+        "id": "p1-t24",
+        "page": 1,
+        "text": "test",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          508.247802734375,
+          545.5750122070312,
+          538.8757934570312,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours"
+      },
+      {
+        "id": "p1-t25",
+        "page": 1,
+        "text": "transaction",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          544.1577758789062,
+          545.5750122070312,
+          637.0869140625,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount"
+      },
+      {
+        "id": "p1-t26",
+        "page": 1,
+        "text": "CURRENCY",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          796.3673706054688,
+          511.80999755859375,
+          892.6892700195312,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device"
+      },
+      {
+        "id": "p1-t27",
+        "page": 1,
+        "text": "INR",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          796.3673706054688,
+          545.5750122070312,
+          829.0853881835938,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Card - test transaction CURRENCY INR Service Hours Amount Device inspection"
+      },
+      {
+        "id": "p1-t28",
+        "page": 1,
+        "text": "Service",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          698.7399291992188,
+          164.0439910888672,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "- test transaction CURRENCY INR Service Hours Amount Device inspection 2"
+      },
+      {
+        "id": "p1-t29",
+        "page": 1,
+        "text": "Hours",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          698.7399291992188,
+          492.8523864746094,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00"
+      },
+      {
+        "id": "p1-t30",
+        "page": 1,
+        "text": "Amount",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          698.7399291992188,
+          849.686767578125,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration"
+      },
+      {
+        "id": "p1-t31",
+        "page": 1,
+        "text": "Device",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          761.0799560546875,
+          153.7855987548828,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support"
+      },
+      {
+        "id": "p1-t32",
+        "page": 1,
+        "text": "inspection",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          158.67840576171875,
+          761.0799560546875,
+          237.91360473632812,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3"
+      },
+      {
+        "id": "p1-t33",
+        "page": 1,
+        "text": "2",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          761.0799560546875,
+          450.6360168457031,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00"
+      },
+      {
+        "id": "p1-t34",
+        "page": 1,
+        "text": "1,200.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          761.0799560546875,
+          850.199951171875,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation"
+      },
+      {
+        "id": "p1-t35",
+        "page": 1,
+        "text": "Configuration",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          823.0799560546875,
+          204.6671905517578,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1"
+      },
+      {
+        "id": "p1-t36",
+        "page": 1,
+        "text": "support",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          209.55999755859375,
+          823.0799560546875,
+          268.2560119628906,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00"
+      },
+      {
+        "id": "p1-t37",
+        "page": 1,
+        "text": "3",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          823.0799560546875,
+          450.6360168457031,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 T0TAL"
+      },
+      {
+        "id": "p1-t38",
+        "page": 1,
+        "text": "2,250.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          823.0799560546875,
+          850.199951171875,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 T0TAL 6"
+      },
+      {
+        "id": "p1-t39",
+        "page": 1,
+        "text": "Documentation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          885.0799560546875,
+          218.36000061035156,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00"
+      },
+      {
+        "id": "p1-t40",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          885.0799560546875,
+          450.6360168457031,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Configuration support 3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES"
+      },
+      {
+        "id": "p1-t41",
+        "page": 1,
+        "text": "600.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          885.0799560546875,
+          835.5215454101562,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "support 3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service"
+      },
+      {
+        "id": "p1-t42",
+        "page": 1,
+        "text": "T0TAL",
+        "confidence": 0.8079999999999999,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text + lexical validation",
+        "confidence_calibration": {
+          "applied": true,
+          "reason": "invalid or rare word with a close trusted lexical match",
+          "candidate": "total",
+          "similarity": 0.98,
+          "original_zipf_frequency": 0.0,
+          "candidate_zipf_frequency": 5.21,
+          "candidate_source": "built-in financial vocabulary"
+        },
+        "bbox": [
+          100.0,
+          947.0799560546875,
+          152.81759643554688,
+          971.2623291015625
+        ],
+        "decision": "CORRECT",
+        "context": "3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion"
+      },
+      {
+        "id": "p1-t43",
+        "page": 1,
+        "text": "6",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          947.0799560546875,
+          450.6360168457031,
+          971.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion was"
+      },
+      {
+        "id": "p1-t44",
+        "page": 1,
+        "text": "4,050.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          947.0799560546875,
+          850.199951171875,
+          971.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion was confirmed"
+      },
+      {
+        "id": "p1-t45",
+        "page": 1,
+        "text": "NOTES",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          1040.4599609375,
+          159.7899932861328,
+          1070.7540283203125
+        ],
+        "decision": "KEEP",
+        "context": "1 600.00 T0TAL 6 4,050.00 NOTES Service completion was confirmed by"
+      },
+      {
+        "id": "p1-t46",
+        "page": 1,
+        "text": "Service",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          120.0,
+          1083.574951171875,
+          183.3459930419922,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "600.00 T0TAL 6 4,050.00 NOTES Service completion was confirmed by the"
+      },
+      {
+        "id": "p1-t47",
+        "page": 1,
+        "text": "completion",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          188.62799072265625,
+          1083.574951171875,
+          280.4929504394531,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "T0TAL 6 4,050.00 NOTES Service completion was confirmed by the demonstration"
+      },
+      {
+        "id": "p1-t48",
+        "page": 1,
+        "text": "was",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          285.77496337890625,
+          1083.574951171875,
+          319.55694580078125,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "6 4,050.00 NOTES Service completion was confirmed by the demonstration contact."
+      },
+      {
+        "id": "p1-t49",
+        "page": 1,
+        "text": "confirmed",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          324.8389587402344,
+          1083.574951171875,
+          408.2489318847656,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "4,050.00 NOTES Service completion was confirmed by the demonstration contact. This"
+      },
+      {
+        "id": "p1-t50",
+        "page": 1,
+        "text": "by",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          413.53094482421875,
+          1083.574951171875,
+          433.5949401855469,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "NOTES Service completion was confirmed by the demonstration contact. This reciept"
+      },
+      {
+        "id": "p1-t51",
+        "page": 1,
+        "text": "the",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          438.876953125,
+          1083.574951171875,
+          465.2869567871094,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Service completion was confirmed by the demonstration contact. This reciept records"
+      },
+      {
+        "id": "p1-t52",
+        "page": 1,
+        "text": "demonstration",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          470.5689697265625,
+          1083.574951171875,
+          590.9530639648438,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "completion was confirmed by the demonstration contact. This reciept records a"
+      },
+      {
+        "id": "p1-t53",
+        "page": 1,
+        "text": "contact.",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          596.2350463867188,
+          1083.574951171875,
+          662.7730712890625,
+          1109.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "was confirmed by the demonstration contact. This reciept records a test"
+      },
+      {
+        "id": "p1-t54",
+        "page": 1,
+        "text": "This",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          120.0,
+          1123.574951171875,
+          155.8909912109375,
+          1149.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "confirmed by the demonstration contact. This reciept records a test transaction"
+      },
+      {
+        "id": "p1-t55",
+        "page": 1,
+        "text": "reciept",
+        "confidence": 0.8571427999999999,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text + lexical validation",
+        "confidence_calibration": {
+          "applied": true,
+          "reason": "invalid or rare word with a close trusted lexical match",
+          "candidate": "receipt",
+          "similarity": 0.857143,
+          "original_zipf_frequency": 1.49,
+          "candidate_zipf_frequency": 3.92,
+          "candidate_source": "built-in financial vocabulary"
+        },
+        "bbox": [
+          161.17298889160156,
+          1123.574951171875,
+          218.1919708251953,
+          1149.6810302734375
+        ],
+        "decision": "CORRECT",
+        "context": "by the demonstration contact. This reciept records a test transaction only."
+      },
+      {
+        "id": "p1-t56",
+        "page": 1,
+        "text": "records",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          223.47396850585938,
+          1123.574951171875,
+          286.8199462890625,
+          1149.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "the demonstration contact. This reciept records a test transaction only. Synthetic"
+      },
+      {
+        "id": "p1-t57",
+        "page": 1,
+        "text": "a",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          292.1019592285156,
+          1123.574951171875,
+          302.66595458984375,
+          1149.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "demonstration contact. This reciept records a test transaction only. Synthetic evaluation"
+      },
+      {
+        "id": "p1-t58",
+        "page": 1,
+        "text": "test",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          307.9479675292969,
+          1123.574951171875,
+          338.57598876953125,
+          1149.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "contact. This reciept records a test transaction only. Synthetic evaluation data"
+      },
+      {
+        "id": "p1-t59",
+        "page": 1,
+        "text": "transaction",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          343.8580017089844,
+          1123.574951171875,
+          436.7869873046875,
+          1149.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "This reciept records a test transaction only. Synthetic evaluation data -"
+      },
+      {
+        "id": "p1-t60",
+        "page": 1,
+        "text": "only.",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          442.0690002441406,
+          1123.574951171875,
+          482.1969909667969,
+          1149.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "reciept records a test transaction only. Synthetic evaluation data - not"
+      },
+      {
+        "id": "p1-t61",
+        "page": 1,
+        "text": "Synthetic",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          1569.5045166015625,
+          153.92100524902344,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "records a test transaction only. Synthetic evaluation data - not a"
+      },
+      {
+        "id": "p1-t62",
+        "page": 1,
+        "text": "evaluation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          158.64700317382812,
+          1569.5045166015625,
+          236.1329803466797,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "a test transaction only. Synthetic evaluation data - not a real"
+      },
+      {
+        "id": "p1-t63",
+        "page": 1,
+        "text": "data",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          240.85897827148438,
+          1569.5045166015625,
+          273.94097900390625,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "test transaction only. Synthetic evaluation data - not a real record"
+      },
+      {
+        "id": "p1-t64",
+        "page": 1,
+        "text": "-",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          278.6669921875,
+          1569.5045166015625,
+          284.3280029296875,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "transaction only. Synthetic evaluation data - not a real record Page"
+      },
+      {
+        "id": "p1-t65",
+        "page": 1,
+        "text": "not",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          289.05401611328125,
+          1569.5045166015625,
+          312.68402099609375,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "only. Synthetic evaluation data - not a real record Page 1"
+      },
+      {
+        "id": "p1-t66",
+        "page": 1,
+        "text": "a",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          317.4100341796875,
+          1569.5045166015625,
+          326.8620300292969,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "Synthetic evaluation data - not a real record Page 1 of"
+      },
+      {
+        "id": "p1-t67",
+        "page": 1,
+        "text": "real",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          331.5880432128906,
+          1569.5045166015625,
+          359.9270324707031,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "evaluation data - not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t68",
+        "page": 1,
+        "text": "record",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          364.6530456542969,
+          1569.5045166015625,
+          412.8310546875,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "data - not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t69",
+        "page": 1,
+        "text": "Page",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1019.59619140625,
+          1569.5045166015625,
+          1059.291259765625,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "- not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t70",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1064.0172119140625,
+          1569.5045166015625,
+          1073.46923828125,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t71",
+        "page": 1,
+        "text": "of",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1078.1951904296875,
+          1569.5045166015625,
+          1092.3731689453125,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t72",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1097.09912109375,
+          1569.5045166015625,
+          1106.5511474609375,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "real record Page 1 of 1"
+      }
+    ],
+    "confidence": {
+      "threshold": 0.9,
+      "average": 0.9953492055555555,
+      "low_count": 2,
+      "high_count": 70,
+      "distribution": [
+        {
+          "range": "0.0–0.1",
+          "count": 0
+        },
+        {
+          "range": "0.1–0.2",
+          "count": 0
+        },
+        {
+          "range": "0.2–0.3",
+          "count": 0
+        },
+        {
+          "range": "0.3–0.4",
+          "count": 0
+        },
+        {
+          "range": "0.4–0.5",
+          "count": 0
+        },
+        {
+          "range": "0.5–0.6",
+          "count": 0
+        },
+        {
+          "range": "0.6–0.7",
+          "count": 0
+        },
+        {
+          "range": "0.7–0.8",
+          "count": 0
+        },
+        {
+          "range": "0.8–0.9",
+          "count": 2
+        },
+        {
+          "range": "0.9–1.0",
+          "count": 70
+        }
+      ]
+    },
+    "low_confidence": [
+      {
+        "id": "p1-t42",
+        "text": "T0TAL",
+        "confidence": 0.8079999999999999,
+        "ocr_confidence": 1.0,
+        "confidence_calibration": {
+          "applied": true,
+          "reason": "invalid or rare word with a close trusted lexical match",
+          "candidate": "total",
+          "similarity": 0.98,
+          "original_zipf_frequency": 0.0,
+          "candidate_zipf_frequency": 5.21,
+          "candidate_source": "built-in financial vocabulary"
+        },
+        "page": 1,
+        "reason": "effective confidence 0.808 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match total (0.980)"
+      },
+      {
+        "id": "p1-t55",
+        "text": "reciept",
+        "confidence": 0.8571427999999999,
+        "ocr_confidence": 1.0,
+        "confidence_calibration": {
+          "applied": true,
+          "reason": "invalid or rare word with a close trusted lexical match",
+          "candidate": "receipt",
+          "similarity": 0.857143,
+          "original_zipf_frequency": 1.49,
+          "candidate_zipf_frequency": 3.92,
+          "candidate_source": "built-in financial vocabulary"
+        },
+        "page": 1,
+        "reason": "effective confidence 0.857 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match receipt (0.857)"
+      }
+    ],
+    "candidates": [
+      {
+        "token_id": "p1-t42",
+        "original": "T0TAL",
+        "lexical_status": "invalid_or_rare_near_match",
+        "candidates": [
+          {
+            "value": "total",
+            "source": "built-in financial vocabulary",
+            "similarity": 0.98,
+            "ranking_score": 1.06,
+            "zipf_frequency": 5.21,
+            "rank": 1
+          },
+          {
+            "value": "KEEP_ORIGINAL",
+            "source": "safety policy",
+            "similarity": 1.0
+          }
+        ]
+      },
+      {
+        "token_id": "p1-t55",
+        "original": "reciept",
+        "lexical_status": "invalid_or_rare_near_match",
+        "candidates": [
+          {
+            "value": "receipt",
+            "source": "trusted document vocabulary",
+            "similarity": 0.857143,
+            "ranking_score": 0.937143,
+            "zipf_frequency": 3.92,
+            "rank": 1
+          },
+          {
+            "value": "precept",
+            "source": "English frequency lexicon",
+            "similarity": 0.857143,
+            "ranking_score": 0.857143,
+            "zipf_frequency": 2.58,
+            "rank": 2
+          },
+          {
+            "value": "recep",
+            "source": "English frequency lexicon",
+            "similarity": 0.833333,
+            "ranking_score": 0.833333,
+            "zipf_frequency": 2.66,
+            "rank": 3
+          },
+          {
+            "value": "KEEP_ORIGINAL",
+            "source": "safety policy",
+            "similarity": 1.0
+          }
+        ]
+      }
+    ],
+    "chunks": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "token_id": "p1-t42",
+        "query": "3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion",
+        "results": [
+          {
+            "id": "p1-c1",
+            "page": 1,
+            "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+            "token_start": 0,
+            "similarity": 0.4665298527636453,
+            "source": "page 1"
+          }
+        ]
+      },
+      {
+        "token_id": "p1-t55",
+        "query": "by the demonstration contact. This reciept records a test transaction only.",
+        "results": [
+          {
+            "id": "p1-c1",
+            "page": 1,
+            "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+            "token_start": 0,
+            "similarity": 0.37435244296357245,
+            "source": "page 1"
+          }
+        ]
+      }
+    ],
+    "graph": {
+      "schema_version": "2.0",
+      "domain": "financial",
+      "nodes": [
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "label": "PDF005_service_receipt.pdf",
+          "type": "Document",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [],
+          "provenance": [
+            {
+              "source": "uploaded document metadata",
+              "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "source_name": "PDF005_service_receipt.pdf"
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:transaction",
+          "label": "Transaction",
+          "type": "Transaction",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "pages": [
+            1
+          ],
+          "mentions": 2,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t25",
+            "p1-t59"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t25",
+              "page": 1,
+              "bbox": [
+                544.1577758789062,
+                545.5750122070312,
+                637.0869140625,
+                571.6810302734375
+              ],
+              "confidence": 1.0,
+              "text": "transaction"
+            },
+            {
+              "token_id": "p1-t59",
+              "page": 1,
+              "bbox": [
+                343.8580017089844,
+                1123.574951171875,
+                436.7869873046875,
+                1149.6810302734375
+              ],
+              "confidence": 1.0,
+              "text": "transaction"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 2
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:payment",
+          "label": "Payment",
+          "type": "Payment",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t21"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t21",
+              "page": 1,
+              "bbox": [
+                450.1838073730469,
+                511.80999755859375,
+                533.2968139648438,
+                535.218994140625
+              ],
+              "confidence": 1.0,
+              "text": "PAYMENT"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rct-2026-225",
+          "label": "RCT-2026-225",
+          "type": "ReferenceIdentifier",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t12"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t12",
+              "page": 1,
+              "bbox": [
+                225.7179718017578,
+                350.3500061035156,
+                371.2038879394531,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "RCT-2026-225"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:06-september-2026",
+          "label": "06 September 2026",
+          "type": "Date",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t14",
+            "p1-t15",
+            "p1-t16"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t14",
+              "page": 1,
+              "bbox": [
+                885.3252563476562,
+                350.3500061035156,
+                909.7892456054688,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "06"
+            },
+            {
+              "token_id": "p1-t15",
+              "page": 1,
+              "bbox": [
+                915.9052734375,
+                350.3500061035156,
+                1023.5072631835938,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "September"
+            },
+            {
+              "token_id": "p1-t16",
+              "page": 1,
+              "bbox": [
+                1029.623291015625,
+                350.3500061035156,
+                1078.551513671875,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "2026"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel1",
+          "source": "c6190d12-c497-4c30-96bf-74776e62b6ed:transaction",
+          "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:payment",
+          "type": "SETTLED_BY",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "provenance": "domain relation supported by high-confidence OCR mentions",
+          "token_ids": [
+            "p1-t25",
+            "p1-t59",
+            "p1-t21"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "domain relation supported by high-confidence OCR mentions"
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel2",
+          "source": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:rct-2026-225",
+          "type": "HAS_REFERENCE",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "provenance": "reference identifier extracted from high-confidence OCR",
+          "token_ids": [
+            "p1-t12"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "reference identifier extracted from high-confidence OCR"
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel3",
+          "source": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:06-september-2026",
+          "type": "DATED",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "provenance": "date extracted from high-confidence OCR",
+          "token_ids": [
+            "p1-t14",
+            "p1-t15",
+            "p1-t16"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "date extracted from high-confidence OCR"
+          }
+        },
+        {
+          "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel4",
+          "source": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:transaction",
+          "type": "MENTIONS",
+          "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+          "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+          "token_ids": [
+            "p1-t25",
+            "p1-t59"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        }
+      ],
+      "persisted_to_neo4j": true
+    },
+    "graph_evidence": [
+      {
+        "token_id": "p1-t42",
+        "results": []
+      },
+      {
+        "token_id": "p1-t55",
+        "results": []
+      }
+    ],
+    "combined_evidence": [
+      {
+        "token_id": "p1-t42",
+        "semantic": [
+          {
+            "id": "p1-c1",
+            "page": 1,
+            "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+            "token_start": 0,
+            "similarity": 0.4665298527636453,
+            "source": "page 1"
+          }
+        ],
+        "graph": []
+      },
+      {
+        "token_id": "p1-t55",
+        "semantic": [
+          {
+            "id": "p1-c1",
+            "page": 1,
+            "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+            "token_start": 0,
+            "similarity": 0.37435244296357245,
+            "source": "page 1"
+          }
+        ],
+        "graph": []
+      }
+    ],
+    "prompts": [
+      {
+        "token_id": "p1-t42",
+        "payload": {
+          "original": "T0TAL",
+          "context": "3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion",
+          "candidates": [
+            "total",
+            "KEEP_ORIGINAL"
+          ],
+          "candidate_details": [
+            {
+              "value": "total",
+              "rank": 1,
+              "edit_similarity": 0.98,
+              "source": "built-in financial vocabulary"
+            },
+            {
+              "value": "KEEP_ORIGINAL",
+              "rank": null,
+              "edit_similarity": 1.0,
+              "source": "safety policy"
+            }
+          ],
+          "semantic_evidence": [
+            "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1"
+          ],
+          "graph_evidence": [],
+          "task": "Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.",
+          "required_output": {
+            "selection": "exact candidate string",
+            "reason": "short evidence-based reason",
+            "confidence": "number from 0 to 1"
+          }
+        },
+        "rendered": "{\n  \"original\": \"T0TAL\",\n  \"context\": \"3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion\",\n  \"candidates\": [\n    \"total\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"total\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.98,\n      \"source\": \"built-in financial vocabulary\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}"
+      },
+      {
+        "token_id": "p1-t55",
+        "payload": {
+          "original": "reciept",
+          "context": "by the demonstration contact. This reciept records a test transaction only.",
+          "candidates": [
+            "receipt",
+            "precept",
+            "recep",
+            "KEEP_ORIGINAL"
+          ],
+          "candidate_details": [
+            {
+              "value": "receipt",
+              "rank": 1,
+              "edit_similarity": 0.857143,
+              "source": "trusted document vocabulary"
+            },
+            {
+              "value": "precept",
+              "rank": 2,
+              "edit_similarity": 0.857143,
+              "source": "English frequency lexicon"
+            },
+            {
+              "value": "recep",
+              "rank": 3,
+              "edit_similarity": 0.833333,
+              "source": "English frequency lexicon"
+            },
+            {
+              "value": "KEEP_ORIGINAL",
+              "rank": null,
+              "edit_similarity": 1.0,
+              "source": "safety policy"
+            }
+          ],
+          "semantic_evidence": [
+            "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1"
+          ],
+          "graph_evidence": [],
+          "task": "Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.",
+          "required_output": {
+            "selection": "exact candidate string",
+            "reason": "short evidence-based reason",
+            "confidence": "number from 0 to 1"
+          }
+        },
+        "rendered": "{\n  \"original\": \"reciept\",\n  \"context\": \"by the demonstration contact. This reciept records a test transaction only.\",\n  \"candidates\": [\n    \"receipt\",\n    \"precept\",\n    \"recep\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"receipt\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"trusted document vocabulary\"\n    },\n    {\n      \"value\": \"precept\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"recep\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.833333,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}"
+      }
+    ],
+    "slm_decisions": [
+      {
+        "token_id": "p1-t42",
+        "status": "COMPLETED",
+        "selection": "total",
+        "reason": "The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.",
+        "confidence": 0.98,
+        "latency_ms": 11868.34,
+        "prompt_tokens": 442,
+        "completion_tokens": 49,
+        "raw_output": "{\n  \"selection\": \"total\",\n  \"reason\": \"The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.\",\n  \"confidence\": 0.98\n}"
+      },
+      {
+        "token_id": "p1-t55",
+        "status": "COMPLETED",
+        "selection": "receipt",
+        "reason": "The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.",
+        "confidence": 0.857143,
+        "latency_ms": 13677.15,
+        "prompt_tokens": 518,
+        "completion_tokens": 57,
+        "raw_output": "{\n  \"selection\": \"receipt\",\n  \"reason\": \"The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.\",\n  \"confidence\": 0.857143\n}"
+      }
+    ],
+    "validations": [
+      {
+        "token_id": "p1-t42",
+        "original": "T0TAL",
+        "selection": "total",
+        "final": "TOTAL",
+        "status": "ACCEPTED",
+        "checks": [
+          "Candidate membership passed.",
+          "Rank-1 lexical proximity passed.",
+          "Preservation rules passed."
+        ]
+      },
+      {
+        "token_id": "p1-t55",
+        "original": "reciept",
+        "selection": "receipt",
+        "final": "receipt",
+        "status": "ACCEPTED",
+        "checks": [
+          "Candidate membership passed.",
+          "Rank-1 lexical proximity passed.",
+          "Preservation rules passed."
+        ]
+      }
+    ],
+    "original_text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This reciept records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+    "corrected_text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 TOTAL 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This receipt records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+    "correction_records": [
+      {
+        "token_id": "p1-t42",
+        "original": "T0TAL",
+        "selection": "total",
+        "final": "TOTAL",
+        "status": "ACCEPTED",
+        "checks": [
+          "Candidate membership passed.",
+          "Rank-1 lexical proximity passed.",
+          "Preservation rules passed."
+        ],
+        "confidence": 0.8079999999999999,
+        "changed": true
+      },
+      {
+        "token_id": "p1-t55",
+        "original": "reciept",
+        "selection": "receipt",
+        "final": "receipt",
+        "status": "ACCEPTED",
+        "checks": [
+          "Candidate membership passed.",
+          "Rank-1 lexical proximity passed.",
+          "Preservation rules passed."
+        ],
+        "confidence": 0.8571427999999999,
+        "changed": true
+      }
+    ],
+    "traces": [
+      {
+        "token_id": "p1-t42",
+        "original": "T0TAL",
+        "selection": "total",
+        "final": "TOTAL",
+        "status": "ACCEPTED",
+        "checks": [
+          "Candidate membership passed.",
+          "Rank-1 lexical proximity passed.",
+          "Preservation rules passed."
+        ],
+        "confidence": 0.8079999999999999,
+        "changed": true,
+        "why_selected": "effective confidence 0.808 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match total (0.980)",
+        "candidates": [
+          {
+            "value": "total",
+            "source": "built-in financial vocabulary",
+            "similarity": 0.98,
+            "ranking_score": 1.06,
+            "zipf_frequency": 5.21,
+            "rank": 1
+          },
+          {
+            "value": "KEEP_ORIGINAL",
+            "source": "safety policy",
+            "similarity": 1.0
+          }
+        ],
+        "semantic_evidence": [
+          {
+            "id": "p1-c1",
+            "page": 1,
+            "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+            "token_start": 0,
+            "similarity": 0.4665298527636453,
+            "source": "page 1"
+          }
+        ],
+        "graph_evidence": [],
+        "prompt": "{\n  \"original\": \"T0TAL\",\n  \"context\": \"3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion\",\n  \"candidates\": [\n    \"total\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"total\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.98,\n      \"source\": \"built-in financial vocabulary\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+        "slm_decision": {
+          "token_id": "p1-t42",
+          "status": "COMPLETED",
+          "selection": "total",
+          "reason": "The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.",
+          "confidence": 0.98,
+          "latency_ms": 11868.34,
+          "prompt_tokens": 442,
+          "completion_tokens": 49,
+          "raw_output": "{\n  \"selection\": \"total\",\n  \"reason\": \"The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.\",\n  \"confidence\": 0.98\n}"
+        }
+      },
+      {
+        "token_id": "p1-t55",
+        "original": "reciept",
+        "selection": "receipt",
+        "final": "receipt",
+        "status": "ACCEPTED",
+        "checks": [
+          "Candidate membership passed.",
+          "Rank-1 lexical proximity passed.",
+          "Preservation rules passed."
+        ],
+        "confidence": 0.8571427999999999,
+        "changed": true,
+        "why_selected": "effective confidence 0.857 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match receipt (0.857)",
+        "candidates": [
+          {
+            "value": "receipt",
+            "source": "trusted document vocabulary",
+            "similarity": 0.857143,
+            "ranking_score": 0.937143,
+            "zipf_frequency": 3.92,
+            "rank": 1
+          },
+          {
+            "value": "precept",
+            "source": "English frequency lexicon",
+            "similarity": 0.857143,
+            "ranking_score": 0.857143,
+            "zipf_frequency": 2.58,
+            "rank": 2
+          },
+          {
+            "value": "recep",
+            "source": "English frequency lexicon",
+            "similarity": 0.833333,
+            "ranking_score": 0.833333,
+            "zipf_frequency": 2.66,
+            "rank": 3
+          },
+          {
+            "value": "KEEP_ORIGINAL",
+            "source": "safety policy",
+            "similarity": 1.0
+          }
+        ],
+        "semantic_evidence": [
+          {
+            "id": "p1-c1",
+            "page": 1,
+            "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+            "token_start": 0,
+            "similarity": 0.37435244296357245,
+            "source": "page 1"
+          }
+        ],
+        "graph_evidence": [],
+        "prompt": "{\n  \"original\": \"reciept\",\n  \"context\": \"by the demonstration contact. This reciept records a test transaction only.\",\n  \"candidates\": [\n    \"receipt\",\n    \"precept\",\n    \"recep\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"receipt\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"trusted document vocabulary\"\n    },\n    {\n      \"value\": \"precept\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"recep\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.833333,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+        "slm_decision": {
+          "token_id": "p1-t55",
+          "status": "COMPLETED",
+          "selection": "receipt",
+          "reason": "The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.",
+          "confidence": 0.857143,
+          "latency_ms": 13677.15,
+          "prompt_tokens": 518,
+          "completion_tokens": 57,
+          "raw_output": "{\n  \"selection\": \"receipt\",\n  \"reason\": \"The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.\",\n  \"confidence\": 0.857143\n}"
+        }
+      }
+    ],
+    "export_pdf_url": "/api/runs/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/export/pdf",
+    "export_pdf_path": "/data/output/89b180f9-6e89-41f8-a3ef-ccd683e85fc5-corrected.pdf",
+    "provenance_json_path": "/data/output/89b180f9-6e89-41f8-a3ef-ccd683e85fc5.json",
+    "stats": {
+      "ocr_tokens": 72,
+      "low_confidence_tokens": 2,
+      "corrections_applied": 2,
+      "corrections_rejected": 0,
+      "slm_calls": 2
+    }
+  },
+  "stages": [
+    {
+      "key": "document_input",
+      "number": 1,
+      "name": "Document Input",
+      "status": "COMPLETED",
+      "input": {
+        "filename": "PDF005_service_receipt.pdf",
+        "size": 3248
+      },
+      "method": "Validated file ingestion and page rendering",
+      "parameters": {},
+      "output": {
+        "pages": 1,
+        "digital_pdf": true
+      },
+      "diagnostics": {
+        "media_type": "application/pdf"
+      },
+      "next_step": "Preprocessing",
+      "started_at": "2026-10-13T09:46:57.559389+00:00",
+      "completed_at": "2026-10-13T09:46:57.719556+00:00",
+      "runtime_ms": 122.3,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "preprocessing",
+      "number": 2,
+      "name": "Preprocessing",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "OpenCV conditional preprocessing",
+      "parameters": {
+        "conditional_operations": true
+      },
+      "output": [
+        {
+          "source": "/data/processed/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/original/page-1.png",
+          "output": "/data/processed/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/preprocessed/page-1.png",
+          "operations": [
+            "grayscale",
+            "adaptive threshold"
+          ],
+          "width": 1191,
+          "height": 1684
+        }
+      ],
+      "diagnostics": {
+        "operations": [
+          "adaptive threshold",
+          "grayscale"
+        ]
+      },
+      "next_step": "Layout Detection",
+      "started_at": "2026-10-13T09:46:57.753220+00:00",
+      "completed_at": "2026-10-13T09:46:58.300602+00:00",
+      "runtime_ms": 512.76,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "layout",
+      "number": 3,
+      "name": "Layout Detection",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)",
+      "parameters": {
+        "confidence": 0.2,
+        "device": "cpu"
+      },
+      "output": [
+        {
+          "page": 1,
+          "regions": [
+            {
+              "id": "r5",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1002.64,
+                58.8,
+                1114.42,
+                94.97
+              ],
+              "confidence": 0.9089,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r14",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                76.65,
+                58.92,
+                481.35,
+                94.7
+              ],
+              "confidence": 0.2922,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r9",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                77.43,
+                59.08,
+                482.3,
+                94.62
+              ],
+              "confidence": 0.77,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r4",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                81.89,
+                170.48,
+                475.72,
+                227.84
+              ],
+              "confidence": 0.9106,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r6",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                82.27,
+                242.84,
+                406.51,
+                272.47
+              ],
+              "confidence": 0.9005,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r8",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                110.16,
+                352.31,
+                373.16,
+                379.64
+              ],
+              "confidence": 0.8545,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r12",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                823.65,
+                353.52,
+                1081.59,
+                380.11
+              ],
+              "confidence": 0.4895,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r13",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                823.65,
+                353.52,
+                1081.59,
+                380.11
+              ],
+              "confidence": 0.4303,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r17",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                791.87,
+                510.39,
+                895.2,
+                572.34
+              ],
+              "confidence": 0.2309,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r15",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                446.83,
+                511.72,
+                535.44,
+                533.88
+              ],
+              "confidence": 0.2609,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r1",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                82.01,
+                677.91,
+                1107.9,
+                991.46
+              ],
+              "confidence": 0.9698,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r3",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.2,
+                1041.5,
+                163.3,
+                1069.24
+              ],
+              "confidence": 0.9183,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r16",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                86.32,
+                1084.87,
+                664.67,
+                1151.26
+              ],
+              "confidence": 0.24,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r10",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                93.82,
+                1085.36,
+                665.33,
+                1110.37
+              ],
+              "confidence": 0.7613,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r11",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                90.47,
+                1125.45,
+                484.26,
+                1150.25
+              ],
+              "confidence": 0.5781,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r7",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1017.92,
+                1572.19,
+                1106.47,
+                1593.38
+              ],
+              "confidence": 0.9,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r2",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                82.19,
+                1572.44,
+                415.72,
+                1593.07
+              ],
+              "confidence": 0.9339,
+              "source": "DocLayout-YOLO"
+            }
+          ],
+          "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+        }
+      ],
+      "diagnostics": {
+        "region_count": 17,
+        "methods": [
+          "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+        ]
+      },
+      "next_step": "Reading Order",
+      "started_at": "2026-10-13T09:46:58.380398+00:00",
+      "completed_at": "2026-10-13T09:47:04.989589+00:00",
+      "runtime_ms": 6564.19,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "reading_order",
+      "number": 4,
+      "name": "Reading Order",
+      "status": "COMPLETED",
+      "input": {
+        "regions": 17
+      },
+      "method": "Column-aware geometric ordering",
+      "parameters": {},
+      "output": [
+        {
+          "page": 1,
+          "regions": [
+            {
+              "id": "r14",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                76.65,
+                58.92,
+                481.35,
+                94.7
+              ],
+              "confidence": 0.2922,
+              "source": "DocLayout-YOLO",
+              "order": 1
+            },
+            {
+              "id": "r9",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                77.43,
+                59.08,
+                482.3,
+                94.62
+              ],
+              "confidence": 0.77,
+              "source": "DocLayout-YOLO",
+              "order": 2
+            },
+            {
+              "id": "r4",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                81.89,
+                170.48,
+                475.72,
+                227.84
+              ],
+              "confidence": 0.9106,
+              "source": "DocLayout-YOLO",
+              "order": 3
+            },
+            {
+              "id": "r6",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                82.27,
+                242.84,
+                406.51,
+                272.47
+              ],
+              "confidence": 0.9005,
+              "source": "DocLayout-YOLO",
+              "order": 4
+            },
+            {
+              "id": "r8",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                110.16,
+                352.31,
+                373.16,
+                379.64
+              ],
+              "confidence": 0.8545,
+              "source": "DocLayout-YOLO",
+              "order": 5
+            },
+            {
+              "id": "r15",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                446.83,
+                511.72,
+                535.44,
+                533.88
+              ],
+              "confidence": 0.2609,
+              "source": "DocLayout-YOLO",
+              "order": 6
+            },
+            {
+              "id": "r3",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.2,
+                1041.5,
+                163.3,
+                1069.24
+              ],
+              "confidence": 0.9183,
+              "source": "DocLayout-YOLO",
+              "order": 7
+            },
+            {
+              "id": "r16",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                86.32,
+                1084.87,
+                664.67,
+                1151.26
+              ],
+              "confidence": 0.24,
+              "source": "DocLayout-YOLO",
+              "order": 8
+            },
+            {
+              "id": "r10",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                93.82,
+                1085.36,
+                665.33,
+                1110.37
+              ],
+              "confidence": 0.7613,
+              "source": "DocLayout-YOLO",
+              "order": 9
+            },
+            {
+              "id": "r11",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                90.47,
+                1125.45,
+                484.26,
+                1150.25
+              ],
+              "confidence": 0.5781,
+              "source": "DocLayout-YOLO",
+              "order": 10
+            },
+            {
+              "id": "r2",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                82.19,
+                1572.44,
+                415.72,
+                1593.07
+              ],
+              "confidence": 0.9339,
+              "source": "DocLayout-YOLO",
+              "order": 11
+            },
+            {
+              "id": "r5",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1002.64,
+                58.8,
+                1114.42,
+                94.97
+              ],
+              "confidence": 0.9089,
+              "source": "DocLayout-YOLO",
+              "order": 12
+            },
+            {
+              "id": "r12",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                823.65,
+                353.52,
+                1081.59,
+                380.11
+              ],
+              "confidence": 0.4895,
+              "source": "DocLayout-YOLO",
+              "order": 13
+            },
+            {
+              "id": "r13",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                823.65,
+                353.52,
+                1081.59,
+                380.11
+              ],
+              "confidence": 0.4303,
+              "source": "DocLayout-YOLO",
+              "order": 14
+            },
+            {
+              "id": "r17",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                791.87,
+                510.39,
+                895.2,
+                572.34
+              ],
+              "confidence": 0.2309,
+              "source": "DocLayout-YOLO",
+              "order": 15
+            },
+            {
+              "id": "r1",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                82.01,
+                677.91,
+                1107.9,
+                991.46
+              ],
+              "confidence": 0.9698,
+              "source": "DocLayout-YOLO",
+              "order": 16
+            },
+            {
+              "id": "r7",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1017.92,
+                1572.19,
+                1106.47,
+                1593.38
+              ],
+              "confidence": 0.9,
+              "source": "DocLayout-YOLO",
+              "order": 17
+            }
+          ]
+        }
+      ],
+      "diagnostics": {
+        "ordered_regions": 17
+      },
+      "next_step": "OCR Extraction",
+      "started_at": "2026-10-13T09:47:05.166501+00:00",
+      "completed_at": "2026-10-13T09:47:05.232473+00:00",
+      "runtime_ms": 0.31,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "ocr",
+      "number": 5,
+      "name": "OCR Extraction",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "PyMuPDF embedded text extraction",
+      "parameters": {},
+      "output": {
+        "token_count": 72,
+        "preview": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1",
+        "calibrated_tokens": [
+          {
+            "text": "T0TAL",
+            "raw_ocr_confidence": 1.0,
+            "effective_confidence": 0.8079999999999999,
+            "evidence": {
+              "applied": true,
+              "reason": "invalid or rare word with a close trusted lexical match",
+              "candidate": "total",
+              "similarity": 0.98,
+              "original_zipf_frequency": 0.0,
+              "candidate_zipf_frequency": 5.21,
+              "candidate_source": "built-in financial vocabulary"
+            }
+          },
+          {
+            "text": "reciept",
+            "raw_ocr_confidence": 1.0,
+            "effective_confidence": 0.8571427999999999,
+            "evidence": {
+              "applied": true,
+              "reason": "invalid or rare word with a close trusted lexical match",
+              "candidate": "receipt",
+              "similarity": 0.857143,
+              "original_zipf_frequency": 1.49,
+              "candidate_zipf_frequency": 3.92,
+              "candidate_source": "built-in financial vocabulary"
+            }
+          }
+        ]
+      },
+      "diagnostics": {
+        "engine": "PyMuPDF embedded text extraction",
+        "raw_score_scope": "line",
+        "effective_score_scope": "token",
+        "calibrated_token_count": 2
+      },
+      "next_step": "Confidence Analysis",
+      "started_at": "2026-10-13T09:47:05.269836+00:00",
+      "completed_at": "2026-10-13T09:47:05.399784+00:00",
+      "runtime_ms": 86.04,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "confidence",
+      "number": 6,
+      "name": "Confidence Analysis",
+      "status": "COMPLETED",
+      "input": {
+        "tokens": 72
+      },
+      "method": "Token confidence distribution and configurable threshold",
+      "parameters": {
+        "threshold": 0.9
+      },
+      "output": {
+        "threshold": 0.9,
+        "average": 0.9953492055555555,
+        "low_count": 2,
+        "high_count": 70,
+        "distribution": [
+          {
+            "range": "0.0–0.1",
+            "count": 0
+          },
+          {
+            "range": "0.1–0.2",
+            "count": 0
+          },
+          {
+            "range": "0.2–0.3",
+            "count": 0
+          },
+          {
+            "range": "0.3–0.4",
+            "count": 0
+          },
+          {
+            "range": "0.4–0.5",
+            "count": 0
+          },
+          {
+            "range": "0.5–0.6",
+            "count": 0
+          },
+          {
+            "range": "0.6–0.7",
+            "count": 0
+          },
+          {
+            "range": "0.7–0.8",
+            "count": 0
+          },
+          {
+            "range": "0.8–0.9",
+            "count": 2
+          },
+          {
+            "range": "0.9–1.0",
+            "count": 70
+          }
+        ]
+      },
+      "diagnostics": {
+        "confidence_source": [
+          "embedded PDF text",
+          "embedded PDF text + lexical validation"
+        ]
+      },
+      "next_step": "Low-Confidence Detection",
+      "started_at": "2026-10-13T09:47:05.592375+00:00",
+      "completed_at": "2026-10-13T09:47:05.668264+00:00",
+      "runtime_ms": 0.95,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "low_confidence",
+      "number": 7,
+      "name": "Low-Confidence Detection",
+      "status": "COMPLETED",
+      "input": {
+        "tokens": 72
+      },
+      "method": "Selective confidence gate",
+      "parameters": {
+        "threshold": 0.9
+      },
+      "output": [
+        {
+          "id": "p1-t42",
+          "text": "T0TAL",
+          "confidence": 0.8079999999999999,
+          "ocr_confidence": 1.0,
+          "confidence_calibration": {
+            "applied": true,
+            "reason": "invalid or rare word with a close trusted lexical match",
+            "candidate": "total",
+            "similarity": 0.98,
+            "original_zipf_frequency": 0.0,
+            "candidate_zipf_frequency": 5.21,
+            "candidate_source": "built-in financial vocabulary"
+          },
+          "page": 1,
+          "reason": "effective confidence 0.808 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match total (0.980)"
+        },
+        {
+          "id": "p1-t55",
+          "text": "reciept",
+          "confidence": 0.8571427999999999,
+          "ocr_confidence": 1.0,
+          "confidence_calibration": {
+            "applied": true,
+            "reason": "invalid or rare word with a close trusted lexical match",
+            "candidate": "receipt",
+            "similarity": 0.857143,
+            "original_zipf_frequency": 1.49,
+            "candidate_zipf_frequency": 3.92,
+            "candidate_source": "built-in financial vocabulary"
+          },
+          "page": 1,
+          "reason": "effective confidence 0.857 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match receipt (0.857)"
+        }
+      ],
+      "diagnostics": {
+        "selected": 2,
+        "kept": 70
+      },
+      "next_step": "Candidate Generation",
+      "started_at": "2026-10-13T09:47:05.737776+00:00",
+      "completed_at": "2026-10-13T09:47:05.806808+00:00",
+      "runtime_ms": 0.72,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "candidates",
+      "number": 8,
+      "name": "Candidate Generation",
+      "status": "COMPLETED",
+      "input": {
+        "selected_tokens": 2
+      },
+      "method": "Word-frequency validity + OCR-confusion-aware near-word ranking",
+      "parameters": {
+        "domain": "financial",
+        "limit": 5,
+        "valid_word_zipf_floor": 2.5
+      },
+      "output": [
+        {
+          "token_id": "p1-t42",
+          "original": "T0TAL",
+          "lexical_status": "invalid_or_rare_near_match",
+          "candidates": [
+            {
+              "value": "total",
+              "source": "built-in financial vocabulary",
+              "similarity": 0.98,
+              "ranking_score": 1.06,
+              "zipf_frequency": 5.21,
+              "rank": 1
+            },
+            {
+              "value": "KEEP_ORIGINAL",
+              "source": "safety policy",
+              "similarity": 1.0
+            }
+          ]
+        },
+        {
+          "token_id": "p1-t55",
+          "original": "reciept",
+          "lexical_status": "invalid_or_rare_near_match",
+          "candidates": [
+            {
+              "value": "receipt",
+              "source": "trusted document vocabulary",
+              "similarity": 0.857143,
+              "ranking_score": 0.937143,
+              "zipf_frequency": 3.92,
+              "rank": 1
+            },
+            {
+              "value": "precept",
+              "source": "English frequency lexicon",
+              "similarity": 0.857143,
+              "ranking_score": 0.857143,
+              "zipf_frequency": 2.58,
+              "rank": 2
+            },
+            {
+              "value": "recep",
+              "source": "English frequency lexicon",
+              "similarity": 0.833333,
+              "ranking_score": 0.833333,
+              "zipf_frequency": 2.66,
+              "rank": 3
+            },
+            {
+              "value": "KEEP_ORIGINAL",
+              "source": "safety policy",
+              "similarity": 1.0
+            }
+          ]
+        }
+      ],
+      "diagnostics": {
+        "candidate_sets": 2,
+        "valid_low-confidence_words_protected": 0
+      },
+      "next_step": "Semantic Retrieval",
+      "started_at": "2026-10-13T09:47:05.873597+00:00",
+      "completed_at": "2026-10-13T09:47:06.274606+00:00",
+      "runtime_ms": 341.87,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "semantic",
+      "number": 9,
+      "name": "Semantic Retrieval",
+      "status": "COMPLETED",
+      "input": {
+        "chunks": 1,
+        "queries": 2
+      },
+      "method": "TF-IDF cosine retrieval (resident Qwen server preserved)",
+      "parameters": {
+        "top_k": 3,
+        "chunk_size_tokens": 80
+      },
+      "output": [
+        {
+          "token_id": "p1-t42",
+          "query": "3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion",
+          "results": [
+            {
+              "id": "p1-c1",
+              "page": 1,
+              "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+              "token_start": 0,
+              "similarity": 0.4665298527636453,
+              "source": "page 1"
+            }
+          ]
+        },
+        {
+          "token_id": "p1-t55",
+          "query": "by the demonstration contact. This reciept records a test transaction only.",
+          "results": [
+            {
+              "id": "p1-c1",
+              "page": 1,
+              "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+              "token_start": 0,
+              "similarity": 0.37435244296357245,
+              "source": "page 1"
+            }
+          ]
+        }
+      ],
+      "diagnostics": {
+        "evidence_sets": 2
+      },
+      "next_step": "Knowledge Graph",
+      "started_at": "2026-10-13T09:47:06.361654+00:00",
+      "completed_at": "2026-10-13T09:47:06.438679+00:00",
+      "runtime_ms": 5.84,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "graph",
+      "number": 10,
+      "name": "Knowledge Graph",
+      "status": "COMPLETED",
+      "input": {
+        "high_confidence_tokens": 70
+      },
+      "method": "Domain-aware entity and relationship extraction with token provenance + Neo4j persistence",
+      "parameters": {},
+      "output": {
+        "schema_version": "2.0",
+        "domain": "financial",
+        "nodes": [
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "label": "PDF005_service_receipt.pdf",
+            "type": "Document",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [],
+            "provenance": [
+              {
+                "source": "uploaded document metadata",
+                "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "source_name": "PDF005_service_receipt.pdf"
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:transaction",
+            "label": "Transaction",
+            "type": "Transaction",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "pages": [
+              1
+            ],
+            "mentions": 2,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t25",
+              "p1-t59"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t25",
+                "page": 1,
+                "bbox": [
+                  544.1577758789062,
+                  545.5750122070312,
+                  637.0869140625,
+                  571.6810302734375
+                ],
+                "confidence": 1.0,
+                "text": "transaction"
+              },
+              {
+                "token_id": "p1-t59",
+                "page": 1,
+                "bbox": [
+                  343.8580017089844,
+                  1123.574951171875,
+                  436.7869873046875,
+                  1149.6810302734375
+                ],
+                "confidence": 1.0,
+                "text": "transaction"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 2
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:payment",
+            "label": "Payment",
+            "type": "Payment",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t21"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t21",
+                "page": 1,
+                "bbox": [
+                  450.1838073730469,
+                  511.80999755859375,
+                  533.2968139648438,
+                  535.218994140625
+                ],
+                "confidence": 1.0,
+                "text": "PAYMENT"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 1
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rct-2026-225",
+            "label": "RCT-2026-225",
+            "type": "ReferenceIdentifier",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t12"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t12",
+                "page": 1,
+                "bbox": [
+                  225.7179718017578,
+                  350.3500061035156,
+                  371.2038879394531,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "RCT-2026-225"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 1
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:06-september-2026",
+            "label": "06 September 2026",
+            "type": "Date",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t14",
+              "p1-t15",
+              "p1-t16"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t14",
+                "page": 1,
+                "bbox": [
+                  885.3252563476562,
+                  350.3500061035156,
+                  909.7892456054688,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "06"
+              },
+              {
+                "token_id": "p1-t15",
+                "page": 1,
+                "bbox": [
+                  915.9052734375,
+                  350.3500061035156,
+                  1023.5072631835938,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "September"
+              },
+              {
+                "token_id": "p1-t16",
+                "page": 1,
+                "bbox": [
+                  1029.623291015625,
+                  350.3500061035156,
+                  1078.551513671875,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "2026"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel1",
+            "source": "c6190d12-c497-4c30-96bf-74776e62b6ed:transaction",
+            "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:payment",
+            "type": "SETTLED_BY",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "provenance": "domain relation supported by high-confidence OCR mentions",
+            "token_ids": [
+              "p1-t25",
+              "p1-t59",
+              "p1-t21"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "domain relation supported by high-confidence OCR mentions"
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel2",
+            "source": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:rct-2026-225",
+            "type": "HAS_REFERENCE",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "provenance": "reference identifier extracted from high-confidence OCR",
+            "token_ids": [
+              "p1-t12"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "reference identifier extracted from high-confidence OCR"
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel3",
+            "source": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:06-september-2026",
+            "type": "DATED",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "provenance": "date extracted from high-confidence OCR",
+            "token_ids": [
+              "p1-t14",
+              "p1-t15",
+              "p1-t16"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "date extracted from high-confidence OCR"
+            }
+          },
+          {
+            "id": "c6190d12-c497-4c30-96bf-74776e62b6ed:rel4",
+            "source": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "target": "c6190d12-c497-4c30-96bf-74776e62b6ed:transaction",
+            "type": "MENTIONS",
+            "document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+            "token_ids": [
+              "p1-t25",
+              "p1-t59"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          }
+        ],
+        "persisted_to_neo4j": true
+      },
+      "diagnostics": {
+        "schema_version": "2.0",
+        "nodes": 5,
+        "edges": 4,
+        "relationship_types": [
+          "DATED",
+          "HAS_REFERENCE",
+          "MENTIONS",
+          "SETTLED_BY"
+        ],
+        "persisted_to_neo4j": true
+      },
+      "next_step": "Hybrid GraphRAG",
+      "started_at": "2026-10-13T09:47:06.626016+00:00",
+      "completed_at": "2026-10-13T09:47:07.018087+00:00",
+      "runtime_ms": 111.28,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "graphrag",
+      "number": 11,
+      "name": "Hybrid GraphRAG",
+      "status": "COMPLETED",
+      "input": {
+        "semantic_sets": 2,
+        "graph_nodes": 5
+      },
+      "method": "Provenance-preserving semantic + graph evidence union",
+      "parameters": {},
+      "output": [
+        {
+          "token_id": "p1-t42",
+          "semantic": [
+            {
+              "id": "p1-c1",
+              "page": 1,
+              "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+              "token_start": 0,
+              "similarity": 0.4665298527636453,
+              "source": "page 1"
+            }
+          ],
+          "graph": []
+        },
+        {
+          "token_id": "p1-t55",
+          "semantic": [
+            {
+              "id": "p1-c1",
+              "page": 1,
+              "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+              "token_start": 0,
+              "similarity": 0.37435244296357245,
+              "source": "page 1"
+            }
+          ],
+          "graph": []
+        }
+      ],
+      "diagnostics": {
+        "combined_sets": 2
+      },
+      "next_step": "Dynamic Prompt Construction",
+      "started_at": "2026-10-13T09:47:07.080595+00:00",
+      "completed_at": "2026-10-13T09:47:07.358939+00:00",
+      "runtime_ms": 176.03,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "prompt",
+      "number": 12,
+      "name": "Dynamic Prompt Construction",
+      "status": "COMPLETED",
+      "input": {
+        "candidate_sets": 2
+      },
+      "method": "Per-token constrained JSON prompt template",
+      "parameters": {},
+      "output": [
+        {
+          "token_id": "p1-t42",
+          "payload": {
+            "original": "T0TAL",
+            "context": "3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion",
+            "candidates": [
+              "total",
+              "KEEP_ORIGINAL"
+            ],
+            "candidate_details": [
+              {
+                "value": "total",
+                "rank": 1,
+                "edit_similarity": 0.98,
+                "source": "built-in financial vocabulary"
+              },
+              {
+                "value": "KEEP_ORIGINAL",
+                "rank": null,
+                "edit_similarity": 1.0,
+                "source": "safety policy"
+              }
+            ],
+            "semantic_evidence": [
+              "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1"
+            ],
+            "graph_evidence": [],
+            "task": "Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.",
+            "required_output": {
+              "selection": "exact candidate string",
+              "reason": "short evidence-based reason",
+              "confidence": "number from 0 to 1"
+            }
+          },
+          "rendered": "{\n  \"original\": \"T0TAL\",\n  \"context\": \"3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion\",\n  \"candidates\": [\n    \"total\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"total\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.98,\n      \"source\": \"built-in financial vocabulary\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}"
+        },
+        {
+          "token_id": "p1-t55",
+          "payload": {
+            "original": "reciept",
+            "context": "by the demonstration contact. This reciept records a test transaction only.",
+            "candidates": [
+              "receipt",
+              "precept",
+              "recep",
+              "KEEP_ORIGINAL"
+            ],
+            "candidate_details": [
+              {
+                "value": "receipt",
+                "rank": 1,
+                "edit_similarity": 0.857143,
+                "source": "trusted document vocabulary"
+              },
+              {
+                "value": "precept",
+                "rank": 2,
+                "edit_similarity": 0.857143,
+                "source": "English frequency lexicon"
+              },
+              {
+                "value": "recep",
+                "rank": 3,
+                "edit_similarity": 0.833333,
+                "source": "English frequency lexicon"
+              },
+              {
+                "value": "KEEP_ORIGINAL",
+                "rank": null,
+                "edit_similarity": 1.0,
+                "source": "safety policy"
+              }
+            ],
+            "semantic_evidence": [
+              "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1"
+            ],
+            "graph_evidence": [],
+            "task": "Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.",
+            "required_output": {
+              "selection": "exact candidate string",
+              "reason": "short evidence-based reason",
+              "confidence": "number from 0 to 1"
+            }
+          },
+          "rendered": "{\n  \"original\": \"reciept\",\n  \"context\": \"by the demonstration contact. This reciept records a test transaction only.\",\n  \"candidates\": [\n    \"receipt\",\n    \"precept\",\n    \"recep\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"receipt\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"trusted document vocabulary\"\n    },\n    {\n      \"value\": \"precept\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"recep\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.833333,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}"
+        }
+      ],
+      "diagnostics": {
+        "prompt_count": 2
+      },
+      "next_step": "Qwen2.5-3B Selection",
+      "started_at": "2026-10-13T09:47:07.419086+00:00",
+      "completed_at": "2026-10-13T09:47:07.477752+00:00",
+      "runtime_ms": 0.62,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "slm",
+      "number": 13,
+      "name": "Qwen2.5-3B Selection",
+      "status": "COMPLETED",
+      "input": {
+        "prompts": 2
+      },
+      "method": "Qwen2.5-3B-Instruct Q4_K_M via local llama.cpp: qwen2.5-3b-instruct-q4_k_m.gguf",
+      "parameters": {},
+      "output": [
+        {
+          "token_id": "p1-t42",
+          "status": "COMPLETED",
+          "selection": "total",
+          "reason": "The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.",
+          "confidence": 0.98,
+          "latency_ms": 11868.34,
+          "prompt_tokens": 442,
+          "completion_tokens": 49,
+          "raw_output": "{\n  \"selection\": \"total\",\n  \"reason\": \"The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.\",\n  \"confidence\": 0.98\n}"
+        },
+        {
+          "token_id": "p1-t55",
+          "status": "COMPLETED",
+          "selection": "receipt",
+          "reason": "The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.",
+          "confidence": 0.857143,
+          "latency_ms": 13677.15,
+          "prompt_tokens": 518,
+          "completion_tokens": 57,
+          "raw_output": "{\n  \"selection\": \"receipt\",\n  \"reason\": \"The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.\",\n  \"confidence\": 0.857143\n}"
+        }
+      ],
+      "diagnostics": {
+        "calls": 2,
+        "unavailable": 0,
+        "errors": 0,
+        "total_model_latency_ms": 25545.49
+      },
+      "next_step": "Validation",
+      "started_at": "2026-10-13T09:47:07.573499+00:00",
+      "completed_at": "2026-10-13T09:47:33.177280+00:00",
+      "runtime_ms": 25548.25,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "validation",
+      "number": 14,
+      "name": "Validation",
+      "status": "COMPLETED",
+      "input": {
+        "decisions": 2
+      },
+      "method": "Candidate membership + rank-1 lexical proximity + valid-word and identifier preservation",
+      "parameters": {},
+      "output": [
+        {
+          "token_id": "p1-t42",
+          "original": "T0TAL",
+          "selection": "total",
+          "final": "TOTAL",
+          "status": "ACCEPTED",
+          "checks": [
+            "Candidate membership passed.",
+            "Rank-1 lexical proximity passed.",
+            "Preservation rules passed."
+          ]
+        },
+        {
+          "token_id": "p1-t55",
+          "original": "reciept",
+          "selection": "receipt",
+          "final": "receipt",
+          "status": "ACCEPTED",
+          "checks": [
+            "Candidate membership passed.",
+            "Rank-1 lexical proximity passed.",
+            "Preservation rules passed."
+          ]
+        }
+      ],
+      "diagnostics": {
+        "ACCEPTED": 2
+      },
+      "next_step": "Final Output",
+      "started_at": "2026-10-13T09:47:33.243861+00:00",
+      "completed_at": "2026-10-13T09:47:33.357562+00:00",
+      "runtime_ms": 0.36,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "output",
+      "number": 15,
+      "name": "Final Output",
+      "status": "COMPLETED",
+      "input": {
+        "validated_records": 2
+      },
+      "method": "Immutable original + validated token substitution and searchable PDF generation",
+      "parameters": {},
+      "output": {
+        "original_text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This reciept records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+        "corrected_text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 TOTAL 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This receipt records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+        "pdf_export": "/data/output/89b180f9-6e89-41f8-a3ef-ccd683e85fc5-corrected.pdf",
+        "download_url": "/api/runs/89b180f9-6e89-41f8-a3ef-ccd683e85fc5/export/pdf",
+        "provenance_json": "/data/output/89b180f9-6e89-41f8-a3ef-ccd683e85fc5.json"
+      },
+      "diagnostics": {
+        "ocr_tokens": 72,
+        "low_confidence_tokens": 2,
+        "corrections_applied": 2,
+        "corrections_rejected": 0,
+        "slm_calls": 2,
+        "pdf_text_selectable": true
+      },
+      "next_step": null,
+      "started_at": "2026-10-13T09:47:33.411387+00:00",
+      "completed_at": "2026-10-13T09:47:33.512346+00:00",
+      "runtime_ms": 26.17,
+      "warnings": [],
+      "error": null
+    }
+  ]
+}

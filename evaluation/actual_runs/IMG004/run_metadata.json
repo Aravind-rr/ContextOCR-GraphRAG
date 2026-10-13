@@ -1,0 +1,51 @@
+{
+  "status": "ACTUALLY_RUN",
+  "document_id": "IMG004",
+  "api_document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+  "run_id": "c2f523fd-6850-4b77-b206-4b00d78246ff",
+  "input_filename": "IMG004_tax_invoice.png",
+  "input_sha256": "53e5f8578f0673678773cd8c5937367f015dfc31df0fdf1bceb38e0e898e59d7",
+  "ground_truth_sha256": "24123ae1bb4d6e21dabcf1a90033a1ced1b57ae903ead05c31780bf7c9858ac5",
+  "api_url": "http://127.0.0.1:8000",
+  "domain": "financial",
+  "confidence_threshold": 0.9,
+  "started_at": "2026-10-13T07:56:13.898359+00:00",
+  "completed_at": "2026-10-13T07:56:39.651008+00:00",
+  "wall_runtime_seconds": 25.75,
+  "pipeline_status": "COMPLETED",
+  "pipeline_stats": {
+    "ocr_tokens": 78,
+    "low_confidence_tokens": 0,
+    "corrections_applied": 0,
+    "corrections_rejected": 0,
+    "slm_calls": 0
+  },
+  "stage_timings_ms": {
+    "document_input": 110.21,
+    "preprocessing": 316.13,
+    "layout": 6577.55,
+    "reading_order": 0.3,
+    "ocr": 12496.08,
+    "confidence": 0.44,
+    "low_confidence": 0.67,
+    "candidates": 323.23,
+    "semantic": 0.57,
+    "graph": 698.4,
+    "graphrag": 0.29,
+    "prompt": 0.39,
+    "slm": 0.3,
+    "validation": 0.33,
+    "output": 49.93
+  },
+  "stage_warnings": [],
+  "artifacts": [
+    "corrected.pdf",
+    "corrected.txt",
+    "corrections.json",
+    "evidence.json",
+    "graph.json",
+    "ocr_raw.txt",
+    "pipeline.json",
+    "result.json"
+  ]
+}

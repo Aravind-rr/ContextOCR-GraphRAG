@@ -1,0 +1,51 @@
+{
+  "status": "ACTUALLY_RUN",
+  "document_id": "IMG001",
+  "api_document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+  "run_id": "9a5936c8-3999-452d-a7a9-ba2c04a0e315",
+  "input_filename": "IMG001_clinical_follow_up_note.png",
+  "input_sha256": "8172303346e973b6be40bb01f6fddc2c91a06f000c277c66ebf0f3ce19230c69",
+  "ground_truth_sha256": "151b8bd8156275bf7edd7da5d83190b192b89ab5da01a9b1a16f81e92d051bb3",
+  "api_url": "http://127.0.0.1:8000",
+  "domain": "medical",
+  "confidence_threshold": 0.9,
+  "started_at": "2026-10-13T07:37:41.273282+00:00",
+  "completed_at": "2026-10-13T07:38:27.033975+00:00",
+  "wall_runtime_seconds": 45.75,
+  "pipeline_status": "COMPLETED",
+  "pipeline_stats": {
+    "ocr_tokens": 85,
+    "low_confidence_tokens": 0,
+    "corrections_applied": 0,
+    "corrections_rejected": 0,
+    "slm_calls": 0
+  },
+  "stage_timings_ms": {
+    "document_input": 132.91,
+    "preprocessing": 438.72,
+    "layout": 10180.23,
+    "reading_order": 0.37,
+    "ocr": 26132.64,
+    "confidence": 0.54,
+    "low_confidence": 0.26,
+    "candidates": 423.42,
+    "semantic": 0.32,
+    "graph": 898.97,
+    "graphrag": 0.43,
+    "prompt": 0.51,
+    "slm": 0.48,
+    "validation": 0.58,
+    "output": 50.92
+  },
+  "stage_warnings": [],
+  "artifacts": [
+    "corrected.pdf",
+    "corrected.txt",
+    "corrections.json",
+    "evidence.json",
+    "graph.json",
+    "ocr_raw.txt",
+    "pipeline.json",
+    "result.json"
+  ]
+}

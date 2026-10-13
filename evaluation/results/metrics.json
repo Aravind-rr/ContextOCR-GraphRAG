@@ -1,0 +1,2132 @@
+{
+  "evaluation_status": "MEASURED",
+  "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+  "summary": {
+    "status": "MEASURED",
+    "documents_in_manifest": 30,
+    "documents_measured": 10,
+    "documents_not_yet_measured": 20,
+    "documents_improved": 0,
+    "documents_unchanged": 8,
+    "documents_worsened": 2,
+    "clean_baseline_documents_measured": 0,
+    "clean_documents_preserved": 0,
+    "clean_document_preservation_rate": null,
+    "macro_baseline_cer": 0.1319159258186254,
+    "macro_post_correction_cer": 0.1338812598974624,
+    "macro_baseline_wer": 0.34686439313616935,
+    "macro_post_correction_wer": 0.3482728438403947,
+    "macro_baseline_normalized_character_accuracy": 0.8680840741813746,
+    "macro_post_correction_normalized_character_accuracy": 0.8661187401025376
+  },
+  "documents": [
+    {
+      "document_id": "IMG001",
+      "input_filename": "IMG001_clinical_follow_up_note.png",
+      "input_format": "image",
+      "document_category": "medical",
+      "input_path": "evaluation/dataset/inputs/images/IMG001_clinical_follow_up_note.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG001.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 513,
+          "normalized_prediction_length": 515,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 513,
+            "prediction_units": 515,
+            "substitutions": 30,
+            "deletions": 24,
+            "insertions": 26,
+            "edit_distance": 80,
+            "rate": 0.15594541910331383
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 80,
+            "prediction_units": 85,
+            "substitutions": 14,
+            "deletions": 7,
+            "insertions": 12,
+            "edit_distance": 33,
+            "rate": 0.4125
+          },
+          "character_level_normalized_accuracy": 0.8440545808966862
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 513,
+          "normalized_prediction_length": 515,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 513,
+            "prediction_units": 515,
+            "substitutions": 30,
+            "deletions": 24,
+            "insertions": 26,
+            "edit_distance": 80,
+            "rate": 0.15594541910331383
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 80,
+            "prediction_units": 85,
+            "substitutions": 14,
+            "deletions": 7,
+            "insertions": 12,
+            "edit_distance": 33,
+            "rate": 0.4125
+          },
+          "character_level_normalized_accuracy": 0.8440545808966862
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 33,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "IMG001",
+        "api_document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+        "run_id": "d4d8d740-58ad-45c2-ada1-85fcc3ff64e8",
+        "input_filename": "IMG001_clinical_follow_up_note.png",
+        "input_sha256": "8172303346e973b6be40bb01f6fddc2c91a06f000c277c66ebf0f3ce19230c69",
+        "ground_truth_sha256": "151b8bd8156275bf7edd7da5d83190b192b89ab5da01a9b1a16f81e92d051bb3",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "medical",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T05:52:07.796046+00:00",
+        "completed_at": "2026-10-13T05:55:39.702699+00:00",
+        "wall_runtime_seconds": 211.891,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 85,
+          "low_confidence_tokens": 2,
+          "corrections_applied": 0,
+          "corrections_rejected": 1,
+          "slm_calls": 2
+        },
+        "stage_timings_ms": {
+          "document_input": 98.62,
+          "preprocessing": 379.08,
+          "layout": 8955.28,
+          "reading_order": 0.47,
+          "ocr": 21184.07,
+          "confidence": 0.48,
+          "low_confidence": 0.31,
+          "candidates": 0.76,
+          "semantic": 26521.03,
+          "graph": 383.25,
+          "graphrag": 33.38,
+          "prompt": 0.49,
+          "slm": 131106.15,
+          "validation": 0.74,
+          "output": 23.83
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "IMG002",
+      "input_filename": "IMG002_outpatient_review_summary.png",
+      "input_format": "image",
+      "document_category": "medical",
+      "input_path": "evaluation/dataset/inputs/images/IMG002_outpatient_review_summary.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG002.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "l/1 character substitution",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Patient",
+          "rendered": "Patlent",
+          "type": "l/1 character substitution"
+        },
+        {
+          "intended": "recovery",
+          "rendered": "recovry",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "mild_noise"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 490,
+          "normalized_prediction_length": 485,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 490,
+            "prediction_units": 485,
+            "substitutions": 24,
+            "deletions": 31,
+            "insertions": 26,
+            "edit_distance": 81,
+            "rate": 0.1653061224489796
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 71,
+            "prediction_units": 72,
+            "substitutions": 12,
+            "deletions": 10,
+            "insertions": 11,
+            "edit_distance": 33,
+            "rate": 0.4647887323943662
+          },
+          "character_level_normalized_accuracy": 0.8346938775510204
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 490,
+          "normalized_prediction_length": 487,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 490,
+            "prediction_units": 487,
+            "substitutions": 23,
+            "deletions": 31,
+            "insertions": 28,
+            "edit_distance": 82,
+            "rate": 0.1673469387755102
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 71,
+            "prediction_units": 72,
+            "substitutions": 13,
+            "deletions": 10,
+            "insertions": 11,
+            "edit_distance": 34,
+            "rate": 0.4788732394366197
+          },
+          "character_level_normalized_accuracy": 0.8326530612244898
+        },
+        "absolute_cer_reduction": -0.002040816326530609,
+        "relative_cer_reduction": -0.012345679012345658,
+        "outcome": "WORSENED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 2,
+          "errors_introduced": 3,
+          "errors_remaining": 31,
+          "correction_attempts": 5,
+          "successful_corrections": 2,
+          "token_level_correction_accuracy": 0.4,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "IMG002",
+        "api_document_id": "96e20b56-0412-413c-af52-dad8d9ea52a1",
+        "run_id": "8d131cff-10b9-4347-96e1-427db5562468",
+        "input_filename": "IMG002_outpatient_review_summary.png",
+        "input_sha256": "356c238bb8152eb5869c990dc27fdde94512ea41152df2da2793f34bd0ddfad2",
+        "ground_truth_sha256": "e13b206705ecebc095ad6c6edaccd40ae4a31fc1c5015b00c964ed68e98624c7",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "medical",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T05:55:46.956679+00:00",
+        "completed_at": "2026-10-13T05:57:18.410407+00:00",
+        "wall_runtime_seconds": 91.438,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 72,
+          "low_confidence_tokens": 3,
+          "corrections_applied": 2,
+          "corrections_rejected": 0,
+          "slm_calls": 2
+        },
+        "stage_timings_ms": {
+          "document_input": 154.74,
+          "preprocessing": 335.61,
+          "layout": 8454.11,
+          "reading_order": 0.35,
+          "ocr": 14727.26,
+          "confidence": 0.5,
+          "low_confidence": 0.39,
+          "candidates": 0.88,
+          "semantic": 24872.16,
+          "graph": 119.57,
+          "graphrag": 175.86,
+          "prompt": 3.19,
+          "slm": 34887.23,
+          "validation": 0.4,
+          "output": 19.82
+        },
+        "stage_warnings": [
+          {
+            "stage": "slm",
+            "message": null
+          }
+        ],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "IMG003",
+      "input_filename": "IMG003_medication_review_record.png",
+      "input_format": "image",
+      "document_category": "medical",
+      "input_path": "evaluation/dataset/inputs/images/IMG003_medication_review_record.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG003.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "l/1 character substitution",
+        "duplicated character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Patient",
+          "rendered": "Patlent",
+          "type": "l/1 character substitution"
+        },
+        {
+          "intended": "dosage",
+          "rendered": "dossage",
+          "type": "duplicated character"
+        }
+      ],
+      "image_quality_variations": [
+        "slight_rotation_0.8_deg"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 522,
+          "normalized_prediction_length": 522,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 522,
+            "prediction_units": 522,
+            "substitutions": 57,
+            "deletions": 26,
+            "insertions": 26,
+            "edit_distance": 109,
+            "rate": 0.20881226053639848
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 82,
+            "prediction_units": 84,
+            "substitutions": 16,
+            "deletions": 11,
+            "insertions": 13,
+            "edit_distance": 40,
+            "rate": 0.4878048780487805
+          },
+          "character_level_normalized_accuracy": 0.7911877394636015
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 522,
+          "normalized_prediction_length": 521,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 522,
+            "prediction_units": 521,
+            "substitutions": 58,
+            "deletions": 26,
+            "insertions": 25,
+            "edit_distance": 109,
+            "rate": 0.20881226053639848
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 82,
+            "prediction_units": 84,
+            "substitutions": 16,
+            "deletions": 11,
+            "insertions": 13,
+            "edit_distance": 40,
+            "rate": 0.4878048780487805
+          },
+          "character_level_normalized_accuracy": 0.7911877394636015
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 40,
+          "correction_attempts": 1,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": 0.0,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "IMG003",
+        "api_document_id": "9e1e39ad-21ba-4a3f-a575-43a046316a89",
+        "run_id": "0e8cfadc-9f62-4229-84f5-36bdbed711fa",
+        "input_filename": "IMG003_medication_review_record.png",
+        "input_sha256": "85f77e90b3f356c97c2d4c66f50a6a3aff9d9a56dec0d7c564dafa37874a2f19",
+        "ground_truth_sha256": "85d4f33e4839aed1d69eaeedc43f99c707a42777c30aaeb2278aaf777c257e4c",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "medical",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T05:57:18.424682+00:00",
+        "completed_at": "2026-10-13T05:58:39.744483+00:00",
+        "wall_runtime_seconds": 81.281,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 84,
+          "low_confidence_tokens": 1,
+          "corrections_applied": 1,
+          "corrections_rejected": 0,
+          "slm_calls": 1
+        },
+        "stage_timings_ms": {
+          "document_input": 136.21,
+          "preprocessing": 356.52,
+          "layout": 7672.28,
+          "reading_order": 0.42,
+          "ocr": 18639.53,
+          "confidence": 0.48,
+          "low_confidence": 0.42,
+          "candidates": 9.81,
+          "semantic": 33035.65,
+          "graph": 1919.7,
+          "graphrag": 477.66,
+          "prompt": 0.49,
+          "slm": 12729.0,
+          "validation": 0.49,
+          "output": 21.77
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "IMG004",
+      "input_filename": "IMG004_tax_invoice.png",
+      "input_format": "image",
+      "document_category": "invoice_receipt",
+      "input_path": "evaluation/dataset/inputs/images/IMG004_tax_invoice.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG004.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 450,
+          "normalized_prediction_length": 450,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 450,
+            "prediction_units": 450,
+            "substitutions": 14,
+            "deletions": 36,
+            "insertions": 36,
+            "edit_distance": 86,
+            "rate": 0.19111111111111112
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 73,
+            "prediction_units": 78,
+            "substitutions": 14,
+            "deletions": 8,
+            "insertions": 13,
+            "edit_distance": 35,
+            "rate": 0.4794520547945205
+          },
+          "character_level_normalized_accuracy": 0.8088888888888889
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 450,
+          "normalized_prediction_length": 450,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 450,
+            "prediction_units": 450,
+            "substitutions": 14,
+            "deletions": 36,
+            "insertions": 36,
+            "edit_distance": 86,
+            "rate": 0.19111111111111112
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 73,
+            "prediction_units": 78,
+            "substitutions": 14,
+            "deletions": 8,
+            "insertions": 13,
+            "edit_distance": 35,
+            "rate": 0.4794520547945205
+          },
+          "character_level_normalized_accuracy": 0.8088888888888889
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 35,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "IMG004",
+        "api_document_id": "0c341977-ec15-4efe-b453-05573f3816d9",
+        "run_id": "93a98396-f6a9-40cb-8756-a606a4a051be",
+        "input_filename": "IMG004_tax_invoice.png",
+        "input_sha256": "53e5f8578f0673678773cd8c5937367f015dfc31df0fdf1bceb38e0e898e59d7",
+        "ground_truth_sha256": "24123ae1bb4d6e21dabcf1a90033a1ced1b57ae903ead05c31780bf7c9858ac5",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "financial",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:00:15.234264+00:00",
+        "completed_at": "2026-10-13T06:01:36.974278+00:00",
+        "wall_runtime_seconds": 81.688,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 78,
+          "low_confidence_tokens": 2,
+          "corrections_applied": 0,
+          "corrections_rejected": 0,
+          "slm_calls": 2
+        },
+        "stage_timings_ms": {
+          "document_input": 94.38,
+          "preprocessing": 328.67,
+          "layout": 7702.71,
+          "reading_order": 0.4,
+          "ocr": 14598.11,
+          "confidence": 0.54,
+          "low_confidence": 0.34,
+          "candidates": 0.75,
+          "semantic": 29234.09,
+          "graph": 1894.26,
+          "graphrag": 81.05,
+          "prompt": 0.92,
+          "slm": 18630.73,
+          "validation": 1.23,
+          "output": 36.43
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "IMG005",
+      "input_filename": "IMG005_service_receipt.png",
+      "input_format": "image",
+      "document_category": "invoice_receipt",
+      "input_path": "evaluation/dataset/inputs/images/IMG005_service_receipt.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG005.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "O/0 character substitution",
+        "misspelling"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "TOTAL",
+          "rendered": "T0TAL",
+          "type": "O/0 character substitution"
+        },
+        {
+          "intended": "receipt",
+          "rendered": "reciept",
+          "type": "misspelling"
+        }
+      ],
+      "image_quality_variations": [
+        "low_contrast"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 511,
+          "normalized_prediction_length": 512,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 511,
+            "prediction_units": 512,
+            "substitutions": 18,
+            "deletions": 35,
+            "insertions": 36,
+            "edit_distance": 89,
+            "rate": 0.17416829745596868
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 78,
+            "prediction_units": 84,
+            "substitutions": 19,
+            "deletions": 6,
+            "insertions": 12,
+            "edit_distance": 37,
+            "rate": 0.47435897435897434
+          },
+          "character_level_normalized_accuracy": 0.8258317025440314
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 511,
+          "normalized_prediction_length": 518,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 511,
+            "prediction_units": 518,
+            "substitutions": 21,
+            "deletions": 35,
+            "insertions": 42,
+            "edit_distance": 98,
+            "rate": 0.1917808219178082
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 78,
+            "prediction_units": 84,
+            "substitutions": 19,
+            "deletions": 6,
+            "insertions": 12,
+            "edit_distance": 37,
+            "rate": 0.47435897435897434
+          },
+          "character_level_normalized_accuracy": 0.8082191780821918
+        },
+        "absolute_cer_reduction": -0.01761252446183953,
+        "relative_cer_reduction": -0.10112359550561797,
+        "outcome": "WORSENED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 1,
+          "errors_introduced": 1,
+          "errors_remaining": 36,
+          "correction_attempts": 2,
+          "successful_corrections": 1,
+          "token_level_correction_accuracy": 0.5,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "IMG005",
+        "api_document_id": "344ec186-39cd-490a-b929-c13982a11316",
+        "run_id": "3ec16060-4db4-4023-8aff-81be288de10d",
+        "input_filename": "IMG005_service_receipt.png",
+        "input_sha256": "7a07cef60236c212d6b1669ea39527eec8c14b49c0d39c4b817c342646dc9918",
+        "ground_truth_sha256": "7d5c962b7262dea8eaf1ad48d41c0c66730d2876a29cbbf95047843c9da189df",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "financial",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:01:37.036324+00:00",
+        "completed_at": "2026-10-13T06:03:24.310106+00:00",
+        "wall_runtime_seconds": 107.219,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 84,
+          "low_confidence_tokens": 1,
+          "corrections_applied": 1,
+          "corrections_rejected": 0,
+          "slm_calls": 1
+        },
+        "stage_timings_ms": {
+          "document_input": 316.53,
+          "preprocessing": 417.69,
+          "layout": 11234.68,
+          "reading_order": 0.4,
+          "ocr": 19388.53,
+          "confidence": 0.63,
+          "low_confidence": 0.34,
+          "candidates": 1.06,
+          "semantic": 58561.33,
+          "graph": 717.68,
+          "graphrag": 29.72,
+          "prompt": 0.56,
+          "slm": 9567.8,
+          "validation": 0.42,
+          "output": 19.66
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "IMG006",
+      "input_filename": "IMG006_purchase_invoice.png",
+      "input_format": "image",
+      "document_category": "invoice_receipt",
+      "input_path": "evaluation/dataset/inputs/images/IMG006_purchase_invoice.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG006.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "i/l character substitution",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Stationery",
+          "rendered": "Statlonery",
+          "type": "i/l character substitution"
+        },
+        {
+          "intended": "Quantity",
+          "rendered": "Quantty",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "mild_blur"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG007",
+      "input_filename": "IMG007_course_completion_certificate.png",
+      "input_format": "image",
+      "document_category": "certificate",
+      "input_path": "evaluation/dataset/inputs/images/IMG007_course_completion_certificate.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG007.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG008",
+      "input_filename": "IMG008_workshop_participation_certificate.png",
+      "input_format": "image",
+      "document_category": "certificate",
+      "input_path": "evaluation/dataset/inputs/images/IMG008_workshop_participation_certificate.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG008.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "i/l character substitution",
+        "duplicated character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Participation",
+          "rendered": "Particlpation",
+          "type": "i/l character substitution"
+        },
+        {
+          "intended": "Certificate",
+          "rendered": "Certifficate",
+          "type": "duplicated character"
+        }
+      ],
+      "image_quality_variations": [
+        "mild_noise"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG009",
+      "input_filename": "IMG009_merit_certificate.png",
+      "input_format": "image",
+      "document_category": "certificate",
+      "input_path": "evaluation/dataset/inputs/images/IMG009_merit_certificate.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG009.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "missing character",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Excellence",
+          "rendered": "Excelence",
+          "type": "missing character"
+        },
+        {
+          "intended": "Programme",
+          "rendered": "Programe",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "slight_rotation_-0.7_deg"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG010",
+      "input_filename": "IMG010_library_membership_application.png",
+      "input_format": "image",
+      "document_category": "application_form",
+      "input_path": "evaluation/dataset/inputs/images/IMG010_library_membership_application.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG010.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG011",
+      "input_filename": "IMG011_research_access_application.png",
+      "input_format": "image",
+      "document_category": "application_form",
+      "input_path": "evaluation/dataset/inputs/images/IMG011_research_access_application.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG011.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "c/e character substitution",
+        "l/1 character substitution"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Research",
+          "rendered": "Researeh",
+          "type": "c/e character substitution"
+        },
+        {
+          "intended": "approval",
+          "rendered": "approva1",
+          "type": "l/1 character substitution"
+        }
+      ],
+      "image_quality_variations": [
+        "low_contrast"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG012",
+      "input_filename": "IMG012_student_activity_application.png",
+      "input_format": "image",
+      "document_category": "application_form",
+      "input_path": "evaluation/dataset/inputs/images/IMG012_student_activity_application.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG012.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "duplicated character",
+        "i/l character substitution"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Student",
+          "rendered": "Studdent",
+          "type": "duplicated character"
+        },
+        {
+          "intended": "activity",
+          "rendered": "activlty",
+          "type": "i/l character substitution"
+        }
+      ],
+      "image_quality_variations": [
+        "mild_noise",
+        "mild_blur"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG013",
+      "input_filename": "IMG013_quarterly_financial_summary.png",
+      "input_format": "image",
+      "document_category": "financial_summary",
+      "input_path": "evaluation/dataset/inputs/images/IMG013_quarterly_financial_summary.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG013.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG014",
+      "input_filename": "IMG014_department_budget_snapshot.png",
+      "input_format": "image",
+      "document_category": "financial_summary",
+      "input_path": "evaluation/dataset/inputs/images/IMG014_department_budget_snapshot.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG014.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "l/1 character substitution",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Balance",
+          "rendered": "Ba1ance",
+          "type": "l/1 character substitution"
+        },
+        {
+          "intended": "Allocated",
+          "rendered": "Alocated",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "slight_rotation_0.6_deg"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "IMG015",
+      "input_filename": "IMG015_project_expense_summary.png",
+      "input_format": "image",
+      "document_category": "financial_summary",
+      "input_path": "evaluation/dataset/inputs/images/IMG015_project_expense_summary.png",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG015.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "duplicated character",
+        "i/l character substitution"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Expenses",
+          "rendered": "Expensess",
+          "type": "duplicated character"
+        },
+        {
+          "intended": "variance",
+          "rendered": "varlance",
+          "type": "i/l character substitution"
+        }
+      ],
+      "image_quality_variations": [
+        "low_contrast",
+        "mild_noise"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF001",
+      "input_filename": "PDF001_clinical_follow_up_note.pdf",
+      "input_format": "pdf",
+      "document_category": "medical",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF001_clinical_follow_up_note.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF001.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 513,
+          "normalized_prediction_length": 504,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 513,
+            "prediction_units": 504,
+            "substitutions": 6,
+            "deletions": 21,
+            "insertions": 12,
+            "edit_distance": 39,
+            "rate": 0.07602339181286549
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 80,
+            "prediction_units": 76,
+            "substitutions": 4,
+            "deletions": 8,
+            "insertions": 4,
+            "edit_distance": 16,
+            "rate": 0.2
+          },
+          "character_level_normalized_accuracy": 0.9239766081871346
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 513,
+          "normalized_prediction_length": 504,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 513,
+            "prediction_units": 504,
+            "substitutions": 6,
+            "deletions": 21,
+            "insertions": 12,
+            "edit_distance": 39,
+            "rate": 0.07602339181286549
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 80,
+            "prediction_units": 76,
+            "substitutions": 4,
+            "deletions": 8,
+            "insertions": 4,
+            "edit_distance": 16,
+            "rate": 0.2
+          },
+          "character_level_normalized_accuracy": 0.9239766081871346
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 16,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "PDF001",
+        "api_document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+        "run_id": "d8d2e91e-ef97-4367-b176-688de97c8a56",
+        "input_filename": "PDF001_clinical_follow_up_note.pdf",
+        "input_sha256": "856120c2581bbfc763fa78562323b6c5ce5f6d4560a678354ba5b1bf88ca7470",
+        "ground_truth_sha256": "151b8bd8156275bf7edd7da5d83190b192b89ab5da01a9b1a16f81e92d051bb3",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "medical",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:03:24.352354+00:00",
+        "completed_at": "2026-10-13T06:03:39.972604+00:00",
+        "wall_runtime_seconds": 15.594,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 76,
+          "low_confidence_tokens": 0,
+          "corrections_applied": 0,
+          "corrections_rejected": 0,
+          "slm_calls": 0
+        },
+        "stage_timings_ms": {
+          "document_input": 183.81,
+          "preprocessing": 454.96,
+          "layout": 8194.68,
+          "reading_order": 0.37,
+          "ocr": 26.24,
+          "confidence": 0.4,
+          "low_confidence": 0.23,
+          "candidates": 0.51,
+          "semantic": 0.28,
+          "graph": 285.72,
+          "graphrag": 0.26,
+          "prompt": 0.28,
+          "slm": 0.46,
+          "validation": 0.35,
+          "output": 33.01
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "PDF002",
+      "input_filename": "PDF002_outpatient_review_summary.pdf",
+      "input_format": "pdf",
+      "document_category": "medical",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF002_outpatient_review_summary.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF002.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "l/1 character substitution",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Patient",
+          "rendered": "Patlent",
+          "type": "l/1 character substitution"
+        },
+        {
+          "intended": "recovery",
+          "rendered": "recovry",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "low_contrast_vector_text"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 490,
+          "normalized_prediction_length": 480,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 490,
+            "prediction_units": 480,
+            "substitutions": 7,
+            "deletions": 22,
+            "insertions": 12,
+            "edit_distance": 41,
+            "rate": 0.0836734693877551
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 71,
+            "prediction_units": 67,
+            "substitutions": 5,
+            "deletions": 8,
+            "insertions": 4,
+            "edit_distance": 17,
+            "rate": 0.23943661971830985
+          },
+          "character_level_normalized_accuracy": 0.9163265306122449
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 490,
+          "normalized_prediction_length": 480,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 490,
+            "prediction_units": 480,
+            "substitutions": 7,
+            "deletions": 22,
+            "insertions": 12,
+            "edit_distance": 41,
+            "rate": 0.0836734693877551
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 71,
+            "prediction_units": 67,
+            "substitutions": 5,
+            "deletions": 8,
+            "insertions": 4,
+            "edit_distance": 17,
+            "rate": 0.23943661971830985
+          },
+          "character_level_normalized_accuracy": 0.9163265306122449
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 17,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "PDF002",
+        "api_document_id": "71db4c4f-fb06-4439-b6f9-ba674940440b",
+        "run_id": "8478551c-1f3e-4496-af50-938b61a587f1",
+        "input_filename": "PDF002_outpatient_review_summary.pdf",
+        "input_sha256": "e19f383b631e40b9b2b31f7b2082daef815d4d2fe611b22b67496bbf1afe355c",
+        "ground_truth_sha256": "e13b206705ecebc095ad6c6edaccd40ae4a31fc1c5015b00c964ed68e98624c7",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "medical",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:03:40.014054+00:00",
+        "completed_at": "2026-10-13T06:03:58.018371+00:00",
+        "wall_runtime_seconds": 17.859,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 67,
+          "low_confidence_tokens": 0,
+          "corrections_applied": 0,
+          "corrections_rejected": 0,
+          "slm_calls": 0
+        },
+        "stage_timings_ms": {
+          "document_input": 99.46,
+          "preprocessing": 502.62,
+          "layout": 8222.27,
+          "reading_order": 0.38,
+          "ocr": 85.9,
+          "confidence": 0.64,
+          "low_confidence": 1.02,
+          "candidates": 0.58,
+          "semantic": 2.13,
+          "graph": 126.33,
+          "graphrag": 0.29,
+          "prompt": 0.32,
+          "slm": 0.6,
+          "validation": 0.86,
+          "output": 186.03
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "PDF003",
+      "input_filename": "PDF003_medication_review_record.pdf",
+      "input_format": "pdf",
+      "document_category": "medical",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF003_medication_review_record.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF003.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "l/1 character substitution",
+        "duplicated character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Patient",
+          "rendered": "Patlent",
+          "type": "l/1 character substitution"
+        },
+        {
+          "intended": "dosage",
+          "rendered": "dossage",
+          "type": "duplicated character"
+        }
+      ],
+      "image_quality_variations": [
+        "slight_rotation_0.6_deg"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 522,
+          "normalized_prediction_length": 514,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 522,
+            "prediction_units": 514,
+            "substitutions": 7,
+            "deletions": 21,
+            "insertions": 13,
+            "edit_distance": 41,
+            "rate": 0.07854406130268199
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 82,
+            "prediction_units": 78,
+            "substitutions": 5,
+            "deletions": 8,
+            "insertions": 4,
+            "edit_distance": 17,
+            "rate": 0.2073170731707317
+          },
+          "character_level_normalized_accuracy": 0.921455938697318
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 522,
+          "normalized_prediction_length": 514,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 522,
+            "prediction_units": 514,
+            "substitutions": 7,
+            "deletions": 21,
+            "insertions": 13,
+            "edit_distance": 41,
+            "rate": 0.07854406130268199
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 82,
+            "prediction_units": 78,
+            "substitutions": 5,
+            "deletions": 8,
+            "insertions": 4,
+            "edit_distance": 17,
+            "rate": 0.2073170731707317
+          },
+          "character_level_normalized_accuracy": 0.921455938697318
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 17,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "PDF003",
+        "api_document_id": "801d8f8b-1204-4b9f-86c0-415c7973aba2",
+        "run_id": "b35b79e0-3db7-417d-88b7-7fc5e2887110",
+        "input_filename": "PDF003_medication_review_record.pdf",
+        "input_sha256": "1ee0b03e5458aea9976bebc9667c8648c0f94ab6e36fcbff1812b4f28dbad95c",
+        "ground_truth_sha256": "85d4f33e4839aed1d69eaeedc43f99c707a42777c30aaeb2278aaf777c257e4c",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "medical",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:03:58.168463+00:00",
+        "completed_at": "2026-10-13T06:04:16.148645+00:00",
+        "wall_runtime_seconds": 17.953,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 78,
+          "low_confidence_tokens": 0,
+          "corrections_applied": 0,
+          "corrections_rejected": 0,
+          "slm_calls": 0
+        },
+        "stage_timings_ms": {
+          "document_input": 1483.28,
+          "preprocessing": 594.1,
+          "layout": 8393.93,
+          "reading_order": 0.39,
+          "ocr": 46.03,
+          "confidence": 0.43,
+          "low_confidence": 0.26,
+          "candidates": 0.51,
+          "semantic": 0.45,
+          "graph": 91.21,
+          "graphrag": 0.48,
+          "prompt": 0.77,
+          "slm": 0.38,
+          "validation": 0.58,
+          "output": 21.43
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "PDF004",
+      "input_filename": "PDF004_tax_invoice.pdf",
+      "input_format": "pdf",
+      "document_category": "invoice_receipt",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF004_tax_invoice.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF004.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 450,
+          "normalized_prediction_length": 437,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 450,
+            "prediction_units": 437,
+            "substitutions": 6,
+            "deletions": 25,
+            "insertions": 12,
+            "edit_distance": 43,
+            "rate": 0.09555555555555556
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 73,
+            "prediction_units": 67,
+            "substitutions": 4,
+            "deletions": 10,
+            "insertions": 4,
+            "edit_distance": 18,
+            "rate": 0.2465753424657534
+          },
+          "character_level_normalized_accuracy": 0.9044444444444444
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 450,
+          "normalized_prediction_length": 437,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 450,
+            "prediction_units": 437,
+            "substitutions": 6,
+            "deletions": 25,
+            "insertions": 12,
+            "edit_distance": 43,
+            "rate": 0.09555555555555556
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 73,
+            "prediction_units": 67,
+            "substitutions": 4,
+            "deletions": 10,
+            "insertions": 4,
+            "edit_distance": 18,
+            "rate": 0.2465753424657534
+          },
+          "character_level_normalized_accuracy": 0.9044444444444444
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 18,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "PDF004",
+        "api_document_id": "cf655666-cb2d-45f6-9b4d-96f5653a812c",
+        "run_id": "f3e2a5e7-db2f-4af6-a18b-76cfe7290220",
+        "input_filename": "PDF004_tax_invoice.pdf",
+        "input_sha256": "10b3ac2c7bcc111e34af8e327aa2c955ceec33ceedca0e6b83d38558738d5e85",
+        "ground_truth_sha256": "24123ae1bb4d6e21dabcf1a90033a1ced1b57ae903ead05c31780bf7c9858ac5",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "financial",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:04:16.190607+00:00",
+        "completed_at": "2026-10-13T06:04:26.669065+00:00",
+        "wall_runtime_seconds": 10.437,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 67,
+          "low_confidence_tokens": 0,
+          "corrections_applied": 0,
+          "corrections_rejected": 0,
+          "slm_calls": 0
+        },
+        "stage_timings_ms": {
+          "document_input": 96.57,
+          "preprocessing": 460.15,
+          "layout": 7935.35,
+          "reading_order": 0.35,
+          "ocr": 24.0,
+          "confidence": 0.44,
+          "low_confidence": 0.22,
+          "candidates": 0.59,
+          "semantic": 0.29,
+          "graph": 113.69,
+          "graphrag": 0.45,
+          "prompt": 0.24,
+          "slm": 0.32,
+          "validation": 0.25,
+          "output": 24.7
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "PDF005",
+      "input_filename": "PDF005_service_receipt.pdf",
+      "input_format": "pdf",
+      "document_category": "invoice_receipt",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF005_service_receipt.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF005.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "O/0 character substitution",
+        "misspelling"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "TOTAL",
+          "rendered": "T0TAL",
+          "type": "O/0 character substitution"
+        },
+        {
+          "intended": "receipt",
+          "rendered": "reciept",
+          "type": "misspelling"
+        }
+      ],
+      "image_quality_variations": [
+        "varied_font_sizes"
+      ],
+      "dataset_split": "manual_execution",
+      "execution_status": "ACTUALLY_RUN",
+      "metric_status": "MEASURED",
+      "metrics": {
+        "status": "MEASURED",
+        "baseline_ocr": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 511,
+          "normalized_prediction_length": 498,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 511,
+            "prediction_units": 498,
+            "substitutions": 9,
+            "deletions": 25,
+            "insertions": 12,
+            "edit_distance": 46,
+            "rate": 0.09001956947162426
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 78,
+            "prediction_units": 72,
+            "substitutions": 6,
+            "deletions": 10,
+            "insertions": 4,
+            "edit_distance": 20,
+            "rate": 0.2564102564102564
+          },
+          "character_level_normalized_accuracy": 0.9099804305283757
+        },
+        "post_correction": {
+          "normalization_policy": "Unicode NFKC; lowercase; collapse whitespace; retain punctuation and numbers",
+          "normalized_reference_length": 511,
+          "normalized_prediction_length": 498,
+          "cer": {
+            "status": "MEASURED",
+            "reference_units": 511,
+            "prediction_units": 498,
+            "substitutions": 9,
+            "deletions": 25,
+            "insertions": 12,
+            "edit_distance": 46,
+            "rate": 0.09001956947162426
+          },
+          "wer": {
+            "status": "MEASURED",
+            "reference_units": 78,
+            "prediction_units": 72,
+            "substitutions": 6,
+            "deletions": 10,
+            "insertions": 4,
+            "edit_distance": 20,
+            "rate": 0.2564102564102564
+          },
+          "character_level_normalized_accuracy": 0.9099804305283757
+        },
+        "absolute_cer_reduction": 0.0,
+        "relative_cer_reduction": 0.0,
+        "outcome": "UNCHANGED",
+        "correction_performance": {
+          "unit": "word-level aligned error events",
+          "errors_corrected": 0,
+          "errors_introduced": 0,
+          "errors_remaining": 20,
+          "correction_attempts": 0,
+          "successful_corrections": 0,
+          "token_level_correction_accuracy": null,
+          "token_accuracy_note": "Only changed aligned word positions and changed insertions count as attempts; unchanged correct words are excluded."
+        },
+        "baseline_is_clean": false,
+        "clean_document_preserved": null
+      },
+      "run_metadata": {
+        "status": "ACTUALLY_RUN",
+        "document_id": "PDF005",
+        "api_document_id": "c3312682-1215-4b26-95ff-272c9559f0bd",
+        "run_id": "3d99f4c5-3225-4281-9848-d7d9b0a9737f",
+        "input_filename": "PDF005_service_receipt.pdf",
+        "input_sha256": "01ccf8df57d0ecd0744f8d68f1e8a7dac783b6cffbca6be733bfb998c2869510",
+        "ground_truth_sha256": "7d5c962b7262dea8eaf1ad48d41c0c66730d2876a29cbbf95047843c9da189df",
+        "api_url": "http://127.0.0.1:8000",
+        "domain": "financial",
+        "confidence_threshold": 0.9,
+        "started_at": "2026-10-13T06:04:26.707249+00:00",
+        "completed_at": "2026-10-13T06:04:37.198469+00:00",
+        "wall_runtime_seconds": 10.469,
+        "pipeline_status": "COMPLETED",
+        "pipeline_stats": {
+          "ocr_tokens": 72,
+          "low_confidence_tokens": 0,
+          "corrections_applied": 0,
+          "corrections_rejected": 0,
+          "slm_calls": 0
+        },
+        "stage_timings_ms": {
+          "document_input": 163.62,
+          "preprocessing": 515.2,
+          "layout": 7722.66,
+          "reading_order": 0.35,
+          "ocr": 25.23,
+          "confidence": 0.53,
+          "low_confidence": 0.26,
+          "candidates": 0.53,
+          "semantic": 0.35,
+          "graph": 106.08,
+          "graphrag": 0.45,
+          "prompt": 0.27,
+          "slm": 0.27,
+          "validation": 0.25,
+          "output": 26.23
+        },
+        "stage_warnings": [],
+        "artifacts": [
+          "corrected.pdf",
+          "corrected.txt",
+          "corrections.json",
+          "evidence.json",
+          "graph.json",
+          "ocr_raw.txt",
+          "pipeline.json",
+          "result.json"
+        ]
+      }
+    },
+    {
+      "document_id": "PDF006",
+      "input_filename": "PDF006_purchase_invoice.pdf",
+      "input_format": "pdf",
+      "document_category": "invoice_receipt",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF006_purchase_invoice.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF006.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "i/l character substitution",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Stationery",
+          "rendered": "Statlonery",
+          "type": "i/l character substitution"
+        },
+        {
+          "intended": "Quantity",
+          "rendered": "Quantty",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "tight_line_spacing"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF007",
+      "input_filename": "PDF007_course_completion_certificate.pdf",
+      "input_format": "pdf",
+      "document_category": "certificate",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF007_course_completion_certificate.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF007.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF008",
+      "input_filename": "PDF008_workshop_participation_certificate.pdf",
+      "input_format": "pdf",
+      "document_category": "certificate",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF008_workshop_participation_certificate.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF008.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "i/l character substitution",
+        "duplicated character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Participation",
+          "rendered": "Particlpation",
+          "type": "i/l character substitution"
+        },
+        {
+          "intended": "Certificate",
+          "rendered": "Certifficate",
+          "type": "duplicated character"
+        }
+      ],
+      "image_quality_variations": [
+        "low_contrast_vector_text"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF009",
+      "input_filename": "PDF009_merit_certificate.pdf",
+      "input_format": "pdf",
+      "document_category": "certificate",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF009_merit_certificate.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF009.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "missing character",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Excellence",
+          "rendered": "Excelence",
+          "type": "missing character"
+        },
+        {
+          "intended": "Programme",
+          "rendered": "Programe",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "slight_rotation_-0.5_deg"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF010",
+      "input_filename": "PDF010_library_membership_application.pdf",
+      "input_format": "pdf",
+      "document_category": "application_form",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF010_library_membership_application.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF010.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF011",
+      "input_filename": "PDF011_research_access_application.pdf",
+      "input_format": "pdf",
+      "document_category": "application_form",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF011_research_access_application.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF011.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "c/e character substitution",
+        "l/1 character substitution"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Research",
+          "rendered": "Researeh",
+          "type": "c/e character substitution"
+        },
+        {
+          "intended": "approval",
+          "rendered": "approva1",
+          "type": "l/1 character substitution"
+        }
+      ],
+      "image_quality_variations": [
+        "tight_line_spacing"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF012",
+      "input_filename": "PDF012_student_activity_application.pdf",
+      "input_format": "pdf",
+      "document_category": "application_form",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF012_student_activity_application.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF012.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "duplicated character",
+        "i/l character substitution"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Student",
+          "rendered": "Studdent",
+          "type": "duplicated character"
+        },
+        {
+          "intended": "activity",
+          "rendered": "activlty",
+          "type": "i/l character substitution"
+        }
+      ],
+      "image_quality_variations": [
+        "varied_font_sizes"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF013",
+      "input_filename": "PDF013_quarterly_financial_summary.pdf",
+      "input_format": "pdf",
+      "document_category": "financial_summary",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF013_quarterly_financial_summary.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF013.txt",
+      "intentional_textual_corruption": false,
+      "injected_error_types": [],
+      "injected_error_details": [],
+      "image_quality_variations": [
+        "none"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF014",
+      "input_filename": "PDF014_department_budget_snapshot.pdf",
+      "input_format": "pdf",
+      "document_category": "financial_summary",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF014_department_budget_snapshot.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF014.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "l/1 character substitution",
+        "missing character"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Balance",
+          "rendered": "Ba1ance",
+          "type": "l/1 character substitution"
+        },
+        {
+          "intended": "Allocated",
+          "rendered": "Alocated",
+          "type": "missing character"
+        }
+      ],
+      "image_quality_variations": [
+        "slight_rotation_0.5_deg"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    },
+    {
+      "document_id": "PDF015",
+      "input_filename": "PDF015_project_expense_summary.pdf",
+      "input_format": "pdf",
+      "document_category": "financial_summary",
+      "input_path": "evaluation/dataset/inputs/pdfs/PDF015_project_expense_summary.pdf",
+      "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF015.txt",
+      "intentional_textual_corruption": true,
+      "injected_error_types": [
+        "duplicated character",
+        "i/l character substitution"
+      ],
+      "injected_error_details": [
+        {
+          "intended": "Expenses",
+          "rendered": "Expensess",
+          "type": "duplicated character"
+        },
+        {
+          "intended": "variance",
+          "rendered": "varlance",
+          "type": "i/l character substitution"
+        }
+      ],
+      "image_quality_variations": [
+        "low_contrast_vector_text",
+        "varied_font_sizes"
+      ],
+      "dataset_split": "reserved_unprocessed",
+      "execution_status": "NOT_RUN",
+      "metric_status": "NOT_YET_MEASURED",
+      "reason": "Missing genuine output: ocr_raw.txt, corrected.txt",
+      "available_partial_metrics": {
+        "baseline_ocr": null,
+        "post_correction": null
+      }
+    }
+  ]
+}

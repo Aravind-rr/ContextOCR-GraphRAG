@@ -137,7 +137,10 @@ class PipelineRunner:
             await self._stage(run, 3, "Geometric reading-order reconstruction", s4)
 
             def s5():
-                tokens, method, warnings = extract_ocr(Path(doc["path"]), processed, result["document_meta"], settings.ocr_engine, settings)
+                tokens, method, warnings = extract_ocr(
+                    Path(doc["path"]), processed, result["document_meta"],
+                    settings.ocr_engine, settings, config["domain"],
+                )
                 result["tokens"] = tokens
                 calibrated = [t for t in tokens if t.get("confidence_calibration")]
                 run["stages"][4].update(input={"pages": len(processed)}, method=method, output={"token_count": len(tokens), "preview": " ".join(t["text"] for t in tokens[:40]), "calibrated_tokens": [{"text": t["text"], "raw_ocr_confidence": t.get("ocr_confidence"), "effective_confidence": t["confidence"], "evidence": t["confidence_calibration"]} for t in calibrated]}, diagnostics={"engine": method, "raw_score_scope": "line", "effective_score_scope": "token", "calibrated_token_count": len(calibrated)}, warnings=warnings)
@@ -163,7 +166,11 @@ class PipelineRunner:
                     calibration = token.get("confidence_calibration") or {}
                     reason = f"effective confidence {token['confidence']:.3f} < threshold {threshold:.3f}"
                     if calibration:
-                        reason += f"; raw PaddleOCR line score {raw:.3f}, lexical near-match {calibration.get('candidate')} ({float(calibration.get('similarity', 0)):.3f})"
+                        reason += (
+                            f"; source confidence {raw:.3f}, invalid/rare lexical form; "
+                            f"near-word match {calibration.get('candidate')} "
+                            f"({float(calibration.get('similarity', 0)):.3f})"
+                        )
                     selected.append({
                         "id": token["id"], "text": token["text"],
                         "confidence": token["confidence"], "ocr_confidence": raw,
@@ -177,7 +184,7 @@ class PipelineRunner:
 
             def s8():
                 values = generate_candidates(tokens, threshold, config["domain"], settings.candidate_count); result["candidates"] = values
-                run["stages"][7].update(input={"selected_tokens": len(values)}, method="RapidFuzz edit similarity + domain/document vocabulary", parameters={"domain": config["domain"], "limit": settings.candidate_count}, output=values, diagnostics={"candidate_sets": len(values)})
+                run["stages"][7].update(input={"selected_tokens": len(values)}, method="Word-frequency validity + OCR-confusion-aware near-word ranking", parameters={"domain": config["domain"], "limit": settings.candidate_count, "valid_word_zipf_floor": 2.5}, output=values, diagnostics={"candidate_sets": len(values), "valid_low-confidence_words_protected": analysis["low_count"] - len(values)})
                 return values
             candidates = await self._stage(run, 7, "Provenance-aware lexical candidate generation", s8)
 
@@ -262,7 +269,7 @@ class PipelineRunner:
 
             def s14():
                 validations = validate_decisions(tokens, candidates, decisions); result["validations"] = validations
-                run["stages"][13].update(input={"decisions": len(decisions)}, method="Candidate membership + identifier preservation policy", output=validations, diagnostics=dict(Counter(v["status"] for v in validations)))
+                run["stages"][13].update(input={"decisions": len(decisions)}, method="Candidate membership + rank-1 lexical proximity + valid-word and identifier preservation", output=validations, diagnostics=dict(Counter(v["status"] for v in validations)))
                 return validations
             from collections import Counter
             validations = await self._stage(run, 13, "Independent policy validation", s14)

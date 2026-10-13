@@ -1,0 +1,51 @@
+{
+  "status": "ACTUALLY_RUN",
+  "document_id": "PDF005",
+  "api_document_id": "c6190d12-c497-4c30-96bf-74776e62b6ed",
+  "run_id": "89b180f9-6e89-41f8-a3ef-ccd683e85fc5",
+  "input_filename": "PDF005_service_receipt.pdf",
+  "input_sha256": "01ccf8df57d0ecd0744f8d68f1e8a7dac783b6cffbca6be733bfb998c2869510",
+  "ground_truth_sha256": "7d5c962b7262dea8eaf1ad48d41c0c66730d2876a29cbbf95047843c9da189df",
+  "api_url": "http://127.0.0.1:8000",
+  "domain": "financial",
+  "confidence_threshold": 0.9,
+  "started_at": "2026-10-13T09:46:57.261833+00:00",
+  "completed_at": "2026-10-13T09:47:38.035283+00:00",
+  "wall_runtime_seconds": 40.75,
+  "pipeline_status": "COMPLETED",
+  "pipeline_stats": {
+    "ocr_tokens": 72,
+    "low_confidence_tokens": 2,
+    "corrections_applied": 2,
+    "corrections_rejected": 0,
+    "slm_calls": 2
+  },
+  "stage_timings_ms": {
+    "document_input": 122.3,
+    "preprocessing": 512.76,
+    "layout": 6564.19,
+    "reading_order": 0.31,
+    "ocr": 86.04,
+    "confidence": 0.95,
+    "low_confidence": 0.72,
+    "candidates": 341.87,
+    "semantic": 5.84,
+    "graph": 111.28,
+    "graphrag": 176.03,
+    "prompt": 0.62,
+    "slm": 25548.25,
+    "validation": 0.36,
+    "output": 26.17
+  },
+  "stage_warnings": [],
+  "artifacts": [
+    "corrected.pdf",
+    "corrected.txt",
+    "corrections.json",
+    "evidence.json",
+    "graph.json",
+    "ocr_raw.txt",
+    "pipeline.json",
+    "result.json"
+  ]
+}

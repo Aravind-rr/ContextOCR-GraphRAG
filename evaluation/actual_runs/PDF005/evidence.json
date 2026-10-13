@@ -1,0 +1,72 @@
+{
+  "semantic": [
+    {
+      "token_id": "p1-t42",
+      "query": "3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion",
+      "results": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+          "token_start": 0,
+          "similarity": 0.4665298527636453,
+          "source": "page 1"
+        }
+      ]
+    },
+    {
+      "token_id": "p1-t55",
+      "query": "by the demonstration contact. This reciept records a test transaction only.",
+      "results": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+          "token_start": 0,
+          "similarity": 0.37435244296357245,
+          "source": "page 1"
+        }
+      ]
+    }
+  ],
+  "graph": [
+    {
+      "token_id": "p1-t42",
+      "results": []
+    },
+    {
+      "token_id": "p1-t55",
+      "results": []
+    }
+  ],
+  "combined": [
+    {
+      "token_id": "p1-t42",
+      "semantic": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+          "token_start": 0,
+          "similarity": 0.4665298527636453,
+          "source": "page 1"
+        }
+      ],
+      "graph": []
+    },
+    {
+      "token_id": "p1-t55",
+      "semantic": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+          "token_start": 0,
+          "similarity": 0.37435244296357245,
+          "source": "page 1"
+        }
+      ],
+      "graph": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "status": "ACTUALLY_RUN",
+  "document_id": "IMG003",
+  "api_document_id": "2a67ac64-c43f-49db-b59b-bca1fbb63442",
+  "run_id": "ab87eed2-ec41-45c0-8591-cf1df8c60789",
+  "input_filename": "IMG003_medication_review_record.png",
+  "input_sha256": "85f77e90b3f356c97c2d4c66f50a6a3aff9d9a56dec0d7c564dafa37874a2f19",
+  "ground_truth_sha256": "85d4f33e4839aed1d69eaeedc43f99c707a42777c30aaeb2278aaf777c257e4c",
+  "api_url": "http://127.0.0.1:8000",
+  "domain": "medical",
+  "confidence_threshold": 0.9,
+  "started_at": "2026-10-13T07:52:37.096953+00:00",
+  "completed_at": "2026-10-13T07:56:13.875594+00:00",
+  "wall_runtime_seconds": 216.75,
+  "pipeline_status": "COMPLETED",
+  "pipeline_stats": {
+    "ocr_tokens": 84,
+    "low_confidence_tokens": 3,
+    "corrections_applied": 3,
+    "corrections_rejected": 0,
+    "slm_calls": 3
+  },
+  "stage_timings_ms": {
+    "document_input": 189.53,
+    "preprocessing": 597.53,
+    "layout": 9247.2,
+    "reading_order": 0.49,
+    "ocr": 14966.1,
+    "confidence": 0.54,
+    "low_confidence": 0.62,
+    "candidates": 613.3,
+    "semantic": 36823.06,
+    "graph": 301.45,
+    "graphrag": 65.98,
+    "prompt": 1.32,
+    "slm": 149884.16,
+    "validation": 0.47,
+    "output": 26.22
+  },
+  "stage_warnings": [],
+  "artifacts": [
+    "corrected.pdf",
+    "corrected.txt",
+    "corrections.json",
+    "evidence.json",
+    "graph.json",
+    "ocr_raw.txt",
+    "pipeline.json",
+    "result.json"
+  ]
+}

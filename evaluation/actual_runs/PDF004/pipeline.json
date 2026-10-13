@@ -1,0 +1,3196 @@
+{
+  "id": "f42a709e-662f-489c-8d65-b000851f448d",
+  "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+  "status": "COMPLETED",
+  "created_at": "2026-10-13T09:46:46.766839+00:00",
+  "updated_at": "2026-10-13T09:46:56.265933+00:00",
+  "config": {
+    "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+    "confidence_threshold": 0.9,
+    "domain": "financial",
+    "start_stage": 1
+  },
+  "result": {
+    "document": {
+      "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+      "name": "PDF004_tax_invoice.pdf",
+      "safe_name": "73ddbac5-658f-4f61-8376-d6cc57325bb9.pdf",
+      "path": "/data/input/73ddbac5-658f-4f61-8376-d6cc57325bb9.pdf",
+      "media_type": "application/pdf",
+      "size": 3240,
+      "pages": 1,
+      "created_at": "2026-10-13T09:46:46.694682+00:00",
+      "is_demo": false
+    },
+    "page_images": [
+      "/data/processed/f42a709e-662f-489c-8d65-b000851f448d/original/page-1.png"
+    ],
+    "document_meta": {
+      "digital_pdf": true,
+      "embedded_text": [
+        "SYNTHETIC OCR EVALUATION\nPDF004\nTax Invoice\nNorthwind Office Supplies\nReference: INV-2026-410\nDate: 03 September 2026\nCUSTOMER\nDemo Learning Lab\nPAYMENT\nBank transfer\nCURRENCY\nINR\nItem\nQuantity\nAmount\nArchive folders\n12\n1,440.00\nPrinter labels\n6\n720.00\nDesk supplies\n4\n560.00\nTOTAL\n22\n2,720.00\nNOTES\nGoods were received in complete condition.\nPayment is due within fourteen days.\nSynthetic evaluation data - not a real record\nPage 1 of 1"
+      ]
+    },
+    "preprocessing": [
+      {
+        "source": "/data/processed/f42a709e-662f-489c-8d65-b000851f448d/original/page-1.png",
+        "output": "/data/processed/f42a709e-662f-489c-8d65-b000851f448d/preprocessed/page-1.png",
+        "operations": [
+          "grayscale",
+          "adaptive threshold"
+        ],
+        "width": 1191,
+        "height": 1684
+      }
+    ],
+    "layout": [
+      {
+        "page": 1,
+        "regions": [
+          {
+            "id": "r8",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              77.22,
+              58.71,
+              482.22,
+              95.46
+            ],
+            "confidence": 0.8251,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r5",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1002.57,
+              58.93,
+              1114.58,
+              94.88
+            ],
+            "confidence": 0.9082,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r3",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.01,
+              174.97,
+              338.03,
+              224.97
+            ],
+            "confidence": 0.9163,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r9",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              82.0,
+              242.32,
+              363.31,
+              273.39
+            ],
+            "confidence": 0.7882,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r7",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              109.92,
+              352.45,
+              365.29,
+              379.69
+            ],
+            "confidence": 0.8461,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r11",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              823.44,
+              353.43,
+              1081.72,
+              380.13
+            ],
+            "confidence": 0.5302,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r14",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              823.44,
+              353.43,
+              1081.72,
+              380.13
+            ],
+            "confidence": 0.3935,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r12",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              80.78,
+              485.14,
+              1111.7,
+              622.07
+            ],
+            "confidence": 0.4371,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r17",
+            "class": "image",
+            "raw_class": "figure",
+            "bbox": [
+              80.78,
+              485.14,
+              1111.7,
+              622.07
+            ],
+            "confidence": 0.2407,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r15",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              791.83,
+              510.36,
+              895.27,
+              572.57
+            ],
+            "confidence": 0.3018,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r1",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              82.22,
+              677.94,
+              1107.96,
+              991.49
+            ],
+            "confidence": 0.9666,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r4",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.08,
+              1041.26,
+              163.63,
+              1069.25
+            ],
+            "confidence": 0.912,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r10",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              88.05,
+              1082.34,
+              530.67,
+              1152.14
+            ],
+            "confidence": 0.5416,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r13",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              89.53,
+              1083.12,
+              529.63,
+              1110.24
+            ],
+            "confidence": 0.4149,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r16",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              89.29,
+              1123.65,
+              466.62,
+              1151.34
+            ],
+            "confidence": 0.2958,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r6",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1017.9,
+              1572.14,
+              1106.52,
+              1593.46
+            ],
+            "confidence": 0.901,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r2",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              82.14,
+              1572.35,
+              415.81,
+              1593.13
+            ],
+            "confidence": 0.9349,
+            "source": "DocLayout-YOLO"
+          }
+        ],
+        "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+      }
+    ],
+    "reading_order": [
+      {
+        "page": 1,
+        "regions": [
+          {
+            "id": "r8",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              77.22,
+              58.71,
+              482.22,
+              95.46
+            ],
+            "confidence": 0.8251,
+            "source": "DocLayout-YOLO",
+            "order": 1
+          },
+          {
+            "id": "r3",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.01,
+              174.97,
+              338.03,
+              224.97
+            ],
+            "confidence": 0.9163,
+            "source": "DocLayout-YOLO",
+            "order": 2
+          },
+          {
+            "id": "r9",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              82.0,
+              242.32,
+              363.31,
+              273.39
+            ],
+            "confidence": 0.7882,
+            "source": "DocLayout-YOLO",
+            "order": 3
+          },
+          {
+            "id": "r7",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              109.92,
+              352.45,
+              365.29,
+              379.69
+            ],
+            "confidence": 0.8461,
+            "source": "DocLayout-YOLO",
+            "order": 4
+          },
+          {
+            "id": "r4",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.08,
+              1041.26,
+              163.63,
+              1069.25
+            ],
+            "confidence": 0.912,
+            "source": "DocLayout-YOLO",
+            "order": 5
+          },
+          {
+            "id": "r10",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              88.05,
+              1082.34,
+              530.67,
+              1152.14
+            ],
+            "confidence": 0.5416,
+            "source": "DocLayout-YOLO",
+            "order": 6
+          },
+          {
+            "id": "r13",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              89.53,
+              1083.12,
+              529.63,
+              1110.24
+            ],
+            "confidence": 0.4149,
+            "source": "DocLayout-YOLO",
+            "order": 7
+          },
+          {
+            "id": "r16",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              89.29,
+              1123.65,
+              466.62,
+              1151.34
+            ],
+            "confidence": 0.2958,
+            "source": "DocLayout-YOLO",
+            "order": 8
+          },
+          {
+            "id": "r2",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              82.14,
+              1572.35,
+              415.81,
+              1593.13
+            ],
+            "confidence": 0.9349,
+            "source": "DocLayout-YOLO",
+            "order": 9
+          },
+          {
+            "id": "r5",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1002.57,
+              58.93,
+              1114.58,
+              94.88
+            ],
+            "confidence": 0.9082,
+            "source": "DocLayout-YOLO",
+            "order": 10
+          },
+          {
+            "id": "r11",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              823.44,
+              353.43,
+              1081.72,
+              380.13
+            ],
+            "confidence": 0.5302,
+            "source": "DocLayout-YOLO",
+            "order": 11
+          },
+          {
+            "id": "r14",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              823.44,
+              353.43,
+              1081.72,
+              380.13
+            ],
+            "confidence": 0.3935,
+            "source": "DocLayout-YOLO",
+            "order": 12
+          },
+          {
+            "id": "r12",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              80.78,
+              485.14,
+              1111.7,
+              622.07
+            ],
+            "confidence": 0.4371,
+            "source": "DocLayout-YOLO",
+            "order": 13
+          },
+          {
+            "id": "r17",
+            "class": "image",
+            "raw_class": "figure",
+            "bbox": [
+              80.78,
+              485.14,
+              1111.7,
+              622.07
+            ],
+            "confidence": 0.2407,
+            "source": "DocLayout-YOLO",
+            "order": 14
+          },
+          {
+            "id": "r15",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              791.83,
+              510.36,
+              895.27,
+              572.57
+            ],
+            "confidence": 0.3018,
+            "source": "DocLayout-YOLO",
+            "order": 15
+          },
+          {
+            "id": "r1",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              82.22,
+              677.94,
+              1107.96,
+              991.49
+            ],
+            "confidence": 0.9666,
+            "source": "DocLayout-YOLO",
+            "order": 16
+          },
+          {
+            "id": "r6",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1017.9,
+              1572.14,
+              1106.52,
+              1593.46
+            ],
+            "confidence": 0.901,
+            "source": "DocLayout-YOLO",
+            "order": 17
+          }
+        ]
+      }
+    ],
+    "tokens": [
+      {
+        "id": "p1-t1",
+        "page": 1,
+        "text": "SYNTHETIC",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          58.18000030517578,
+          231.34201049804688,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice"
+      },
+      {
+        "id": "p1-t2",
+        "page": 1,
+        "text": "OCR",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          238.57000732421875,
+          58.18000030517578,
+          296.3420104980469,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind"
+      },
+      {
+        "id": "p1-t3",
+        "page": 1,
+        "text": "EVALUATION",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          303.57000732421875,
+          58.18000030517578,
+          472.57000732421875,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office"
+      },
+      {
+        "id": "p1-t4",
+        "page": 1,
+        "text": "PDF004",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1011.1832275390625,
+          58.18000030517578,
+          1106.5513916015625,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies"
+      },
+      {
+        "id": "p1-t5",
+        "page": 1,
+        "text": "Tax",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          166.77999877929688,
+          163.2580108642578,
+          230.1219940185547
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference:"
+      },
+      {
+        "id": "p1-t6",
+        "page": 1,
+        "text": "Invoice",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          176.04600524902344,
+          166.77999877929688,
+          334.5619812011719,
+          230.1219940185547
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410"
+      },
+      {
+        "id": "p1-t7",
+        "page": 1,
+        "text": "Northwind",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          240.1999969482422,
+          192.02398681640625,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date:"
+      },
+      {
+        "id": "p1-t8",
+        "page": 1,
+        "text": "Office",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          198.69598388671875,
+          240.1999969482422,
+          261.38397216796875,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03"
+      },
+      {
+        "id": "p1-t9",
+        "page": 1,
+        "text": "Supplies",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          268.05596923828125,
+          240.1999969482422,
+          360.095947265625,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September"
+      },
+      {
+        "id": "p1-t10",
+        "page": 1,
+        "text": "Reference:",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          112.0,
+          350.3500061035156,
+          219.6019744873047,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026"
+      },
+      {
+        "id": "p1-t11",
+        "page": 1,
+        "text": "INV-2026-410",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          225.7179718017578,
+          350.3500061035156,
+          362.66790771484375,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER"
+      },
+      {
+        "id": "p1-t12",
+        "page": 1,
+        "text": "Date:",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          826.6292114257812,
+          350.3500061035156,
+          879.209228515625,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo"
+      },
+      {
+        "id": "p1-t13",
+        "page": 1,
+        "text": "03",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          885.3252563476562,
+          350.3500061035156,
+          909.7892456054688,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning"
+      },
+      {
+        "id": "p1-t14",
+        "page": 1,
+        "text": "September",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          915.9052734375,
+          350.3500061035156,
+          1023.5072631835938,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab"
+      },
+      {
+        "id": "p1-t15",
+        "page": 1,
+        "text": "2026",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1029.623291015625,
+          350.3500061035156,
+          1078.551513671875,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT"
+      },
+      {
+        "id": "p1-t16",
+        "page": 1,
+        "text": "CUSTOMER",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          104.0,
+          511.80999755859375,
+          201.2740020751953,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank"
+      },
+      {
+        "id": "p1-t17",
+        "page": 1,
+        "text": "Demo",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          104.0,
+          545.5750122070312,
+          154.67298889160156,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer"
+      },
+      {
+        "id": "p1-t18",
+        "page": 1,
+        "text": "Learning",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          159.95498657226562,
+          545.5750122070312,
+          233.8839569091797,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY"
+      },
+      {
+        "id": "p1-t19",
+        "page": 1,
+        "text": "Lab",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          239.16595458984375,
+          545.5750122070312,
+          270.8579406738281,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR"
+      },
+      {
+        "id": "p1-t20",
+        "page": 1,
+        "text": "PAYMENT",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          450.1838073730469,
+          511.80999755859375,
+          533.2968139648438,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item"
+      },
+      {
+        "id": "p1-t21",
+        "page": 1,
+        "text": "Bank",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          450.1838073730469,
+          545.5750122070312,
+          493.48480224609375,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity"
+      },
+      {
+        "id": "p1-t22",
+        "page": 1,
+        "text": "transfer",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          498.7668151855469,
+          545.5750122070312,
+          563.1768798828125,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount"
+      },
+      {
+        "id": "p1-t23",
+        "page": 1,
+        "text": "CURRENCY",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          796.3673706054688,
+          511.80999755859375,
+          892.6892700195312,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive"
+      },
+      {
+        "id": "p1-t24",
+        "page": 1,
+        "text": "INR",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          796.3673706054688,
+          545.5750122070312,
+          829.0853881835938,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders"
+      },
+      {
+        "id": "p1-t25",
+        "page": 1,
+        "text": "Item",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          698.7399291992188,
+          137.0080108642578,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12"
+      },
+      {
+        "id": "p1-t26",
+        "page": 1,
+        "text": "Quantity",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          698.7399291992188,
+          513.8583374023438,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00"
+      },
+      {
+        "id": "p1-t27",
+        "page": 1,
+        "text": "Amount",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          698.7399291992188,
+          849.686767578125,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer"
+      },
+      {
+        "id": "p1-t28",
+        "page": 1,
+        "text": "Archive",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          761.0799560546875,
+          158.67840576171875,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels"
+      },
+      {
+        "id": "p1-t29",
+        "page": 1,
+        "text": "folders",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          163.5712127685547,
+          761.0799560546875,
+          216.38880920410156,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6"
+      },
+      {
+        "id": "p1-t30",
+        "page": 1,
+        "text": "12",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          761.0799560546875,
+          460.421630859375,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00"
+      },
+      {
+        "id": "p1-t31",
+        "page": 1,
+        "text": "1,440.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          761.0799560546875,
+          850.199951171875,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk"
+      },
+      {
+        "id": "p1-t32",
+        "page": 1,
+        "text": "Printer",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          823.0799560546875,
+          151.83201599121094,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies"
+      },
+      {
+        "id": "p1-t33",
+        "page": 1,
+        "text": "labels",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          156.72482299804688,
+          823.0799560546875,
+          202.69601440429688,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4"
+      },
+      {
+        "id": "p1-t34",
+        "page": 1,
+        "text": "6",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          823.0799560546875,
+          450.6360168457031,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00"
+      },
+      {
+        "id": "p1-t35",
+        "page": 1,
+        "text": "720.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          823.0799560546875,
+          835.5215454101562,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL"
+      },
+      {
+        "id": "p1-t36",
+        "page": 1,
+        "text": "Desk",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          885.0799560546875,
+          140.09280395507812,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22"
+      },
+      {
+        "id": "p1-t37",
+        "page": 1,
+        "text": "supplies",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          144.98561096191406,
+          885.0799560546875,
+          209.5424041748047,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00"
+      },
+      {
+        "id": "p1-t38",
+        "page": 1,
+        "text": "4",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          885.0799560546875,
+          450.6360168457031,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES"
+      },
+      {
+        "id": "p1-t39",
+        "page": 1,
+        "text": "560.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          885.0799560546875,
+          835.5215454101562,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods"
+      },
+      {
+        "id": "p1-t40",
+        "page": 1,
+        "text": "TOTAL",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          947.0799560546875,
+          156.72479248046875,
+          971.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were"
+      },
+      {
+        "id": "p1-t41",
+        "page": 1,
+        "text": "22",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          947.0799560546875,
+          460.421630859375,
+          971.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received"
+      },
+      {
+        "id": "p1-t42",
+        "page": 1,
+        "text": "2,720.00",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          947.0799560546875,
+          850.199951171875,
+          971.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in"
+      },
+      {
+        "id": "p1-t43",
+        "page": 1,
+        "text": "NOTES",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          1040.4599609375,
+          159.7899932861328,
+          1070.7540283203125
+        ],
+        "decision": "KEEP",
+        "context": "4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete"
+      },
+      {
+        "id": "p1-t44",
+        "page": 1,
+        "text": "Goods",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          120.0,
+          1081.425048828125,
+          181.86598205566406,
+          1110.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete condition."
+      },
+      {
+        "id": "p1-t45",
+        "page": 1,
+        "text": "were",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          187.7039794921875,
+          1081.425048828125,
+          233.21096801757812,
+          1110.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "TOTAL 22 2,720.00 NOTES Goods were received in complete condition. Payment"
+      },
+      {
+        "id": "p1-t46",
+        "page": 1,
+        "text": "received",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          239.04896545410156,
+          1081.425048828125,
+          318.4079284667969,
+          1110.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "22 2,720.00 NOTES Goods were received in complete condition. Payment is"
+      },
+      {
+        "id": "p1-t47",
+        "page": 1,
+        "text": "in",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          324.2459411621094,
+          1081.425048828125,
+          340.58392333984375,
+          1110.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "2,720.00 NOTES Goods were received in complete condition. Payment is due"
+      },
+      {
+        "id": "p1-t48",
+        "page": 1,
+        "text": "complete",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          346.42193603515625,
+          1081.425048828125,
+          431.6189270019531,
+          1110.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "NOTES Goods were received in complete condition. Payment is due within"
+      },
+      {
+        "id": "p1-t49",
+        "page": 1,
+        "text": "condition.",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          437.4569396972656,
+          1081.425048828125,
+          527.3369140625,
+          1110.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "Goods were received in complete condition. Payment is due within fourteen"
+      },
+      {
+        "id": "p1-t50",
+        "page": 1,
+        "text": "Payment",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          120.0,
+          1121.425048828125,
+          202.86598205566406,
+          1150.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "were received in complete condition. Payment is due within fourteen days."
+      },
+      {
+        "id": "p1-t51",
+        "page": 1,
+        "text": "is",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          208.7039794921875,
+          1121.425048828125,
+          223.86598205566406,
+          1150.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "received in complete condition. Payment is due within fourteen days. Synthetic"
+      },
+      {
+        "id": "p1-t52",
+        "page": 1,
+        "text": "due",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          229.7039794921875,
+          1121.425048828125,
+          264.7319641113281,
+          1150.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "in complete condition. Payment is due within fourteen days. Synthetic evaluation"
+      },
+      {
+        "id": "p1-t53",
+        "page": 1,
+        "text": "within",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          270.5699768066406,
+          1121.425048828125,
+          324.2459411621094,
+          1150.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "complete condition. Payment is due within fourteen days. Synthetic evaluation data"
+      },
+      {
+        "id": "p1-t54",
+        "page": 1,
+        "text": "fourteen",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          330.0839538574219,
+          1121.425048828125,
+          407.1329650878906,
+          1150.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "condition. Payment is due within fourteen days. Synthetic evaluation data -"
+      },
+      {
+        "id": "p1-t55",
+        "page": 1,
+        "text": "days.",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          412.9709777832031,
+          1121.425048828125,
+          463.1609802246094,
+          1150.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "Payment is due within fourteen days. Synthetic evaluation data - not"
+      },
+      {
+        "id": "p1-t56",
+        "page": 1,
+        "text": "Synthetic",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          1569.5045166015625,
+          153.92100524902344,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "is due within fourteen days. Synthetic evaluation data - not a"
+      },
+      {
+        "id": "p1-t57",
+        "page": 1,
+        "text": "evaluation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          158.64700317382812,
+          1569.5045166015625,
+          236.1329803466797,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "due within fourteen days. Synthetic evaluation data - not a real"
+      },
+      {
+        "id": "p1-t58",
+        "page": 1,
+        "text": "data",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          240.85897827148438,
+          1569.5045166015625,
+          273.94097900390625,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "within fourteen days. Synthetic evaluation data - not a real record"
+      },
+      {
+        "id": "p1-t59",
+        "page": 1,
+        "text": "-",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          278.6669921875,
+          1569.5045166015625,
+          284.3280029296875,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "fourteen days. Synthetic evaluation data - not a real record Page"
+      },
+      {
+        "id": "p1-t60",
+        "page": 1,
+        "text": "not",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          289.05401611328125,
+          1569.5045166015625,
+          312.68402099609375,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "days. Synthetic evaluation data - not a real record Page 1"
+      },
+      {
+        "id": "p1-t61",
+        "page": 1,
+        "text": "a",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          317.4100341796875,
+          1569.5045166015625,
+          326.8620300292969,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "Synthetic evaluation data - not a real record Page 1 of"
+      },
+      {
+        "id": "p1-t62",
+        "page": 1,
+        "text": "real",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          331.5880432128906,
+          1569.5045166015625,
+          359.9270324707031,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "evaluation data - not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t63",
+        "page": 1,
+        "text": "record",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          364.6530456542969,
+          1569.5045166015625,
+          412.8310546875,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "data - not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t64",
+        "page": 1,
+        "text": "Page",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1019.59619140625,
+          1569.5045166015625,
+          1059.291259765625,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "- not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t65",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1064.0172119140625,
+          1569.5045166015625,
+          1073.46923828125,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t66",
+        "page": 1,
+        "text": "of",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1078.1951904296875,
+          1569.5045166015625,
+          1092.3731689453125,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t67",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1097.09912109375,
+          1569.5045166015625,
+          1106.5511474609375,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "real record Page 1 of 1"
+      }
+    ],
+    "confidence": {
+      "threshold": 0.9,
+      "average": 1.0,
+      "low_count": 0,
+      "high_count": 67,
+      "distribution": [
+        {
+          "range": "0.0–0.1",
+          "count": 0
+        },
+        {
+          "range": "0.1–0.2",
+          "count": 0
+        },
+        {
+          "range": "0.2–0.3",
+          "count": 0
+        },
+        {
+          "range": "0.3–0.4",
+          "count": 0
+        },
+        {
+          "range": "0.4–0.5",
+          "count": 0
+        },
+        {
+          "range": "0.5–0.6",
+          "count": 0
+        },
+        {
+          "range": "0.6–0.7",
+          "count": 0
+        },
+        {
+          "range": "0.7–0.8",
+          "count": 0
+        },
+        {
+          "range": "0.8–0.9",
+          "count": 0
+        },
+        {
+          "range": "0.9–1.0",
+          "count": 67
+        }
+      ]
+    },
+    "low_confidence": [],
+    "candidates": [],
+    "chunks": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete condition. Payment is due within fourteen days. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0
+      }
+    ],
+    "semantic_evidence": [],
+    "graph": {
+      "schema_version": "2.0",
+      "domain": "financial",
+      "nodes": [
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "label": "PDF004_tax_invoice.pdf",
+          "type": "Document",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [],
+          "provenance": [
+            {
+              "source": "uploaded document metadata",
+              "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "source_name": "PDF004_tax_invoice.pdf"
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:payment",
+          "label": "Payment",
+          "type": "Payment",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "pages": [
+            1
+          ],
+          "mentions": 2,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t20",
+            "p1-t50"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t20",
+              "page": 1,
+              "bbox": [
+                450.1838073730469,
+                511.80999755859375,
+                533.2968139648438,
+                535.218994140625
+              ],
+              "confidence": 1.0,
+              "text": "PAYMENT"
+            },
+            {
+              "token_id": "p1-t50",
+              "page": 1,
+              "bbox": [
+                120.0,
+                1121.425048828125,
+                202.86598205566406,
+                1150.279052734375
+              ],
+              "confidence": 1.0,
+              "text": "Payment"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 2
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:invoice",
+          "label": "Invoice",
+          "type": "Invoice",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t6"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t6",
+              "page": 1,
+              "bbox": [
+                176.04600524902344,
+                166.77999877929688,
+                334.5619812011719,
+                230.1219940185547
+              ],
+              "confidence": 1.0,
+              "text": "Invoice"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:inv-2026-410",
+          "label": "INV-2026-410",
+          "type": "ReferenceIdentifier",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t11"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t11",
+              "page": 1,
+              "bbox": [
+                225.7179718017578,
+                350.3500061035156,
+                362.66790771484375,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "INV-2026-410"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:03-september-2026",
+          "label": "03 September 2026",
+          "type": "Date",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t13",
+            "p1-t14",
+            "p1-t15"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t13",
+              "page": 1,
+              "bbox": [
+                885.3252563476562,
+                350.3500061035156,
+                909.7892456054688,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "03"
+            },
+            {
+              "token_id": "p1-t14",
+              "page": 1,
+              "bbox": [
+                915.9052734375,
+                350.3500061035156,
+                1023.5072631835938,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "September"
+            },
+            {
+              "token_id": "p1-t15",
+              "page": 1,
+              "bbox": [
+                1029.623291015625,
+                350.3500061035156,
+                1078.551513671875,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "2026"
+            }
+          ],
+          "properties": {
+            "domain": "financial",
+            "mention_count": 1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel1",
+          "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9:payment",
+          "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:invoice",
+          "type": "REFERENCES",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "provenance": "domain relation supported by high-confidence OCR mentions",
+          "token_ids": [
+            "p1-t20",
+            "p1-t50",
+            "p1-t6"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "domain relation supported by high-confidence OCR mentions"
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel2",
+          "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:inv-2026-410",
+          "type": "HAS_REFERENCE",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "provenance": "reference identifier extracted from high-confidence OCR",
+          "token_ids": [
+            "p1-t11"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "reference identifier extracted from high-confidence OCR"
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel3",
+          "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:03-september-2026",
+          "type": "DATED",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "provenance": "date extracted from high-confidence OCR",
+          "token_ids": [
+            "p1-t13",
+            "p1-t14",
+            "p1-t15"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "date extracted from high-confidence OCR"
+          }
+        },
+        {
+          "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel4",
+          "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:payment",
+          "type": "MENTIONS",
+          "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+          "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+          "token_ids": [
+            "p1-t20",
+            "p1-t50"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "financial",
+            "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        }
+      ],
+      "persisted_to_neo4j": true
+    },
+    "graph_evidence": [],
+    "combined_evidence": [],
+    "prompts": [],
+    "slm_decisions": [],
+    "validations": [],
+    "original_text": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete condition. Payment is due within fourteen days. Synthetic evaluation data - not a real record Page 1 of 1",
+    "corrected_text": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete condition. Payment is due within fourteen days. Synthetic evaluation data - not a real record Page 1 of 1",
+    "correction_records": [],
+    "traces": [],
+    "export_pdf_url": "/api/runs/f42a709e-662f-489c-8d65-b000851f448d/export/pdf",
+    "export_pdf_path": "/data/output/f42a709e-662f-489c-8d65-b000851f448d-corrected.pdf",
+    "provenance_json_path": "/data/output/f42a709e-662f-489c-8d65-b000851f448d.json",
+    "stats": {
+      "ocr_tokens": 67,
+      "low_confidence_tokens": 0,
+      "corrections_applied": 0,
+      "corrections_rejected": 0,
+      "slm_calls": 0
+    }
+  },
+  "stages": [
+    {
+      "key": "document_input",
+      "number": 1,
+      "name": "Document Input",
+      "status": "COMPLETED",
+      "input": {
+        "filename": "PDF004_tax_invoice.pdf",
+        "size": 3240
+      },
+      "method": "Validated file ingestion and page rendering",
+      "parameters": {},
+      "output": {
+        "pages": 1,
+        "digital_pdf": true
+      },
+      "diagnostics": {
+        "media_type": "application/pdf"
+      },
+      "next_step": "Preprocessing",
+      "started_at": "2026-10-13T09:46:46.861158+00:00",
+      "completed_at": "2026-10-13T09:46:47.009024+00:00",
+      "runtime_ms": 112.95,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "preprocessing",
+      "number": 2,
+      "name": "Preprocessing",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "OpenCV conditional preprocessing",
+      "parameters": {
+        "conditional_operations": true
+      },
+      "output": [
+        {
+          "source": "/data/processed/f42a709e-662f-489c-8d65-b000851f448d/original/page-1.png",
+          "output": "/data/processed/f42a709e-662f-489c-8d65-b000851f448d/preprocessed/page-1.png",
+          "operations": [
+            "grayscale",
+            "adaptive threshold"
+          ],
+          "width": 1191,
+          "height": 1684
+        }
+      ],
+      "diagnostics": {
+        "operations": [
+          "adaptive threshold",
+          "grayscale"
+        ]
+      },
+      "next_step": "Layout Detection",
+      "started_at": "2026-10-13T09:46:47.045888+00:00",
+      "completed_at": "2026-10-13T09:46:47.496938+00:00",
+      "runtime_ms": 413.46,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "layout",
+      "number": 3,
+      "name": "Layout Detection",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)",
+      "parameters": {
+        "confidence": 0.2,
+        "device": "cpu"
+      },
+      "output": [
+        {
+          "page": 1,
+          "regions": [
+            {
+              "id": "r8",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                77.22,
+                58.71,
+                482.22,
+                95.46
+              ],
+              "confidence": 0.8251,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r5",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1002.57,
+                58.93,
+                1114.58,
+                94.88
+              ],
+              "confidence": 0.9082,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r3",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.01,
+                174.97,
+                338.03,
+                224.97
+              ],
+              "confidence": 0.9163,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r9",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                82.0,
+                242.32,
+                363.31,
+                273.39
+              ],
+              "confidence": 0.7882,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r7",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                109.92,
+                352.45,
+                365.29,
+                379.69
+              ],
+              "confidence": 0.8461,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r11",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                823.44,
+                353.43,
+                1081.72,
+                380.13
+              ],
+              "confidence": 0.5302,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r14",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                823.44,
+                353.43,
+                1081.72,
+                380.13
+              ],
+              "confidence": 0.3935,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r12",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                80.78,
+                485.14,
+                1111.7,
+                622.07
+              ],
+              "confidence": 0.4371,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r17",
+              "class": "image",
+              "raw_class": "figure",
+              "bbox": [
+                80.78,
+                485.14,
+                1111.7,
+                622.07
+              ],
+              "confidence": 0.2407,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r15",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                791.83,
+                510.36,
+                895.27,
+                572.57
+              ],
+              "confidence": 0.3018,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r1",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                82.22,
+                677.94,
+                1107.96,
+                991.49
+              ],
+              "confidence": 0.9666,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r4",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.08,
+                1041.26,
+                163.63,
+                1069.25
+              ],
+              "confidence": 0.912,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r10",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                88.05,
+                1082.34,
+                530.67,
+                1152.14
+              ],
+              "confidence": 0.5416,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r13",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                89.53,
+                1083.12,
+                529.63,
+                1110.24
+              ],
+              "confidence": 0.4149,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r16",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                89.29,
+                1123.65,
+                466.62,
+                1151.34
+              ],
+              "confidence": 0.2958,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r6",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1017.9,
+                1572.14,
+                1106.52,
+                1593.46
+              ],
+              "confidence": 0.901,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r2",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                82.14,
+                1572.35,
+                415.81,
+                1593.13
+              ],
+              "confidence": 0.9349,
+              "source": "DocLayout-YOLO"
+            }
+          ],
+          "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+        }
+      ],
+      "diagnostics": {
+        "region_count": 17,
+        "methods": [
+          "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+        ]
+      },
+      "next_step": "Reading Order",
+      "started_at": "2026-10-13T09:46:47.547941+00:00",
+      "completed_at": "2026-10-13T09:46:54.182081+00:00",
+      "runtime_ms": 6604.61,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "reading_order",
+      "number": 4,
+      "name": "Reading Order",
+      "status": "COMPLETED",
+      "input": {
+        "regions": 17
+      },
+      "method": "Column-aware geometric ordering",
+      "parameters": {},
+      "output": [
+        {
+          "page": 1,
+          "regions": [
+            {
+              "id": "r8",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                77.22,
+                58.71,
+                482.22,
+                95.46
+              ],
+              "confidence": 0.8251,
+              "source": "DocLayout-YOLO",
+              "order": 1
+            },
+            {
+              "id": "r3",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.01,
+                174.97,
+                338.03,
+                224.97
+              ],
+              "confidence": 0.9163,
+              "source": "DocLayout-YOLO",
+              "order": 2
+            },
+            {
+              "id": "r9",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                82.0,
+                242.32,
+                363.31,
+                273.39
+              ],
+              "confidence": 0.7882,
+              "source": "DocLayout-YOLO",
+              "order": 3
+            },
+            {
+              "id": "r7",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                109.92,
+                352.45,
+                365.29,
+                379.69
+              ],
+              "confidence": 0.8461,
+              "source": "DocLayout-YOLO",
+              "order": 4
+            },
+            {
+              "id": "r4",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.08,
+                1041.26,
+                163.63,
+                1069.25
+              ],
+              "confidence": 0.912,
+              "source": "DocLayout-YOLO",
+              "order": 5
+            },
+            {
+              "id": "r10",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                88.05,
+                1082.34,
+                530.67,
+                1152.14
+              ],
+              "confidence": 0.5416,
+              "source": "DocLayout-YOLO",
+              "order": 6
+            },
+            {
+              "id": "r13",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                89.53,
+                1083.12,
+                529.63,
+                1110.24
+              ],
+              "confidence": 0.4149,
+              "source": "DocLayout-YOLO",
+              "order": 7
+            },
+            {
+              "id": "r16",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                89.29,
+                1123.65,
+                466.62,
+                1151.34
+              ],
+              "confidence": 0.2958,
+              "source": "DocLayout-YOLO",
+              "order": 8
+            },
+            {
+              "id": "r2",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                82.14,
+                1572.35,
+                415.81,
+                1593.13
+              ],
+              "confidence": 0.9349,
+              "source": "DocLayout-YOLO",
+              "order": 9
+            },
+            {
+              "id": "r5",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1002.57,
+                58.93,
+                1114.58,
+                94.88
+              ],
+              "confidence": 0.9082,
+              "source": "DocLayout-YOLO",
+              "order": 10
+            },
+            {
+              "id": "r11",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                823.44,
+                353.43,
+                1081.72,
+                380.13
+              ],
+              "confidence": 0.5302,
+              "source": "DocLayout-YOLO",
+              "order": 11
+            },
+            {
+              "id": "r14",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                823.44,
+                353.43,
+                1081.72,
+                380.13
+              ],
+              "confidence": 0.3935,
+              "source": "DocLayout-YOLO",
+              "order": 12
+            },
+            {
+              "id": "r12",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                80.78,
+                485.14,
+                1111.7,
+                622.07
+              ],
+              "confidence": 0.4371,
+              "source": "DocLayout-YOLO",
+              "order": 13
+            },
+            {
+              "id": "r17",
+              "class": "image",
+              "raw_class": "figure",
+              "bbox": [
+                80.78,
+                485.14,
+                1111.7,
+                622.07
+              ],
+              "confidence": 0.2407,
+              "source": "DocLayout-YOLO",
+              "order": 14
+            },
+            {
+              "id": "r15",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                791.83,
+                510.36,
+                895.27,
+                572.57
+              ],
+              "confidence": 0.3018,
+              "source": "DocLayout-YOLO",
+              "order": 15
+            },
+            {
+              "id": "r1",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                82.22,
+                677.94,
+                1107.96,
+                991.49
+              ],
+              "confidence": 0.9666,
+              "source": "DocLayout-YOLO",
+              "order": 16
+            },
+            {
+              "id": "r6",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1017.9,
+                1572.14,
+                1106.52,
+                1593.46
+              ],
+              "confidence": 0.901,
+              "source": "DocLayout-YOLO",
+              "order": 17
+            }
+          ]
+        }
+      ],
+      "diagnostics": {
+        "ordered_regions": 17
+      },
+      "next_step": "OCR Extraction",
+      "started_at": "2026-10-13T09:46:54.313531+00:00",
+      "completed_at": "2026-10-13T09:46:54.356558+00:00",
+      "runtime_ms": 0.29,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "ocr",
+      "number": 5,
+      "name": "OCR Extraction",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "PyMuPDF embedded text extraction",
+      "parameters": {},
+      "output": {
+        "token_count": 67,
+        "preview": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL",
+        "calibrated_tokens": []
+      },
+      "diagnostics": {
+        "engine": "PyMuPDF embedded text extraction",
+        "raw_score_scope": "line",
+        "effective_score_scope": "token",
+        "calibrated_token_count": 0
+      },
+      "next_step": "Confidence Analysis",
+      "started_at": "2026-10-13T09:46:54.393379+00:00",
+      "completed_at": "2026-10-13T09:46:54.481286+00:00",
+      "runtime_ms": 48.62,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "confidence",
+      "number": 6,
+      "name": "Confidence Analysis",
+      "status": "COMPLETED",
+      "input": {
+        "tokens": 67
+      },
+      "method": "Token confidence distribution and configurable threshold",
+      "parameters": {
+        "threshold": 0.9
+      },
+      "output": {
+        "threshold": 0.9,
+        "average": 1.0,
+        "low_count": 0,
+        "high_count": 67,
+        "distribution": [
+          {
+            "range": "0.0–0.1",
+            "count": 0
+          },
+          {
+            "range": "0.1–0.2",
+            "count": 0
+          },
+          {
+            "range": "0.2–0.3",
+            "count": 0
+          },
+          {
+            "range": "0.3–0.4",
+            "count": 0
+          },
+          {
+            "range": "0.4–0.5",
+            "count": 0
+          },
+          {
+            "range": "0.5–0.6",
+            "count": 0
+          },
+          {
+            "range": "0.6–0.7",
+            "count": 0
+          },
+          {
+            "range": "0.7–0.8",
+            "count": 0
+          },
+          {
+            "range": "0.8–0.9",
+            "count": 0
+          },
+          {
+            "range": "0.9–1.0",
+            "count": 67
+          }
+        ]
+      },
+      "diagnostics": {
+        "confidence_source": [
+          "embedded PDF text"
+        ]
+      },
+      "next_step": "Low-Confidence Detection",
+      "started_at": "2026-10-13T09:46:54.571540+00:00",
+      "completed_at": "2026-10-13T09:46:54.591015+00:00",
+      "runtime_ms": 0.42,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "low_confidence",
+      "number": 7,
+      "name": "Low-Confidence Detection",
+      "status": "COMPLETED",
+      "input": {
+        "tokens": 67
+      },
+      "method": "Selective confidence gate",
+      "parameters": {
+        "threshold": 0.9
+      },
+      "output": [],
+      "diagnostics": {
+        "selected": 0,
+        "kept": 67
+      },
+      "next_step": "Candidate Generation",
+      "started_at": "2026-10-13T09:46:54.610056+00:00",
+      "completed_at": "2026-10-13T09:46:54.643376+00:00",
+      "runtime_ms": 0.26,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "candidates",
+      "number": 8,
+      "name": "Candidate Generation",
+      "status": "COMPLETED",
+      "input": {
+        "selected_tokens": 0
+      },
+      "method": "Word-frequency validity + OCR-confusion-aware near-word ranking",
+      "parameters": {
+        "domain": "financial",
+        "limit": 5,
+        "valid_word_zipf_floor": 2.5
+      },
+      "output": [],
+      "diagnostics": {
+        "candidate_sets": 0,
+        "valid_low-confidence_words_protected": 0
+      },
+      "next_step": "Semantic Retrieval",
+      "started_at": "2026-10-13T09:46:54.704465+00:00",
+      "completed_at": "2026-10-13T09:46:55.054467+00:00",
+      "runtime_ms": 302.16,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "semantic",
+      "number": 9,
+      "name": "Semantic Retrieval",
+      "status": "COMPLETED",
+      "input": {
+        "chunks": 1,
+        "queries": 0
+      },
+      "method": "No retrieval required",
+      "parameters": {
+        "top_k": 3,
+        "chunk_size_tokens": 80
+      },
+      "output": [],
+      "diagnostics": {
+        "evidence_sets": 0
+      },
+      "next_step": "Knowledge Graph",
+      "started_at": "2026-10-13T09:46:55.108970+00:00",
+      "completed_at": "2026-10-13T09:46:55.163408+00:00",
+      "runtime_ms": 0.31,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "graph",
+      "number": 10,
+      "name": "Knowledge Graph",
+      "status": "COMPLETED",
+      "input": {
+        "high_confidence_tokens": 67
+      },
+      "method": "Domain-aware entity and relationship extraction with token provenance + Neo4j persistence",
+      "parameters": {},
+      "output": {
+        "schema_version": "2.0",
+        "domain": "financial",
+        "nodes": [
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "label": "PDF004_tax_invoice.pdf",
+            "type": "Document",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [],
+            "provenance": [
+              {
+                "source": "uploaded document metadata",
+                "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "source_name": "PDF004_tax_invoice.pdf"
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:payment",
+            "label": "Payment",
+            "type": "Payment",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "pages": [
+              1
+            ],
+            "mentions": 2,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t20",
+              "p1-t50"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t20",
+                "page": 1,
+                "bbox": [
+                  450.1838073730469,
+                  511.80999755859375,
+                  533.2968139648438,
+                  535.218994140625
+                ],
+                "confidence": 1.0,
+                "text": "PAYMENT"
+              },
+              {
+                "token_id": "p1-t50",
+                "page": 1,
+                "bbox": [
+                  120.0,
+                  1121.425048828125,
+                  202.86598205566406,
+                  1150.279052734375
+                ],
+                "confidence": 1.0,
+                "text": "Payment"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 2
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:invoice",
+            "label": "Invoice",
+            "type": "Invoice",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t6"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t6",
+                "page": 1,
+                "bbox": [
+                  176.04600524902344,
+                  166.77999877929688,
+                  334.5619812011719,
+                  230.1219940185547
+                ],
+                "confidence": 1.0,
+                "text": "Invoice"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 1
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:inv-2026-410",
+            "label": "INV-2026-410",
+            "type": "ReferenceIdentifier",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t11"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t11",
+                "page": 1,
+                "bbox": [
+                  225.7179718017578,
+                  350.3500061035156,
+                  362.66790771484375,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "INV-2026-410"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 1
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:03-september-2026",
+            "label": "03 September 2026",
+            "type": "Date",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t13",
+              "p1-t14",
+              "p1-t15"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t13",
+                "page": 1,
+                "bbox": [
+                  885.3252563476562,
+                  350.3500061035156,
+                  909.7892456054688,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "03"
+              },
+              {
+                "token_id": "p1-t14",
+                "page": 1,
+                "bbox": [
+                  915.9052734375,
+                  350.3500061035156,
+                  1023.5072631835938,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "September"
+              },
+              {
+                "token_id": "p1-t15",
+                "page": 1,
+                "bbox": [
+                  1029.623291015625,
+                  350.3500061035156,
+                  1078.551513671875,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "2026"
+              }
+            ],
+            "properties": {
+              "domain": "financial",
+              "mention_count": 1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel1",
+            "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9:payment",
+            "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:invoice",
+            "type": "REFERENCES",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "provenance": "domain relation supported by high-confidence OCR mentions",
+            "token_ids": [
+              "p1-t20",
+              "p1-t50",
+              "p1-t6"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "domain relation supported by high-confidence OCR mentions"
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel2",
+            "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:inv-2026-410",
+            "type": "HAS_REFERENCE",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "provenance": "reference identifier extracted from high-confidence OCR",
+            "token_ids": [
+              "p1-t11"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "reference identifier extracted from high-confidence OCR"
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel3",
+            "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:03-september-2026",
+            "type": "DATED",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "provenance": "date extracted from high-confidence OCR",
+            "token_ids": [
+              "p1-t13",
+              "p1-t14",
+              "p1-t15"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "date extracted from high-confidence OCR"
+            }
+          },
+          {
+            "id": "73ddbac5-658f-4f61-8376-d6cc57325bb9:rel4",
+            "source": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "target": "73ddbac5-658f-4f61-8376-d6cc57325bb9:payment",
+            "type": "MENTIONS",
+            "document_id": "73ddbac5-658f-4f61-8376-d6cc57325bb9",
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+            "token_ids": [
+              "p1-t20",
+              "p1-t50"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "financial",
+              "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          }
+        ],
+        "persisted_to_neo4j": true
+      },
+      "diagnostics": {
+        "schema_version": "2.0",
+        "nodes": 5,
+        "edges": 4,
+        "relationship_types": [
+          "DATED",
+          "HAS_REFERENCE",
+          "MENTIONS",
+          "REFERENCES"
+        ],
+        "persisted_to_neo4j": true
+      },
+      "next_step": "Hybrid GraphRAG",
+      "started_at": "2026-10-13T09:46:55.307581+00:00",
+      "completed_at": "2026-10-13T09:46:55.569549+00:00",
+      "runtime_ms": 203.14,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "graphrag",
+      "number": 11,
+      "name": "Hybrid GraphRAG",
+      "status": "COMPLETED",
+      "input": {
+        "semantic_sets": 0,
+        "graph_nodes": 5
+      },
+      "method": "Provenance-preserving semantic + graph evidence union",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {
+        "combined_sets": 0
+      },
+      "next_step": "Dynamic Prompt Construction",
+      "started_at": "2026-10-13T09:46:55.620404+00:00",
+      "completed_at": "2026-10-13T09:46:55.678885+00:00",
+      "runtime_ms": 0.27,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "prompt",
+      "number": 12,
+      "name": "Dynamic Prompt Construction",
+      "status": "COMPLETED",
+      "input": {
+        "candidate_sets": 0
+      },
+      "method": "Per-token constrained JSON prompt template",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {
+        "prompt_count": 0
+      },
+      "next_step": "Qwen2.5-3B Selection",
+      "started_at": "2026-10-13T09:46:55.737581+00:00",
+      "completed_at": "2026-10-13T09:46:55.799795+00:00",
+      "runtime_ms": 0.62,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "slm",
+      "number": 13,
+      "name": "Qwen2.5-3B Selection",
+      "status": "COMPLETED",
+      "input": {
+        "prompts": 0
+      },
+      "method": "No low-confidence tokens; model not invoked",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {
+        "calls": 0,
+        "unavailable": 0,
+        "errors": 0,
+        "total_model_latency_ms": 0
+      },
+      "next_step": "Validation",
+      "started_at": "2026-10-13T09:46:55.871656+00:00",
+      "completed_at": "2026-10-13T09:46:55.929888+00:00",
+      "runtime_ms": 0.29,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "validation",
+      "number": 14,
+      "name": "Validation",
+      "status": "COMPLETED",
+      "input": {
+        "decisions": 0
+      },
+      "method": "Candidate membership + rank-1 lexical proximity + valid-word and identifier preservation",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {},
+      "next_step": "Final Output",
+      "started_at": "2026-10-13T09:46:55.988953+00:00",
+      "completed_at": "2026-10-13T09:46:56.039742+00:00",
+      "runtime_ms": 0.31,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "output",
+      "number": 15,
+      "name": "Final Output",
+      "status": "COMPLETED",
+      "input": {
+        "validated_records": 0
+      },
+      "method": "Immutable original + validated token substitution and searchable PDF generation",
+      "parameters": {},
+      "output": {
+        "original_text": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete condition. Payment is due within fourteen days. Synthetic evaluation data - not a real record Page 1 of 1",
+        "corrected_text": "SYNTHETIC OCR EVALUATION PDF004 Tax Invoice Northwind Office Supplies Reference: INV-2026-410 Date: 03 September 2026 CUSTOMER Demo Learning Lab PAYMENT Bank transfer CURRENCY INR Item Quantity Amount Archive folders 12 1,440.00 Printer labels 6 720.00 Desk supplies 4 560.00 TOTAL 22 2,720.00 NOTES Goods were received in complete condition. Payment is due within fourteen days. Synthetic evaluation data - not a real record Page 1 of 1",
+        "pdf_export": "/data/output/f42a709e-662f-489c-8d65-b000851f448d-corrected.pdf",
+        "download_url": "/api/runs/f42a709e-662f-489c-8d65-b000851f448d/export/pdf",
+        "provenance_json": "/data/output/f42a709e-662f-489c-8d65-b000851f448d.json"
+      },
+      "diagnostics": {
+        "ocr_tokens": 67,
+        "low_confidence_tokens": 0,
+        "corrections_applied": 0,
+        "corrections_rejected": 0,
+        "slm_calls": 0,
+        "pdf_text_selectable": true
+      },
+      "next_step": null,
+      "started_at": "2026-10-13T09:46:56.100999+00:00",
+      "completed_at": "2026-10-13T09:46:56.201016+00:00",
+      "runtime_ms": 38.67,
+      "warnings": [],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Department Budget Snapshot
+School of Computing
+Reference: BUD-2026-SEM1
+Date: 05 September 2026
+Entity: School of Computing
+Period: Semester 1, 2026
+Currency: INR
+Cost centre | Allocated | Used
+Laboratory | 320,000 | 298,750
+Software | 180,000 | 171,200
+Contingency | 50,000 | 12,600
+NOTES
+Allocated funds cover the current semester requirements.
+Balance values are synthetic examples.
+Synthetic evaluation data - not a real record

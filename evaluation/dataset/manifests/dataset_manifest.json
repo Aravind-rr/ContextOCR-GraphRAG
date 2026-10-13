@@ -1,0 +1,765 @@
+[
+  {
+    "document_id": "IMG001",
+    "input_filename": "IMG001_clinical_follow_up_note.png",
+    "input_format": "image",
+    "document_category": "medical",
+    "input_path": "evaluation/dataset/inputs/images/IMG001_clinical_follow_up_note.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG001.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "IMG002",
+    "input_filename": "IMG002_outpatient_review_summary.png",
+    "input_format": "image",
+    "document_category": "medical",
+    "input_path": "evaluation/dataset/inputs/images/IMG002_outpatient_review_summary.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG002.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "l/1 character substitution",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Patient",
+        "rendered": "Patlent",
+        "type": "l/1 character substitution"
+      },
+      {
+        "intended": "recovery",
+        "rendered": "recovry",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "mild_noise"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "IMG003",
+    "input_filename": "IMG003_medication_review_record.png",
+    "input_format": "image",
+    "document_category": "medical",
+    "input_path": "evaluation/dataset/inputs/images/IMG003_medication_review_record.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG003.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "l/1 character substitution",
+      "duplicated character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Patient",
+        "rendered": "Patlent",
+        "type": "l/1 character substitution"
+      },
+      {
+        "intended": "dosage",
+        "rendered": "dossage",
+        "type": "duplicated character"
+      }
+    ],
+    "image_quality_variations": [
+      "slight_rotation_0.8_deg"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "IMG004",
+    "input_filename": "IMG004_tax_invoice.png",
+    "input_format": "image",
+    "document_category": "invoice_receipt",
+    "input_path": "evaluation/dataset/inputs/images/IMG004_tax_invoice.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG004.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "IMG005",
+    "input_filename": "IMG005_service_receipt.png",
+    "input_format": "image",
+    "document_category": "invoice_receipt",
+    "input_path": "evaluation/dataset/inputs/images/IMG005_service_receipt.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG005.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "O/0 character substitution",
+      "misspelling"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "TOTAL",
+        "rendered": "T0TAL",
+        "type": "O/0 character substitution"
+      },
+      {
+        "intended": "receipt",
+        "rendered": "reciept",
+        "type": "misspelling"
+      }
+    ],
+    "image_quality_variations": [
+      "low_contrast"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "IMG006",
+    "input_filename": "IMG006_purchase_invoice.png",
+    "input_format": "image",
+    "document_category": "invoice_receipt",
+    "input_path": "evaluation/dataset/inputs/images/IMG006_purchase_invoice.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG006.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "i/l character substitution",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Stationery",
+        "rendered": "Statlonery",
+        "type": "i/l character substitution"
+      },
+      {
+        "intended": "Quantity",
+        "rendered": "Quantty",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "mild_blur"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG007",
+    "input_filename": "IMG007_course_completion_certificate.png",
+    "input_format": "image",
+    "document_category": "certificate",
+    "input_path": "evaluation/dataset/inputs/images/IMG007_course_completion_certificate.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG007.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG008",
+    "input_filename": "IMG008_workshop_participation_certificate.png",
+    "input_format": "image",
+    "document_category": "certificate",
+    "input_path": "evaluation/dataset/inputs/images/IMG008_workshop_participation_certificate.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG008.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "i/l character substitution",
+      "duplicated character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Participation",
+        "rendered": "Particlpation",
+        "type": "i/l character substitution"
+      },
+      {
+        "intended": "Certificate",
+        "rendered": "Certifficate",
+        "type": "duplicated character"
+      }
+    ],
+    "image_quality_variations": [
+      "mild_noise"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG009",
+    "input_filename": "IMG009_merit_certificate.png",
+    "input_format": "image",
+    "document_category": "certificate",
+    "input_path": "evaluation/dataset/inputs/images/IMG009_merit_certificate.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG009.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "missing character",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Excellence",
+        "rendered": "Excelence",
+        "type": "missing character"
+      },
+      {
+        "intended": "Programme",
+        "rendered": "Programe",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "slight_rotation_-0.7_deg"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG010",
+    "input_filename": "IMG010_library_membership_application.png",
+    "input_format": "image",
+    "document_category": "application_form",
+    "input_path": "evaluation/dataset/inputs/images/IMG010_library_membership_application.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG010.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG011",
+    "input_filename": "IMG011_research_access_application.png",
+    "input_format": "image",
+    "document_category": "application_form",
+    "input_path": "evaluation/dataset/inputs/images/IMG011_research_access_application.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG011.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "c/e character substitution",
+      "l/1 character substitution"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Research",
+        "rendered": "Researeh",
+        "type": "c/e character substitution"
+      },
+      {
+        "intended": "approval",
+        "rendered": "approva1",
+        "type": "l/1 character substitution"
+      }
+    ],
+    "image_quality_variations": [
+      "low_contrast"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG012",
+    "input_filename": "IMG012_student_activity_application.png",
+    "input_format": "image",
+    "document_category": "application_form",
+    "input_path": "evaluation/dataset/inputs/images/IMG012_student_activity_application.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG012.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "duplicated character",
+      "i/l character substitution"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Student",
+        "rendered": "Studdent",
+        "type": "duplicated character"
+      },
+      {
+        "intended": "activity",
+        "rendered": "activlty",
+        "type": "i/l character substitution"
+      }
+    ],
+    "image_quality_variations": [
+      "mild_noise",
+      "mild_blur"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG013",
+    "input_filename": "IMG013_quarterly_financial_summary.png",
+    "input_format": "image",
+    "document_category": "financial_summary",
+    "input_path": "evaluation/dataset/inputs/images/IMG013_quarterly_financial_summary.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG013.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG014",
+    "input_filename": "IMG014_department_budget_snapshot.png",
+    "input_format": "image",
+    "document_category": "financial_summary",
+    "input_path": "evaluation/dataset/inputs/images/IMG014_department_budget_snapshot.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG014.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "l/1 character substitution",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Balance",
+        "rendered": "Ba1ance",
+        "type": "l/1 character substitution"
+      },
+      {
+        "intended": "Allocated",
+        "rendered": "Alocated",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "slight_rotation_0.6_deg"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "IMG015",
+    "input_filename": "IMG015_project_expense_summary.png",
+    "input_format": "image",
+    "document_category": "financial_summary",
+    "input_path": "evaluation/dataset/inputs/images/IMG015_project_expense_summary.png",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/images/IMG015.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "duplicated character",
+      "i/l character substitution"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Expenses",
+        "rendered": "Expensess",
+        "type": "duplicated character"
+      },
+      {
+        "intended": "variance",
+        "rendered": "varlance",
+        "type": "i/l character substitution"
+      }
+    ],
+    "image_quality_variations": [
+      "low_contrast",
+      "mild_noise"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF001",
+    "input_filename": "PDF001_clinical_follow_up_note.pdf",
+    "input_format": "pdf",
+    "document_category": "medical",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF001_clinical_follow_up_note.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF001.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "PDF002",
+    "input_filename": "PDF002_outpatient_review_summary.pdf",
+    "input_format": "pdf",
+    "document_category": "medical",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF002_outpatient_review_summary.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF002.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "l/1 character substitution",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Patient",
+        "rendered": "Patlent",
+        "type": "l/1 character substitution"
+      },
+      {
+        "intended": "recovery",
+        "rendered": "recovry",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "low_contrast_vector_text"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "PDF003",
+    "input_filename": "PDF003_medication_review_record.pdf",
+    "input_format": "pdf",
+    "document_category": "medical",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF003_medication_review_record.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF003.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "l/1 character substitution",
+      "duplicated character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Patient",
+        "rendered": "Patlent",
+        "type": "l/1 character substitution"
+      },
+      {
+        "intended": "dosage",
+        "rendered": "dossage",
+        "type": "duplicated character"
+      }
+    ],
+    "image_quality_variations": [
+      "slight_rotation_0.6_deg"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "PDF004",
+    "input_filename": "PDF004_tax_invoice.pdf",
+    "input_format": "pdf",
+    "document_category": "invoice_receipt",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF004_tax_invoice.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF004.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "PDF005",
+    "input_filename": "PDF005_service_receipt.pdf",
+    "input_format": "pdf",
+    "document_category": "invoice_receipt",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF005_service_receipt.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF005.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "O/0 character substitution",
+      "misspelling"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "TOTAL",
+        "rendered": "T0TAL",
+        "type": "O/0 character substitution"
+      },
+      {
+        "intended": "receipt",
+        "rendered": "reciept",
+        "type": "misspelling"
+      }
+    ],
+    "image_quality_variations": [
+      "varied_font_sizes"
+    ],
+    "dataset_split": "manual_execution",
+    "execution_status": "ACTUALLY_RUN"
+  },
+  {
+    "document_id": "PDF006",
+    "input_filename": "PDF006_purchase_invoice.pdf",
+    "input_format": "pdf",
+    "document_category": "invoice_receipt",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF006_purchase_invoice.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF006.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "i/l character substitution",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Stationery",
+        "rendered": "Statlonery",
+        "type": "i/l character substitution"
+      },
+      {
+        "intended": "Quantity",
+        "rendered": "Quantty",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "tight_line_spacing"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF007",
+    "input_filename": "PDF007_course_completion_certificate.pdf",
+    "input_format": "pdf",
+    "document_category": "certificate",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF007_course_completion_certificate.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF007.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF008",
+    "input_filename": "PDF008_workshop_participation_certificate.pdf",
+    "input_format": "pdf",
+    "document_category": "certificate",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF008_workshop_participation_certificate.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF008.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "i/l character substitution",
+      "duplicated character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Participation",
+        "rendered": "Particlpation",
+        "type": "i/l character substitution"
+      },
+      {
+        "intended": "Certificate",
+        "rendered": "Certifficate",
+        "type": "duplicated character"
+      }
+    ],
+    "image_quality_variations": [
+      "low_contrast_vector_text"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF009",
+    "input_filename": "PDF009_merit_certificate.pdf",
+    "input_format": "pdf",
+    "document_category": "certificate",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF009_merit_certificate.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF009.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "missing character",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Excellence",
+        "rendered": "Excelence",
+        "type": "missing character"
+      },
+      {
+        "intended": "Programme",
+        "rendered": "Programe",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "slight_rotation_-0.5_deg"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF010",
+    "input_filename": "PDF010_library_membership_application.pdf",
+    "input_format": "pdf",
+    "document_category": "application_form",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF010_library_membership_application.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF010.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF011",
+    "input_filename": "PDF011_research_access_application.pdf",
+    "input_format": "pdf",
+    "document_category": "application_form",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF011_research_access_application.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF011.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "c/e character substitution",
+      "l/1 character substitution"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Research",
+        "rendered": "Researeh",
+        "type": "c/e character substitution"
+      },
+      {
+        "intended": "approval",
+        "rendered": "approva1",
+        "type": "l/1 character substitution"
+      }
+    ],
+    "image_quality_variations": [
+      "tight_line_spacing"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF012",
+    "input_filename": "PDF012_student_activity_application.pdf",
+    "input_format": "pdf",
+    "document_category": "application_form",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF012_student_activity_application.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF012.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "duplicated character",
+      "i/l character substitution"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Student",
+        "rendered": "Studdent",
+        "type": "duplicated character"
+      },
+      {
+        "intended": "activity",
+        "rendered": "activlty",
+        "type": "i/l character substitution"
+      }
+    ],
+    "image_quality_variations": [
+      "varied_font_sizes"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF013",
+    "input_filename": "PDF013_quarterly_financial_summary.pdf",
+    "input_format": "pdf",
+    "document_category": "financial_summary",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF013_quarterly_financial_summary.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF013.txt",
+    "intentional_textual_corruption": false,
+    "injected_error_types": [],
+    "injected_error_details": [],
+    "image_quality_variations": [
+      "none"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF014",
+    "input_filename": "PDF014_department_budget_snapshot.pdf",
+    "input_format": "pdf",
+    "document_category": "financial_summary",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF014_department_budget_snapshot.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF014.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "l/1 character substitution",
+      "missing character"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Balance",
+        "rendered": "Ba1ance",
+        "type": "l/1 character substitution"
+      },
+      {
+        "intended": "Allocated",
+        "rendered": "Alocated",
+        "type": "missing character"
+      }
+    ],
+    "image_quality_variations": [
+      "slight_rotation_0.5_deg"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  },
+  {
+    "document_id": "PDF015",
+    "input_filename": "PDF015_project_expense_summary.pdf",
+    "input_format": "pdf",
+    "document_category": "financial_summary",
+    "input_path": "evaluation/dataset/inputs/pdfs/PDF015_project_expense_summary.pdf",
+    "ground_truth_reference_path": "evaluation/dataset/ground_truth/pdfs/PDF015.txt",
+    "intentional_textual_corruption": true,
+    "injected_error_types": [
+      "duplicated character",
+      "i/l character substitution"
+    ],
+    "injected_error_details": [
+      {
+        "intended": "Expenses",
+        "rendered": "Expensess",
+        "type": "duplicated character"
+      },
+      {
+        "intended": "variance",
+        "rendered": "varlance",
+        "type": "i/l character substitution"
+      }
+    ],
+    "image_quality_variations": [
+      "low_contrast_vector_text",
+      "varied_font_sizes"
+    ],
+    "dataset_split": "reserved_unprocessed",
+    "execution_status": "NOT_RUN"
+  }
+]

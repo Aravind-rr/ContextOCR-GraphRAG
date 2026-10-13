@@ -1,0 +1,209 @@
+{
+  "schema_version": "2.0",
+  "domain": "medical",
+  "nodes": [
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "label": "PDF003_medication_review_record.pdf",
+      "type": "Document",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 1.0,
+      "token_ids": [],
+      "provenance": [
+        {
+          "source": "uploaded document metadata",
+          "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9"
+        }
+      ],
+      "properties": {
+        "domain": "medical",
+        "source_name": "PDF003_medication_review_record.pdf"
+      }
+    },
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9:prescription",
+      "label": "Prescription",
+      "type": "Prescription",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 1.0,
+      "token_ids": [
+        "p1-t49"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t49",
+          "page": 1,
+          "bbox": [
+            828.1115112304688,
+            881.69140625,
+            919.3164672851562,
+            906.824951171875
+          ],
+          "confidence": 1.0,
+          "text": "prescription"
+        }
+      ],
+      "properties": {
+        "domain": "medical",
+        "mention_count": 1
+      }
+    },
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9:med-2026-127",
+      "label": "MED-2026-127",
+      "type": "ReferenceIdentifier",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 1.0,
+      "token_ids": [
+        "p1-t12"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t12",
+          "page": 1,
+          "bbox": [
+            220.59088134765625,
+            352.68499755859375,
+            370.0592041015625,
+            384.4732666015625
+          ],
+          "confidence": 1.0,
+          "text": "MED-2026-127"
+        }
+      ],
+      "properties": {
+        "domain": "medical",
+        "mention_count": 1
+      }
+    },
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9:14-september-2026",
+      "label": "14 September 2026",
+      "type": "Date",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 1.0,
+      "token_ids": [
+        "p1-t14",
+        "p1-t15",
+        "p1-t16"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t14",
+          "page": 1,
+          "bbox": [
+            880.161865234375,
+            347.08343505859375,
+            904.9411010742188,
+            377.56591796875
+          ],
+          "confidence": 1.0,
+          "text": "14"
+        },
+        {
+          "token_id": "p1-t15",
+          "page": 1,
+          "bbox": [
+            910.7401733398438,
+            345.8924865722656,
+            1018.6528930664062,
+            377.2457275390625
+          ],
+          "confidence": 1.0,
+          "text": "September"
+        },
+        {
+          "token_id": "p1-t16",
+          "page": 1,
+          "bbox": [
+            1024.4520263671875,
+            345.31610107421875,
+            1073.69384765625,
+            376.0548095703125
+          ],
+          "confidence": 1.0,
+          "text": "2026"
+        }
+      ],
+      "properties": {
+        "domain": "medical",
+        "mention_count": 1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9:rel1",
+      "source": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "target": "76a5240c-1457-4bf3-a94d-66e7af2497f9:med-2026-127",
+      "type": "HAS_REFERENCE",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "provenance": "reference identifier extracted from high-confidence OCR",
+      "token_ids": [
+        "p1-t12"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "medical",
+        "evidence": "reference identifier extracted from high-confidence OCR"
+      }
+    },
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9:rel2",
+      "source": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "target": "76a5240c-1457-4bf3-a94d-66e7af2497f9:14-september-2026",
+      "type": "DATED",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "provenance": "date extracted from high-confidence OCR",
+      "token_ids": [
+        "p1-t14",
+        "p1-t15",
+        "p1-t16"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "medical",
+        "evidence": "date extracted from high-confidence OCR"
+      }
+    },
+    {
+      "id": "76a5240c-1457-4bf3-a94d-66e7af2497f9:rel3",
+      "source": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "target": "76a5240c-1457-4bf3-a94d-66e7af2497f9:prescription",
+      "type": "MENTIONS",
+      "document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+      "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+      "token_ids": [
+        "p1-t49"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "medical",
+        "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+      }
+    }
+  ],
+  "persisted_to_neo4j": true
+}

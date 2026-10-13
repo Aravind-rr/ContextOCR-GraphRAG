@@ -1,0 +1,17 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Purchase Invoice
+Orchid Stationery Cooperative
+Reference: INV-2026-438
+Date: 12 September 2026
+Customer: Prototype Design Studio
+Payment: Purchase order
+Currency: INR
+Item | Quantity | Amount
+Notebook set | 10 | 950.00
+Marker pack | 5 | 625.00
+Stationery tray | 2 | 840.00
+TOTAL | 17 | 2,415.00
+NOTES
+Quantity and unit prices were checked before issue.
+No real customer account is represented.
+Synthetic evaluation data - not a real record

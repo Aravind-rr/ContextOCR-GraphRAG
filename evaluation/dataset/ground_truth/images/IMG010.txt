@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Library Membership Application
+Central Learning Resource Centre
+Reference: APP-2026-301
+Date: 01 September 2026
+Applicant: Kabir Test
+Applicant ID: SYN-26031
+Request: Annual membership
+Selection | Choice | Confirmation
+Membership term | 12 months | Selected
+Email notices | Yes | Selected
+Applicant declaration | Accepted | Signed digitally
+NOTES
+The applicant confirms that the submitted details are accurate.
+Membership activation requires manual review.
+Synthetic evaluation data - not a real record

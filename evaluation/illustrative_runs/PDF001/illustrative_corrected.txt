@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Clinical Follow-up Note
+General Medicine Unit
+Reference: MED-2026-101
+Date: 08 September 2026
+Patient: Asha Testwell
+Record Type: Synthetic outpatient record
+Visit: Routine review
+Observation | Reading | Status
+Blood pressure | 118/76 mmHg | Normal
+Pulse | 72 bpm | Stable
+Oxygen saturation | 98 percent | Normal
+NOTES
+Patient is stable and may continue the current care plan.
+A printed prescription was received for the next review.
+Synthetic evaluation data - not a real record

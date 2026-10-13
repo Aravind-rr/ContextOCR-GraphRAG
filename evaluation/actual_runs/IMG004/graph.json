@@ -1,0 +1,275 @@
+{
+  "schema_version": "2.0",
+  "domain": "financial",
+  "nodes": [
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "label": "IMG004_tax_invoice.png",
+      "type": "Document",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 1.0,
+      "token_ids": [],
+      "provenance": [
+        {
+          "source": "uploaded document metadata",
+          "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041"
+        }
+      ],
+      "properties": {
+        "domain": "financial",
+        "source_name": "IMG004_tax_invoice.png"
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:payment",
+      "label": "Payment",
+      "type": "Payment",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "pages": [
+        1
+      ],
+      "mentions": 2,
+      "confidence": 0.9742410778999329,
+      "token_ids": [
+        "p1-t20",
+        "p1-t60"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t20",
+          "page": 1,
+          "bbox": [
+            366.0,
+            428.0,
+            450.0,
+            452.0
+          ],
+          "confidence": 0.9924148321151733,
+          "text": "PAYMENT"
+        },
+        {
+          "token_id": "p1-t60",
+          "page": 1,
+          "bbox": [
+            94.0,
+            994.0,
+            187.0,
+            1025.0
+          ],
+          "confidence": 0.9742410778999329,
+          "text": "Payment"
+        }
+      ],
+      "properties": {
+        "domain": "financial",
+        "mention_count": 2
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:invoice",
+      "label": "Invoice",
+      "type": "Invoice",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 0.9866783618927002,
+      "token_ids": [
+        "p1-t7"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t7",
+          "page": 1,
+          "bbox": [
+            142.0,
+            163.0,
+            270.0,
+            201.0
+          ],
+          "confidence": 0.9866783618927002,
+          "text": "Invoice"
+        }
+      ],
+      "properties": {
+        "domain": "financial",
+        "mention_count": 1
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:inv-2026-410",
+      "label": "INV-2026-410",
+      "type": "ReferenceIdentifier",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 0.9907158613204956,
+      "token_ids": [
+        "p1-t13"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t13",
+          "page": 1,
+          "bbox": [
+            207.0,
+            299.0,
+            355.0,
+            323.0
+          ],
+          "confidence": 0.9907158613204956,
+          "text": "INV-2026-410"
+        }
+      ],
+      "properties": {
+        "domain": "financial",
+        "mention_count": 1
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:03-september-2026",
+      "label": "03 September 2026",
+      "type": "Date",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "pages": [
+        1
+      ],
+      "mentions": 1,
+      "confidence": 0.9776811003684998,
+      "token_ids": [
+        "p1-t16",
+        "p1-t17",
+        "p1-t18"
+      ],
+      "provenance": [
+        {
+          "token_id": "p1-t16",
+          "page": 1,
+          "bbox": [
+            623.0,
+            297.0,
+            637.0,
+            318.0
+          ],
+          "confidence": 0.9776811003684998,
+          "text": "03"
+        },
+        {
+          "token_id": "p1-t17",
+          "page": 1,
+          "bbox": [
+            651.0,
+            297.0,
+            742.0,
+            318.0
+          ],
+          "confidence": 0.9776811003684998,
+          "text": "September"
+        },
+        {
+          "token_id": "p1-t18",
+          "page": 1,
+          "bbox": [
+            752.0,
+            297.0,
+            791.0,
+            318.0
+          ],
+          "confidence": 0.9776811003684998,
+          "text": "2026"
+        }
+      ],
+      "properties": {
+        "domain": "financial",
+        "mention_count": 1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:rel1",
+      "source": "d7f99007-94ca-4c76-9365-88a0f0456041:payment",
+      "target": "d7f99007-94ca-4c76-9365-88a0f0456041:invoice",
+      "type": "REFERENCES",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "provenance": "domain relation supported by high-confidence OCR mentions",
+      "token_ids": [
+        "p1-t20",
+        "p1-t60",
+        "p1-t7"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "financial",
+        "evidence": "domain relation supported by high-confidence OCR mentions"
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:rel2",
+      "source": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "target": "d7f99007-94ca-4c76-9365-88a0f0456041:inv-2026-410",
+      "type": "HAS_REFERENCE",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "provenance": "reference identifier extracted from high-confidence OCR",
+      "token_ids": [
+        "p1-t13"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "financial",
+        "evidence": "reference identifier extracted from high-confidence OCR"
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:rel3",
+      "source": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "target": "d7f99007-94ca-4c76-9365-88a0f0456041:03-september-2026",
+      "type": "DATED",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "provenance": "date extracted from high-confidence OCR",
+      "token_ids": [
+        "p1-t16",
+        "p1-t17",
+        "p1-t18"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "financial",
+        "evidence": "date extracted from high-confidence OCR"
+      }
+    },
+    {
+      "id": "d7f99007-94ca-4c76-9365-88a0f0456041:rel4",
+      "source": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "target": "d7f99007-94ca-4c76-9365-88a0f0456041:payment",
+      "type": "MENTIONS",
+      "document_id": "d7f99007-94ca-4c76-9365-88a0f0456041",
+      "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+      "token_ids": [
+        "p1-t20",
+        "p1-t60"
+      ],
+      "pages": [
+        1
+      ],
+      "properties": {
+        "domain": "financial",
+        "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+      }
+    }
+  ],
+  "persisted_to_neo4j": true
+}

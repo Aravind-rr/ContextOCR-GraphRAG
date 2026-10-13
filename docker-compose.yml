@@ -10,6 +10,12 @@ services:
       DATA_DIR: /data
       DATABASE_URL: sqlite:////data/ocr_graphrag.db
       NEO4J_URI: bolt://neo4j:7687
+      DOC_LAYOUT_MODEL_PATH: /models/doclayout-yolo/doclayout_yolo_docstructbench_imgsz1024.pt
+      EMBEDDING_MODEL: /models/bge-m3-fp16
+      EMBEDDING_GGUF_MODEL_PATH: /models/bge-m3-gguf/bge-m3-Q4_K_M.gguf
+      SLM_MODEL_PATH: /models/qwen2.5-3b-instruct-gguf/qwen2.5-3b-instruct-q4_k_m.gguf
+      LLAMA_SERVER_EXECUTABLE: /opt/llama.cpp/llama-server
+      SLM_GPU_LAYERS: 0
     volumes:
       - ./data:/data
       - ./models:/models:ro

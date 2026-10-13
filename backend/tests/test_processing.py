@@ -5,7 +5,7 @@ import numpy as np
 
 from app.core.config import Settings
 from app.pipeline.processing import (analyze_confidence, build_prompts,
-    calibrated_paddle_confidence, corrected_text, detect_layout, evaluate_text,
+    calibrated_lexical_confidence, calibrated_paddle_confidence, corrected_text, detect_layout, evaluate_text,
     extract_graph, generate_candidates, graph_evidence, make_chunks, preprocess_page, reading_order,
     semantic_retrieve, validate_decisions)
 
@@ -45,6 +45,36 @@ def test_paddle_line_score_is_calibrated_for_token_level_lexical_anomaly():
     assert evidence and evidence["candidate"] == "government"
     unchanged, evidence = calibrated_paddle_confidence("government", .980749)
     assert unchanged == .980749 and evidence is None
+
+
+def test_frequency_lexicon_detects_errors_and_protects_valid_words():
+    expected = {
+        "Patlent": "patient", "recovry": "recovery", "dossage": "dosage",
+        "reciept": "receipt", "T0TAL": "total", "Retum": "return",
+    }
+    for original, correction in expected.items():
+        effective, evidence = calibrated_lexical_confidence(original, .99, "medical" if correction in {"patient", "recovery", "dosage"} else "financial")
+        assert effective < .9
+        assert evidence and evidence["candidate"] == correction
+    for valid in ("Clinic", "contact", "Finding", "Item", "Rohan", "mmHg"):
+        effective, evidence = calibrated_lexical_confidence(valid, .99, "medical")
+        assert effective == .99 and evidence is None
+
+
+def test_validation_accepts_only_rank_one_near_word_and_preserves_case():
+    values = [{"id": "t1", "page": 1, "text": "PATLENT", "confidence": .85, "confidence_source": "fixture", "bbox": [0, 0, 1, 1]}]
+    candidates = generate_candidates(values, .9, "medical", 5)
+    accepted = validate_decisions(values, candidates, [{"token_id": "t1", "status": "COMPLETED", "selection": "patient", "confidence": .95}])
+    assert accepted[0]["status"] == "ACCEPTED"
+    assert accepted[0]["final"] == "PATIENT"
+    rejected = validate_decisions(values, candidates, [{"token_id": "t1", "status": "COMPLETED", "selection": "patent", "confidence": .99}])
+    assert rejected[0]["status"] == "REJECTED"
+    assert rejected[0]["final"] == "PATLENT"
+
+
+def test_valid_low_confidence_word_is_not_sent_for_correction():
+    values = [{"id": "t1", "page": 1, "text": "contact", "confidence": .4, "confidence_source": "fixture", "bbox": [0, 0, 1, 1]}]
+    assert generate_candidates(values, .9, "general", 5) == []
 
 
 def test_government_graph_has_meaningful_typed_relationships():

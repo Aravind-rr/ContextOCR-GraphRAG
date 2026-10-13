@@ -1,0 +1,124 @@
+[
+  {
+    "token_id": "p1-t42",
+    "original": "T0TAL",
+    "selection": "total",
+    "final": "TOTAL",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8079999999999999,
+    "changed": true,
+    "why_selected": "effective confidence 0.808 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match total (0.980)",
+    "candidates": [
+      {
+        "value": "total",
+        "source": "built-in financial vocabulary",
+        "similarity": 0.98,
+        "ranking_score": 1.06,
+        "zipf_frequency": 5.21,
+        "rank": 1
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0,
+        "similarity": 0.4665298527636453,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [],
+    "prompt": "{\n  \"original\": \"T0TAL\",\n  \"context\": \"3 2,250.00 Documentation 1 600.00 T0TAL 6 4,050.00 NOTES Service completion\",\n  \"candidates\": [\n    \"total\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"total\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.98,\n      \"source\": \"built-in financial vocabulary\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t42",
+      "status": "COMPLETED",
+      "selection": "total",
+      "reason": "The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.",
+      "confidence": 0.98,
+      "latency_ms": 11868.34,
+      "prompt_tokens": 442,
+      "completion_tokens": 49,
+      "raw_output": "{\n  \"selection\": \"total\",\n  \"reason\": \"The rank-1 near-word candidate 'total' fits the context and is more likely to be the correct OCR correction.\",\n  \"confidence\": 0.98\n}"
+    }
+  },
+  {
+    "token_id": "p1-t55",
+    "original": "reciept",
+    "selection": "receipt",
+    "final": "receipt",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8571427999999999,
+    "changed": true,
+    "why_selected": "effective confidence 0.857 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match receipt (0.857)",
+    "candidates": [
+      {
+        "value": "receipt",
+        "source": "trusted document vocabulary",
+        "similarity": 0.857143,
+        "ranking_score": 0.937143,
+        "zipf_frequency": 3.92,
+        "rank": 1
+      },
+      {
+        "value": "precept",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 2.58,
+        "rank": 2
+      },
+      {
+        "value": "recep",
+        "source": "English frequency lexicon",
+        "similarity": 0.833333,
+        "ranking_score": 0.833333,
+        "zipf_frequency": 2.66,
+        "rank": 3
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0,
+        "similarity": 0.37435244296357245,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [],
+    "prompt": "{\n  \"original\": \"reciept\",\n  \"context\": \"by the demonstration contact. This reciept records a test transaction only.\",\n  \"candidates\": [\n    \"receipt\",\n    \"precept\",\n    \"recep\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"receipt\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"trusted document vocabulary\"\n    },\n    {\n      \"value\": \"precept\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"recep\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.833333,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF005 Service Receipt Blue River Technical Services Reference: RCT-2026-225 Date: 06 September 2026 CUSTOMER Sample Innovation Cell PAYMENT Card - test transaction CURRENCY INR Service Hours Amount Device inspection 2 1,200.00 Configuration support 3 2,250.00 Documentation 1 600.00 6 4,050.00 NOTES Service completion was confirmed by the demonstration contact. This records a test transaction only. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t55",
+      "status": "COMPLETED",
+      "selection": "receipt",
+      "reason": "The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.",
+      "confidence": 0.857143,
+      "latency_ms": 13677.15,
+      "prompt_tokens": 518,
+      "completion_tokens": 57,
+      "raw_output": "{\n  \"selection\": \"receipt\",\n  \"reason\": \"The rank-1 near-word candidate 'receipt' fits the context and is the near-word of the original OCR 'reciept'.\",\n  \"confidence\": 0.857143\n}"
+    }
+  }
+]

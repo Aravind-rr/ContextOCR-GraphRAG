@@ -1,0 +1,17 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Service Receipt
+Blue River Technical Services
+Reference: RCT-2026-225
+Date: 06 September 2026
+Customer: Sample Innovation Cell
+Payment: Card - test transaction
+Currency: INR
+Service | Hours | Amount
+Device inspection | 2 | 1,200.00
+Configuration support | 3 | 2,250.00
+Documentation | 1 | 600.00
+T0TAL | 6 | 4,050.00
+NOTES
+Service completion was confirmed by the demonstration contact.
+This reciept records a test transaction only.
+Synthetic evaluation data - not a real record

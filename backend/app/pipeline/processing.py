@@ -8,6 +8,7 @@ import shutil
 import statistics
 import subprocess
 from collections import Counter
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +19,7 @@ from PIL import Image
 from rapidfuzz import fuzz, process
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from wordfreq import top_n_list, zipf_frequency
 
 from app.core.config import Settings
 from app.services.local_models import embed_with_llama_cpp, llama_server, run_model_worker
@@ -25,17 +27,133 @@ from app.services.local_models import embed_with_llama_cpp, llama_server, run_mo
 
 DOMAIN_VOCABULARY: dict[str, tuple[str, ...]] = {
     "general": ("document", "information", "government", "regulation", "institution", "department", "research", "system", "confidence", "correction", "application", "university", "technology", "development", "management", "organization"),
-    "medical": ("patient", "hospital", "diagnosis", "treatment", "medicine", "clinical", "physician", "prescription", "symptoms", "laboratory"),
+    "medical": ("patient", "hospital", "diagnosis", "treatment", "medicine", "clinical", "clinic", "physician", "prescription", "symptoms", "laboratory", "dosage", "recovery", "tablet"),
     "legal": ("agreement", "contract", "regulation", "statute", "court", "plaintiff", "defendant", "jurisdiction", "liability", "provision"),
     "government": ("government", "ministry", "department", "regulation", "policy", "authority", "administration", "public", "official", "citizen"),
-    "financial": ("account", "transaction", "balance", "interest", "financial", "revenue", "liability", "invoice", "payment", "statement"),
+    "financial": ("account", "transaction", "balance", "interest", "financial", "revenue", "liability", "invoice", "receipt", "payment", "statement", "total", "amount", "quantity", "customer", "currency"),
     "institutional": ("institution", "university", "department", "faculty", "student", "academic", "administration", "committee", "policy", "programme"),
 }
 
 ALL_DOMAIN_TERMS = sorted({term for terms in DOMAIN_VOCABULARY.values() for term in terms})
+LEXICAL_VALID_ZIPF = 2.5
 
 
-def calibrated_paddle_confidence(text: str, raw_confidence: float) -> tuple[float, dict[str, Any] | None]:
+def _clean_word(text: str) -> str:
+    return re.sub(r"[^A-Za-z0-9'-]", "", text).casefold()
+
+
+def _ocr_canonical(word: str) -> str:
+    """Normalize only common OCR glyph confusions, not general semantics."""
+    value = word.casefold().translate(str.maketrans({"0": "o", "1": "l", "5": "s", "8": "b"}))
+    return value.replace("rn", "m")
+
+
+def _looks_like_identifier(text: str) -> bool:
+    clean = _clean_word(text)
+    if not clean:
+        return True
+    digits = sum(character.isdigit() for character in clean)
+    letters = sum(character.isalpha() for character in clean)
+    if digits and not letters:
+        return True
+    if digits >= 2 or ("-" in text and digits):
+        return True
+    # Preserve mixed-case abbreviations such as mmHg.
+    letters_only = re.sub(r"[^A-Za-z]", "", text)
+    return bool(letters_only and not (letters_only.islower() or letters_only.isupper() or letters_only.istitle()))
+
+
+@lru_cache(maxsize=1)
+def _common_words() -> tuple[str, ...]:
+    words = {
+        word.casefold()
+        for word in top_n_list("en", 50000)
+        if len(word) >= 4 and re.fullmatch(r"[A-Za-z][A-Za-z'-]*", word)
+    }
+    words.update(ALL_DOMAIN_TERMS)
+    return tuple(sorted(words))
+
+
+@lru_cache(maxsize=1)
+def _canonical_word_index() -> dict[str, tuple[str, ...]]:
+    grouped: dict[str, list[str]] = {}
+    for word in _common_words():
+        grouped.setdefault(_ocr_canonical(word), []).append(word)
+    return {key: tuple(values) for key, values in grouped.items()}
+
+
+def _valid_lexical_word(text: str) -> bool:
+    clean = _clean_word(text)
+    if not clean or any(character.isdigit() for character in clean):
+        return False
+    return clean in ALL_DOMAIN_TERMS or zipf_frequency(clean, "en") >= LEXICAL_VALID_ZIPF
+
+
+def _lexical_similarity(original: str, candidate: str) -> float:
+    score = fuzz.ratio(original.casefold(), candidate.casefold()) / 100.0
+    if original.casefold() != candidate.casefold() and _ocr_canonical(original) == _ocr_canonical(candidate):
+        score = max(score, 0.98)
+    return score
+
+
+def _lexical_candidates(text: str, domain: str = "general", extra_words: set[str] | None = None, limit: int = 5) -> list[dict[str, Any]]:
+    clean = _clean_word(text)
+    if len(clean) < 4 or _looks_like_identifier(text):
+        return []
+    pool = set(_common_words())
+    if extra_words:
+        pool.update(word for word in extra_words if _valid_lexical_word(word))
+    raw_matches = process.extract(clean, tuple(pool), scorer=fuzz.ratio, limit=max(20, limit * 4))
+    possible = {word for word, _score, _index in raw_matches}
+    possible.update(_canonical_word_index().get(_ocr_canonical(clean), ()))
+    domain_words = set(DOMAIN_VOCABULARY.get(domain, ()))
+    ranked = []
+    for word in possible:
+        if word == clean or not _valid_lexical_word(word):
+            continue
+        similarity = _lexical_similarity(clean, word)
+        minimum = 0.85 if len(clean) <= 5 else 0.82
+        if similarity < minimum or (levenshtein(clean, word) > 2 and _ocr_canonical(clean) != _ocr_canonical(word)):
+            continue
+        domain_boost = 0.08 if word in domain_words else 0.0
+        source = f"built-in {domain} vocabulary" if word in domain_words else "English frequency lexicon"
+        if extra_words and word in extra_words:
+            source = "trusted document vocabulary"
+        ranked.append({
+            "value": word,
+            "source": source,
+            "similarity": round(similarity, 6),
+            "ranking_score": round(similarity + domain_boost, 6),
+            "zipf_frequency": round(zipf_frequency(word, "en"), 3),
+        })
+    ranked.sort(key=lambda item: (item["ranking_score"], item["zipf_frequency"]), reverse=True)
+    for index, item in enumerate(ranked[:limit], 1):
+        item["rank"] = index
+    return ranked[:limit]
+
+
+def calibrated_lexical_confidence(text: str, raw_confidence: float, domain: str = "general") -> tuple[float, dict[str, Any] | None]:
+    clean = _clean_word(text)
+    if len(clean) < 4 or _looks_like_identifier(text) or _valid_lexical_word(clean):
+        return raw_confidence, None
+    candidates = _lexical_candidates(text, domain, limit=3)
+    if not candidates:
+        return raw_confidence, None
+    best = candidates[0]
+    similarity = float(best["similarity"])
+    effective = min(raw_confidence, max(0.55, 1.20 - 0.40 * similarity))
+    return effective, {
+        "applied": True,
+        "reason": "invalid or rare word with a close trusted lexical match",
+        "candidate": best["value"],
+        "similarity": similarity,
+        "original_zipf_frequency": round(zipf_frequency(clean, "en"), 3),
+        "candidate_zipf_frequency": best["zipf_frequency"],
+        "candidate_source": best["source"],
+    }
+
+
+def calibrated_paddle_confidence(text: str, raw_confidence: float, domain: str = "general") -> tuple[float, dict[str, Any] | None]:
     """Produce a transparent token score from Paddle's line-level score.
 
     PaddleOCR returns one recognition score for a complete line even when word
@@ -43,25 +161,7 @@ def calibrated_paddle_confidence(text: str, raw_confidence: float) -> tuple[floa
     is therefore used as token-level anomaly evidence. The raw score is always
     retained separately and the adjustment is exposed in the API.
     """
-    clean = re.sub(r"[^A-Za-z'-]", "", text).lower()
-    if len(clean) < 5 or clean in ALL_DOMAIN_TERMS:
-        return raw_confidence, None
-    if clean.endswith("s") and clean[:-1] in ALL_DOMAIN_TERMS:
-        return raw_confidence, None
-    match = process.extractOne(clean, ALL_DOMAIN_TERMS, scorer=fuzz.ratio)
-    if not match or float(match[1]) < 82 or levenshtein(clean, match[0]) > 2:
-        return raw_confidence, None
-    candidate, score, _ = match
-    if clean.endswith("ive") and candidate.endswith("ion") and clean[:-3] == candidate[:-3]:
-        return raw_confidence, None
-    similarity = float(score) / 100.0
-    effective = min(raw_confidence, max(0.55, 1.20 - 0.40 * similarity))
-    return effective, {
-        "applied": True,
-        "reason": "near-match lexical anomaly against trusted domain terminology",
-        "candidate": candidate,
-        "similarity": similarity,
-    }
+    return calibrated_lexical_confidence(text, raw_confidence, domain)
 
 
 def dependency_available(module: str) -> bool:
@@ -202,7 +302,7 @@ def _tesseract_available() -> bool:
     return shutil.which("tesseract") is not None
 
 
-def extract_ocr(path: Path, page_images: list[Path], document_meta: dict[str, Any], engine: str, settings: Settings | None = None) -> tuple[list[dict[str, Any]], str, list[str]]:
+def extract_ocr(path: Path, page_images: list[Path], document_meta: dict[str, Any], engine: str, settings: Settings | None = None, domain: str = "general") -> tuple[list[dict[str, Any]], str, list[str]]:
     warnings: list[str] = []
     tokens: list[dict[str, Any]] = []
     # Embedded PDF words are actual source text; confidence is explicitly source certainty, not OCR confidence.
@@ -212,7 +312,14 @@ def extract_ocr(path: Path, page_images: list[Path], document_meta: dict[str, An
             for idx, word in enumerate(page.get_text("words")):
                 x0, y0, x1, y1, text, *_ = word
                 # Pages are rendered at 2x for display/preprocessing, so boxes use rendered-image coordinates.
-                tokens.append({"id": f"p{page_index+1}-t{idx+1}", "page": page_index + 1, "text": text, "confidence": 1.0, "confidence_source": "embedded-pdf", "bbox": [x0 * 2, y0 * 2, x1 * 2, y1 * 2]})
+                confidence, calibration = calibrated_lexical_confidence(text, 1.0, domain)
+                tokens.append({
+                    "id": f"p{page_index+1}-t{idx+1}", "page": page_index + 1,
+                    "text": text, "confidence": confidence, "ocr_confidence": 1.0,
+                    "confidence_source": "embedded PDF text" if calibration is None else "embedded PDF text + lexical validation",
+                    "confidence_calibration": calibration,
+                    "bbox": [x0 * 2, y0 * 2, x1 * 2, y1 * 2],
+                })
         doc.close()
         return tokens, "PyMuPDF embedded text extraction", warnings
     if engine in ("auto", "paddle") and dependency_available("paddleocr"):
@@ -239,7 +346,7 @@ def extract_ocr(path: Path, page_images: list[Path], document_meta: dict[str, An
                         bbox = [round(float(value), 2) for value in line["box"]]
                     else:
                         bbox = [0, 0, 0, 0]
-                    confidence, calibration = calibrated_paddle_confidence(text, raw_confidence)
+                    confidence, calibration = calibrated_paddle_confidence(text, raw_confidence, domain)
                     tokens.append({
                         "id": f"p{page_index+1}-t{counter}", "page": page_index + 1,
                         "text": text, "confidence": confidence,
@@ -277,19 +384,25 @@ def analyze_confidence(tokens: list[dict[str, Any]], threshold: float) -> dict[s
 
 
 def generate_candidates(tokens: list[dict[str, Any]], threshold: float, domain: str, limit: int) -> list[dict[str, Any]]:
-    high_words = {re.sub(r"[^A-Za-z'-]", "", t["text"]).lower() for t in tokens if t["confidence"] >= threshold and len(t["text"]) > 2}
-    vocabulary = sorted(high_words | set(DOMAIN_VOCABULARY.get(domain, DOMAIN_VOCABULARY["general"])) | set(DOMAIN_VOCABULARY["general"]))
+    high_words = {
+        _clean_word(t["text"])
+        for t in tokens
+        if t["confidence"] >= threshold and len(t["text"]) > 2 and _valid_lexical_word(t["text"])
+    }
     results = []
     for index, token in enumerate(tokens):
-        token["decision"] = "CORRECT" if token["confidence"] < threshold else "KEEP"
+        lexical_matches = _lexical_candidates(token["text"], domain, high_words, limit)
+        correction_eligible = token["confidence"] < threshold and bool(lexical_matches) and not _valid_lexical_word(token["text"])
+        token["decision"] = "CORRECT" if correction_eligible else "KEEP"
         token["context"] = " ".join(t["text"] for t in tokens[max(0, index-5):index+6])
         if token["decision"] == "KEEP":
             continue
-        clean = re.sub(r"[^A-Za-z'-]", "", token["text"]).lower()
-        matches = process.extract(clean, vocabulary, scorer=fuzz.ratio, limit=limit) if clean else []
-        candidates = [{"value": word, "source": "document vocabulary" if word in high_words else f"built-in {domain} vocabulary", "similarity": score / 100.0} for word, score, _ in matches if word != clean]
+        candidates = lexical_matches
         candidates.append({"value": "KEEP_ORIGINAL", "source": "safety policy", "similarity": 1.0})
-        results.append({"token_id": token["id"], "original": token["text"], "candidates": candidates})
+        results.append({
+            "token_id": token["id"], "original": token["text"],
+            "lexical_status": "invalid_or_rare_near_match", "candidates": candidates,
+        })
     return results
 
 
@@ -324,9 +437,14 @@ def semantic_retrieve(tokens: list[dict[str, Any]], candidates: list[dict[str, A
     gguf_path = Path(settings.embedding_gguf_model_path or "")
     llama_executable = Path(settings.llama_server_executable or "")
 
-    # Prefer quantized BGE-M3 through llama.cpp. It uses substantially less
-    # memory than the PyTorch checkpoint and is released before Qwen starts.
-    if gguf_path.is_file() and llama_executable.is_file() and dependency_available("faiss"):
+    # Keep a healthy Qwen server resident. Reloading two multi-gigabyte GGUF
+    # models for every document is slower and can cause Docker Desktop I/O
+    # contention. BGE-M3 is used when Qwen is not resident; subsequent runs use
+    # the deterministic local TF-IDF path while preserving the hot SLM.
+    if llama_server.is_running(settings):
+        searches = tfidf_results()
+        method = "TF-IDF cosine retrieval (resident Qwen server preserved)"
+    elif gguf_path.is_file() and llama_executable.is_file() and dependency_available("faiss"):
         try:
             import faiss
 
@@ -679,9 +797,19 @@ def build_prompts(tokens: list[dict[str, Any]], candidates: list[dict[str, Any]]
             })
         payload = {
             "original": token["text"], "context": token["context"],
-            "candidates": values, "semantic_evidence": evidence,
+            "candidates": values,
+            "candidate_details": [
+                {
+                    "value": candidate["value"],
+                    "rank": candidate.get("rank"),
+                    "edit_similarity": candidate.get("similarity"),
+                    "source": candidate.get("source"),
+                }
+                for candidate in item["candidates"]
+            ],
+            "semantic_evidence": evidence,
             "graph_evidence": compact_graph,
-            "task": "Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.",
+            "task": "Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.",
             "required_output": {"selection": "exact candidate string", "reason": "short evidence-based reason", "confidence": "number from 0 to 1"},
         }
         prompts.append({"token_id": token["id"], "payload": payload, "rendered": json.dumps(payload, ensure_ascii=False, indent=2)})
@@ -709,28 +837,67 @@ def run_slm(prompts: list[dict[str, Any]], settings: Settings) -> tuple[list[dic
     return decisions, f"Qwen2.5-3B-Instruct Q4_K_M via local llama.cpp: {model_path.name}", warnings
 
 
+def _preserve_case(original: str, replacement: str) -> str:
+    if original.isupper():
+        return replacement.upper()
+    if original.istitle():
+        return replacement.title()
+    return replacement
+
+
 def validate_decisions(tokens: list[dict[str, Any]], candidates: list[dict[str, Any]], decisions: list[dict[str, Any]]) -> list[dict[str, Any]]:
     token_map = {t["id"]: t for t in tokens}
     candidate_map = {c["token_id"]: c for c in candidates}
     results = []
     for decision in decisions:
         token = token_map[decision["token_id"]]
-        allowed = {c["value"] for c in candidate_map[decision["token_id"]]["candidates"]}
+        candidate_items = candidate_map[decision["token_id"]]["candidates"]
+        allowed = {c["value"].casefold(): c for c in candidate_items}
         selection = str(decision.get("selection", "KEEP_ORIGINAL"))
         reasons = []
         status = "ACCEPTED"
-        if selection not in allowed:
+        selected_item = allowed.get(selection.casefold())
+        if selected_item is None:
             status, selection = "REJECTED", "KEEP_ORIGINAL"
             reasons.append("Selection is outside the candidate set.")
+        else:
+            selection = selected_item["value"]
         if any(ch.isdigit() for ch in token["text"]) and selection not in (token["text"], "KEEP_ORIGINAL"):
-            status, selection = "REJECTED", "KEEP_ORIGINAL"
-            reasons.append("Numeric/identifier preservation rule triggered.")
-        if decision.get("status") == "UNAVAILABLE":
+            digit_normalized = _ocr_canonical(_clean_word(token["text"]))
+            if digit_normalized != _ocr_canonical(selection):
+                status, selection = "REJECTED", "KEEP_ORIGINAL"
+                reasons.append("Numeric/identifier preservation rule triggered.")
+        if selection != "KEEP_ORIGINAL" and status != "REJECTED":
+            similarity = float((selected_item or {}).get("similarity", 0))
+            minimum = 0.85 if len(_clean_word(token["text"])) <= 5 else 0.82
+            model_confidence = decision.get("confidence")
+            if _valid_lexical_word(token["text"]):
+                status, selection = "REJECTED", "KEEP_ORIGINAL"
+                reasons.append("Original token is already a valid lexical word; semantic substitution blocked.")
+            elif (selected_item or {}).get("rank") != 1:
+                status, selection = "REJECTED", "KEEP_ORIGINAL"
+                reasons.append("Selection is not the highest-ranked near-word candidate.")
+            elif similarity < minimum:
+                status, selection = "REJECTED", "KEEP_ORIGINAL"
+                reasons.append(f"Edit similarity {similarity:.3f} is below the lexical safety threshold {minimum:.3f}.")
+            elif not _valid_lexical_word(selection):
+                status, selection = "REJECTED", "KEEP_ORIGINAL"
+                reasons.append("Selected candidate is not a trusted lexical word.")
+            elif model_confidence is not None and float(model_confidence) < 0.65:
+                status, selection = "REJECTED", "KEEP_ORIGINAL"
+                reasons.append("Model confidence is below the 0.65 validation floor.")
+        if decision.get("status") in {"UNAVAILABLE", "ERROR"}:
             status = "KEEP_ORIGINAL"
-            reasons.append("Local SLM was unavailable.")
+            selection = "KEEP_ORIGINAL"
+            reasons.append("Local SLM did not return a valid decision.")
         elif selection == "KEEP_ORIGINAL" and status != "REJECTED":
             status = "KEEP_ORIGINAL"
-        results.append({"token_id": token["id"], "original": token["text"], "selection": selection, "final": token["text"] if selection == "KEEP_ORIGINAL" else selection, "status": status, "checks": reasons or ["Candidate membership passed.", "Preservation rules passed."]})
+        final = token["text"] if selection == "KEEP_ORIGINAL" else _preserve_case(token["text"], selection)
+        results.append({
+            "token_id": token["id"], "original": token["text"], "selection": selection,
+            "final": final, "status": status,
+            "checks": reasons or ["Candidate membership passed.", "Rank-1 lexical proximity passed.", "Preservation rules passed."],
+        })
     return results
 
 

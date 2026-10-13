@@ -1,0 +1,516 @@
+[
+  {
+    "token_id": "p1-t17",
+    "original": "PATLENT",
+    "selection": "patient",
+    "final": "PATIENT",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8571427999999999,
+    "changed": true,
+    "why_selected": "effective confidence 0.857 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match patient (0.857)",
+    "candidates": [
+      {
+        "value": "patient",
+        "source": "built-in medical vocabulary",
+        "similarity": 0.857143,
+        "ranking_score": 0.937143,
+        "zipf_frequency": 4.77,
+        "rank": 1
+      },
+      {
+        "value": "patent",
+        "source": "English frequency lexicon",
+        "similarity": 0.923077,
+        "ranking_score": 0.923077,
+        "zipf_frequency": 4.18,
+        "rank": 2
+      },
+      {
+        "value": "patents",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 3.77,
+        "rank": 3
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF002 Outpatient Review Summary Community Health Clinic Reference: MED-2026-114 Date: 11 September 2026 Rohan Sample RECORD TYPE Synthetic clinical note VISIT Follow-up consultation Assessment Finding Action Temperature 36.8 C Observe Symptoms Improving Continue plan Review 14 days Scheduled NOTES Clinical findings are consistent with routine Return earlier if symptoms change. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0,
+        "similarity": 0.46088240084927057,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+          "label": "Patient",
+          "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "IMG001_clinical_follow_up_note.png",
+              "label": "IMG001_clinical_follow_up_note.png",
+              "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+              "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+          "label": "Patient",
+          "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t66"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 0.9724271893501282,
+              "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:prescription",
+              "label": "Prescription",
+              "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+          "label": "Patient",
+          "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "IMG001_clinical_follow_up_note.png",
+              "label": "IMG001_clinical_follow_up_note.png",
+              "id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+              "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+          "label": "Patient",
+          "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t66"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 0.9724271893501282,
+              "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:prescription",
+              "label": "Prescription",
+              "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 1.0,
+          "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+          "label": "Patient",
+          "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "PDF001_clinical_follow_up_note.pdf",
+              "label": "PDF001_clinical_follow_up_note.pdf",
+              "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+              "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 1.0,
+          "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+          "label": "Patient",
+          "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t58"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 1.0,
+              "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:prescription",
+              "label": "Prescription",
+              "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t58\", \"page\": 1, \"bbox\": [209.87997436523438, 1059.425048828125, 318.407958984375, 1088.279052734375], \"confidence\": 1.0, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+          "label": "Patient",
+          "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "IMG001_clinical_follow_up_note.png",
+              "label": "IMG001_clinical_follow_up_note.png",
+              "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+              "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+          "label": "Patient",
+          "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t66"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 0.9724271893501282,
+              "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:prescription",
+              "label": "Prescription",
+              "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 1.0,
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+          "label": "Patient",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "PDF001_clinical_follow_up_note.pdf",
+              "label": "PDF001_clinical_follow_up_note.pdf",
+              "id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+              "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 1.0,
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+          "label": "Patient",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t58"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 1.0,
+              "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:prescription",
+              "label": "Prescription",
+              "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t58\", \"page\": 1, \"bbox\": [209.87997436523438, 1059.425048828125, 318.407958984375, 1088.279052734375], \"confidence\": 1.0, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      }
+    ],
+    "prompt": "{\n  \"original\": \"PATLENT\",\n  \"context\": \"MED-2026-114 Date: 11 September 2026 PATLENT Rohan Sample RECORD TYPE Synthetic\",\n  \"candidates\": [\n    \"patient\",\n    \"patent\",\n    \"patents\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"patient\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"built-in medical vocabulary\"\n    },\n    {\n      \"value\": \"patent\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.923077,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"patents\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF002 Outpatient Review Summary Community Health Clinic Reference: MED-2026-114 Date: 11 September 2026 Rohan Sample RECORD TYPE Synthetic clinical note VISIT Follow-up consultation Assessment Finding Action Temperature 36.8 C Observe Symptoms Improving Continue plan Review 14 days Scheduled NOTES Clinical findings are consistent with routine Return earlier if symptoms change. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [\n    {\n      \"candidate\": \"Patient\",\n      \"entity\": {\n        \"label\": \"Patient\",\n        \"type\": \"Patient\"\n      },\n      \"connections\": [\n        {\n          \"type\": \"MENTIONS\",\n          \"provenance\": \"trusted entity mention anchors this semantic subgraph to the source document\"\n        }\n      ],\n      \"source\": \"Neo4j graph retrieval\"\n    },\n    {\n      \"candidate\": \"Patient\",\n      \"entity\": {\n        \"label\": \"Patient\",\n        \"type\": \"Patient\"\n      },\n      \"connections\": [\n        {\n          \"type\": \"HAS_PRESCRIPTION\",\n          \"provenance\": \"domain relation supported by high-confidence OCR mentions\"\n        }\n      ],\n      \"source\": \"Neo4j graph retrieval\"\n    }\n  ],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t17",
+      "status": "COMPLETED",
+      "selection": "patient",
+      "reason": "The context mentions 'patient' in the clinical note 'Rohan Sample' and the rank-1 near-word candidate 'patient' has the highest edit similarity (0.857143) and is supported by a built-in medical vocabulary.",
+      "confidence": 0.857,
+      "latency_ms": 15325.66,
+      "prompt_tokens": 665,
+      "completion_tokens": 77,
+      "raw_output": "{\n  \"selection\": \"patient\",\n  \"reason\": \"The context mentions 'patient' in the clinical note 'Rohan Sample' and the rank-1 near-word candidate 'patient' has the highest edit similarity (0.857143) and is supported by a built-in medical vocabulary.\",\n  \"confidence\": 0.857\n}"
+    }
+  },
+  {
+    "token_id": "p1-t50",
+    "original": "recovry.",
+    "selection": "recovery",
+    "final": "recovery",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8266667999999999,
+    "changed": true,
+    "why_selected": "effective confidence 0.827 < threshold 0.900; source confidence 1.000, invalid/rare lexical form; near-word match recovery (0.933)",
+    "candidates": [
+      {
+        "value": "recovery",
+        "source": "built-in medical vocabulary",
+        "similarity": 0.933333,
+        "ranking_score": 1.013333,
+        "zipf_frequency": 4.58,
+        "rank": 1
+      },
+      {
+        "value": "recover",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 4.29,
+        "rank": 2
+      },
+      {
+        "value": "rectory",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 2.88,
+        "rank": 3
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF002 Outpatient Review Summary Community Health Clinic Reference: MED-2026-114 Date: 11 September 2026 Rohan Sample RECORD TYPE Synthetic clinical note VISIT Follow-up consultation Assessment Finding Action Temperature 36.8 C Observe Symptoms Improving Continue plan Review 14 days Scheduled NOTES Clinical findings are consistent with routine Return earlier if symptoms change. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0,
+        "similarity": 0.37449785079308595,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [],
+    "prompt": "{\n  \"original\": \"recovry.\",\n  \"context\": \"findings are consistent with routine recovry. Return earlier if symptoms change.\",\n  \"candidates\": [\n    \"recovery\",\n    \"recover\",\n    \"rectory\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"recovery\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.933333,\n      \"source\": \"built-in medical vocabulary\"\n    },\n    {\n      \"value\": \"recover\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"rectory\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION PDF002 Outpatient Review Summary Community Health Clinic Reference: MED-2026-114 Date: 11 September 2026 Rohan Sample RECORD TYPE Synthetic clinical note VISIT Follow-up consultation Assessment Finding Action Temperature 36.8 C Observe Symptoms Improving Continue plan Review 14 days Scheduled NOTES Clinical findings are consistent with routine Return earlier if symptoms change. Synthetic evaluation data - not a real record Page 1 of 1\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t50",
+      "status": "COMPLETED",
+      "selection": "recovery",
+      "reason": "The context mentions 'routine recovery' and the rank-1 near-word candidate 'recovery' has the highest edit similarity and is from a built-in medical vocabulary.",
+      "confidence": 0.933333,
+      "latency_ms": 11649.83,
+      "prompt_tokens": 487,
+      "completion_tokens": 63,
+      "raw_output": "{\n  \"selection\": \"recovery\",\n  \"reason\": \"The context mentions 'routine recovery' and the rank-1 near-word candidate 'recovery' has the highest edit similarity and is from a built-in medical vocabulary.\",\n  \"confidence\": 0.933333\n}"
+    }
+  }
+]

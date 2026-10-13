@@ -1,0 +1,51 @@
+{
+  "status": "ACTUALLY_RUN",
+  "document_id": "PDF003",
+  "api_document_id": "76a5240c-1457-4bf3-a94d-66e7af2497f9",
+  "run_id": "201925da-0878-45e3-bf04-f7377ba3367f",
+  "input_filename": "PDF003_medication_review_record.pdf",
+  "input_sha256": "1ee0b03e5458aea9976bebc9667c8648c0f94ab6e36fcbff1812b4f28dbad95c",
+  "ground_truth_sha256": "85d4f33e4839aed1d69eaeedc43f99c707a42777c30aaeb2278aaf777c257e4c",
+  "api_url": "http://127.0.0.1:8000",
+  "domain": "medical",
+  "confidence_threshold": 0.9,
+  "started_at": "2026-10-13T09:46:05.659503+00:00",
+  "completed_at": "2026-10-13T09:46:46.578669+00:00",
+  "wall_runtime_seconds": 40.907,
+  "pipeline_status": "COMPLETED",
+  "pipeline_stats": {
+    "ocr_tokens": 78,
+    "low_confidence_tokens": 2,
+    "corrections_applied": 2,
+    "corrections_rejected": 0,
+    "slm_calls": 2
+  },
+  "stage_timings_ms": {
+    "document_input": 142.85,
+    "preprocessing": 395.01,
+    "layout": 6153.21,
+    "reading_order": 0.27,
+    "ocr": 73.65,
+    "confidence": 0.44,
+    "low_confidence": 0.34,
+    "candidates": 355.27,
+    "semantic": 17.5,
+    "graph": 130.84,
+    "graphrag": 36.02,
+    "prompt": 0.78,
+    "slm": 28253.41,
+    "validation": 0.39,
+    "output": 17.48
+  },
+  "stage_warnings": [],
+  "artifacts": [
+    "corrected.pdf",
+    "corrected.txt",
+    "corrections.json",
+    "evidence.json",
+    "graph.json",
+    "ocr_raw.txt",
+    "pipeline.json",
+    "result.json"
+  ]
+}

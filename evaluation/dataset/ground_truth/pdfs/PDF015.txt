@@ -1,0 +1,17 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Project Expense Summary
+ContextOCR Prototype Programme
+Reference: EXP-2026-044
+Date: 10 September 2026
+Entity: ContextOCR Prototype Programme
+Period: August 2026
+Currency: INR
+Category | Plan | Expenses
+Model testing | 95,000 | 88,400
+Documentation | 42,000 | 39,750
+Infrastructure | 130,000 | 125,900
+Net variance | 0 | 12,950
+NOTES
+Expenses remained within the approved prototype budget.
+Variance will be reviewed in the next planning cycle.
+Synthetic evaluation data - not a real record

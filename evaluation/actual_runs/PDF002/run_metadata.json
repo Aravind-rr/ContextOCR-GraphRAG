@@ -1,0 +1,51 @@
+{
+  "status": "ACTUALLY_RUN",
+  "document_id": "PDF002",
+  "api_document_id": "330f1c7d-5ebd-4fd7-8c27-d378d2ab6e46",
+  "run_id": "a186d824-9874-4070-82c8-8abd61775234",
+  "input_filename": "PDF002_outpatient_review_summary.pdf",
+  "input_sha256": "e19f383b631e40b9b2b31f7b2082daef815d4d2fe611b22b67496bbf1afe355c",
+  "ground_truth_sha256": "e13b206705ecebc095ad6c6edaccd40ae4a31fc1c5015b00c964ed68e98624c7",
+  "api_url": "http://127.0.0.1:8000",
+  "domain": "medical",
+  "confidence_threshold": 0.9,
+  "started_at": "2026-10-13T09:45:24.205172+00:00",
+  "completed_at": "2026-10-13T09:46:05.633431+00:00",
+  "wall_runtime_seconds": 41.391,
+  "pipeline_status": "COMPLETED",
+  "pipeline_stats": {
+    "ocr_tokens": 67,
+    "low_confidence_tokens": 2,
+    "corrections_applied": 2,
+    "corrections_rejected": 0,
+    "slm_calls": 2
+  },
+  "stage_timings_ms": {
+    "document_input": 136.92,
+    "preprocessing": 430.1,
+    "layout": 7657.75,
+    "reading_order": 0.39,
+    "ocr": 106.72,
+    "confidence": 0.45,
+    "low_confidence": 0.25,
+    "candidates": 425.41,
+    "semantic": 14.56,
+    "graph": 95.12,
+    "graphrag": 29.36,
+    "prompt": 8.97,
+    "slm": 26980.44,
+    "validation": 0.47,
+    "output": 15.43
+  },
+  "stage_warnings": [],
+  "artifacts": [
+    "corrected.pdf",
+    "corrected.txt",
+    "corrections.json",
+    "evidence.json",
+    "graph.json",
+    "ocr_raw.txt",
+    "pipeline.json",
+    "result.json"
+  ]
+}

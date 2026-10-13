@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     llama_server_url: str = "http://127.0.0.1:8091"
     slm_gpu_layers: int = 99
     slm_context_size: int = 2048
-    slm_max_new_tokens: int = 120
+    slm_max_new_tokens: int = 256
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 

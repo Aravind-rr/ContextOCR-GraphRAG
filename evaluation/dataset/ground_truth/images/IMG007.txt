@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Course Completion Certificate
+Centre for Applied Computing
+Reference: CERT-2026-071
+Date: 02 September 2026
+Recipient: Ananya Demo
+Programme: Foundations of Data Systems
+Result: Completed
+Module | Hours | Grade
+Data modelling | 8 | A
+Query design | 6 | A
+Assessment | 2 | Passed
+NOTES
+This certificate recognises successful course completion.
+Verification code is valid only inside this synthetic dataset.
+Synthetic evaluation data - not a real record

@@ -1,0 +1,18 @@
+[
+  {
+    "original": "Patlent",
+    "final": "Patient",
+    "intended": "Patient",
+    "status": "ILLUSTRATIVE_CORRECTED",
+    "error_type": "l/1 character substitution",
+    "classification": "ILLUSTRATIVE_NOT_ACTUAL_PIPELINE_EVIDENCE"
+  },
+  {
+    "original": "dossage",
+    "final": "dosage",
+    "intended": "dosage",
+    "status": "ILLUSTRATIVE_CORRECTED",
+    "error_type": "duplicated character",
+    "classification": "ILLUSTRATIVE_NOT_ACTUAL_PIPELINE_EVIDENCE"
+  }
+]

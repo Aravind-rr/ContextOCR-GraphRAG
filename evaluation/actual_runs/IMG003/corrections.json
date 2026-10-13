@@ -1,0 +1,550 @@
+[
+  {
+    "token_id": "p1-t22",
+    "original": "PATLENT",
+    "selection": "patient",
+    "final": "PATIENT",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8571427999999999,
+    "changed": true,
+    "why_selected": "effective confidence 0.857 < threshold 0.900; source confidence 0.993, invalid/rare lexical form; near-word match patient (0.857)",
+    "candidates": [
+      {
+        "value": "patient",
+        "source": "built-in medical vocabulary",
+        "similarity": 0.857143,
+        "ranking_score": 0.937143,
+        "zipf_frequency": 4.77,
+        "rank": 1
+      },
+      {
+        "value": "patent",
+        "source": "English frequency lexicon",
+        "similarity": 0.923077,
+        "ranking_score": 0.923077,
+        "zipf_frequency": 4.18,
+        "rank": 2
+      },
+      {
+        "value": "patents",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 3.77,
+        "rank": 3
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+        "token_start": 0,
+        "similarity": 0.7160847187042236,
+        "source": "page 1"
+      },
+      {
+        "id": "p1-c2",
+        "page": 1,
+        "text": "record",
+        "token_start": 80,
+        "similarity": 0.49062734842300415,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+          "label": "Patient",
+          "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "IMG001_clinical_follow_up_note.png",
+              "label": "IMG001_clinical_follow_up_note.png",
+              "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+              "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+          "label": "Patient",
+          "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t66"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 0.9724271893501282,
+              "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:prescription",
+              "label": "Prescription",
+              "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+          "label": "Patient",
+          "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "IMG001_clinical_follow_up_note.png",
+              "label": "IMG001_clinical_follow_up_note.png",
+              "id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+              "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+          "label": "Patient",
+          "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t66"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 0.9724271893501282,
+              "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:prescription",
+              "label": "Prescription",
+              "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 1.0,
+          "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+          "label": "Patient",
+          "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "PDF001_clinical_follow_up_note.pdf",
+              "label": "PDF001_clinical_follow_up_note.pdf",
+              "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+              "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 1.0,
+          "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+          "label": "Patient",
+          "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t58"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 1.0,
+              "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:prescription",
+              "label": "Prescription",
+              "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t58\", \"page\": 1, \"bbox\": [209.87997436523438, 1059.425048828125, 318.407958984375, 1088.279052734375], \"confidence\": 1.0, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+          "label": "Patient",
+          "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "MENTIONS",
+            "neighbor": {
+              "domain": "medical",
+              "name": "IMG001_clinical_follow_up_note.png",
+              "label": "IMG001_clinical_follow_up_note.png",
+              "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+              "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+              "type": "Document"
+            },
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      },
+      {
+        "candidate": "Patient",
+        "entity": {
+          "token_ids": [
+            "p1-t20",
+            "p1-t52"
+          ],
+          "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+          "pages": [
+            1
+          ],
+          "confidence": 0.9826856255531311,
+          "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+          "label": "Patient",
+          "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+          "type": "Patient",
+          "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+        },
+        "relationships": [
+          {
+            "type": "HAS_PRESCRIPTION",
+            "neighbor": {
+              "token_ids": [
+                "p1-t66"
+              ],
+              "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+              "pages": [
+                1
+              ],
+              "confidence": 0.9724271893501282,
+              "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:prescription",
+              "label": "Prescription",
+              "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+              "type": "Prescription",
+              "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+            },
+            "provenance": "domain relation supported by high-confidence OCR mentions"
+          }
+        ],
+        "source": "Neo4j graph retrieval"
+      }
+    ],
+    "prompt": "{\n  \"original\": \"PATLENT\",\n  \"context\": \"September 2026 RECORD TYPE VISIT PATLENT Mira Example Synthetic medication record\",\n  \"candidates\": [\n    \"patient\",\n    \"patent\",\n    \"patents\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"patient\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"built-in medical vocabulary\"\n    },\n    {\n      \"value\": \"patent\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.923077,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"patents\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real\",\n    \"record\"\n  ],\n  \"graph_evidence\": [\n    {\n      \"candidate\": \"Patient\",\n      \"entity\": {\n        \"label\": \"Patient\",\n        \"type\": \"Patient\"\n      },\n      \"connections\": [\n        {\n          \"type\": \"MENTIONS\",\n          \"provenance\": \"trusted entity mention anchors this semantic subgraph to the source document\"\n        }\n      ],\n      \"source\": \"Neo4j graph retrieval\"\n    },\n    {\n      \"candidate\": \"Patient\",\n      \"entity\": {\n        \"label\": \"Patient\",\n        \"type\": \"Patient\"\n      },\n      \"connections\": [\n        {\n          \"type\": \"HAS_PRESCRIPTION\",\n          \"provenance\": \"domain relation supported by high-confidence OCR mentions\"\n        }\n      ],\n      \"source\": \"Neo4j graph retrieval\"\n    }\n  ],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t22",
+      "status": "COMPLETED",
+      "selection": "patient",
+      "reason": "The rank-1 near-word candidate 'patient' fits the context of a medical record and is supported by the semantic evidence of a patient being mentioned in the record.",
+      "confidence": 0.857143,
+      "latency_ms": 14527.2,
+      "prompt_tokens": 669,
+      "completion_tokens": 62,
+      "raw_output": "{\n  \"selection\": \"patient\",\n  \"reason\": \"The rank-1 near-word candidate 'patient' fits the context of a medical record and is supported by the semantic evidence of a patient being mentioned in the record.\",\n  \"confidence\": 0.857143\n}"
+    }
+  },
+  {
+    "token_id": "p1-t33",
+    "original": "nstruction",
+    "selection": "instruction",
+    "final": "instruction",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8190476,
+    "changed": true,
+    "why_selected": "effective confidence 0.819 < threshold 0.900; source confidence 0.960, invalid/rare lexical form; near-word match instruction (0.952)",
+    "candidates": [
+      {
+        "value": "instruction",
+        "source": "English frequency lexicon",
+        "similarity": 0.952381,
+        "ranking_score": 0.952381,
+        "zipf_frequency": 4.14,
+        "rank": 1
+      },
+      {
+        "value": "construction",
+        "source": "English frequency lexicon",
+        "similarity": 0.909091,
+        "ranking_score": 0.909091,
+        "zipf_frequency": 4.97,
+        "rank": 2
+      },
+      {
+        "value": "instructions",
+        "source": "English frequency lexicon",
+        "similarity": 0.909091,
+        "ranking_score": 0.909091,
+        "zipf_frequency": 4.37,
+        "rank": 3
+      },
+      {
+        "value": "destruction",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 4.36,
+        "rank": 4
+      },
+      {
+        "value": "obstruction",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 3.55,
+        "rank": 5
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+        "token_start": 0,
+        "similarity": 0.6872599124908447,
+        "source": "page 1"
+      },
+      {
+        "id": "p1-c2",
+        "page": 1,
+        "text": "record",
+        "token_start": 80,
+        "similarity": 0.3484787940979004,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [],
+    "prompt": "{\n  \"original\": \"nstruction\",\n  \"context\": \"Dosage reconciliation Medicine Dosage ( nstruction Sample tablet A 5mg After\",\n  \"candidates\": [\n    \"instruction\",\n    \"construction\",\n    \"instructions\",\n    \"destruction\",\n    \"obstruction\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"instruction\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.952381,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"construction\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.909091,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"instructions\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.909091,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"destruction\",\n      \"rank\": 4,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"obstruction\",\n      \"rank\": 5,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real\",\n    \"record\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t33",
+      "status": "COMPLETED",
+      "selection": "instruction",
+      "reason": "The rank-1 near-word candidate 'instruction' fits the context of 'Dosage instruction' and is supported by the English frequency lexicon.",
+      "confidence": 0.952381,
+      "latency_ms": 13432.36,
+      "prompt_tokens": 596,
+      "completion_tokens": 58,
+      "raw_output": "{\n  \"selection\": \"instruction\",\n  \"reason\": \"The rank-1 near-word candidate 'instruction' fits the context of 'Dosage instruction' and is supported by the English frequency lexicon.\",\n  \"confidence\": 0.952381\n}"
+    }
+  },
+  {
+    "token_id": "p1-t55",
+    "original": "dossage",
+    "selection": "dosage",
+    "final": "dosage",
+    "status": "ACCEPTED",
+    "checks": [
+      "Candidate membership passed.",
+      "Rank-1 lexical proximity passed.",
+      "Preservation rules passed."
+    ],
+    "confidence": 0.8307692,
+    "changed": true,
+    "why_selected": "effective confidence 0.831 < threshold 0.900; source confidence 0.974, invalid/rare lexical form; near-word match dosage (0.923)",
+    "candidates": [
+      {
+        "value": "dosage",
+        "source": "trusted document vocabulary",
+        "similarity": 0.923077,
+        "ranking_score": 1.003077,
+        "zipf_frequency": 3.52,
+        "rank": 1
+      },
+      {
+        "value": "dosages",
+        "source": "English frequency lexicon",
+        "similarity": 0.857143,
+        "ranking_score": 0.857143,
+        "zipf_frequency": 2.8,
+        "rank": 2
+      },
+      {
+        "value": "osage",
+        "source": "English frequency lexicon",
+        "similarity": 0.833333,
+        "ranking_score": 0.833333,
+        "zipf_frequency": 2.93,
+        "rank": 3
+      },
+      {
+        "value": "KEEP_ORIGINAL",
+        "source": "safety policy",
+        "similarity": 1.0
+      }
+    ],
+    "semantic_evidence": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+        "token_start": 0,
+        "similarity": 0.6585006713867188,
+        "source": "page 1"
+      },
+      {
+        "id": "p1-c2",
+        "page": 1,
+        "text": "record",
+        "token_start": 80,
+        "similarity": 0.4302965998649597,
+        "source": "page 1"
+      }
+    ],
+    "graph_evidence": [],
+    "prompt": "{\n  \"original\": \"dossage\",\n  \"context\": \"Bring prescription NOTES • The dossage list was reviewed for clarity\",\n  \"candidates\": [\n    \"dosage\",\n    \"dosages\",\n    \"osage\",\n    \"KEEP_ORIGINAL\"\n  ],\n  \"candidate_details\": [\n    {\n      \"value\": \"dosage\",\n      \"rank\": 1,\n      \"edit_similarity\": 0.923077,\n      \"source\": \"trusted document vocabulary\"\n    },\n    {\n      \"value\": \"dosages\",\n      \"rank\": 2,\n      \"edit_similarity\": 0.857143,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"osage\",\n      \"rank\": 3,\n      \"edit_similarity\": 0.833333,\n      \"source\": \"English frequency lexicon\"\n    },\n    {\n      \"value\": \"KEEP_ORIGINAL\",\n      \"rank\": null,\n      \"edit_similarity\": 1.0,\n      \"source\": \"safety policy\"\n    }\n  ],\n  \"semantic_evidence\": [\n    \"SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real\",\n    \"record\"\n  ],\n  \"graph_evidence\": [],\n  \"task\": \"Correct only an OCR glyph or spelling error. Prefer the rank-1 near-word candidate when it fits the context. Never replace a valid word with a merely related word. Select exactly one supplied candidate or KEEP_ORIGINAL. Preserve entities, numbers and meaning.\",\n  \"required_output\": {\n    \"selection\": \"exact candidate string\",\n    \"reason\": \"short evidence-based reason\",\n    \"confidence\": \"number from 0 to 1\"\n  }\n}",
+    "slm_decision": {
+      "token_id": "p1-t55",
+      "status": "COMPLETED",
+      "selection": "dosage",
+      "reason": "The rank-1 near-word candidate 'dosage' fits the context and is the most semantically and syntactically correct option.",
+      "confidence": 0.923,
+      "latency_ms": 11187.78,
+      "prompt_tokens": 501,
+      "completion_tokens": 54,
+      "raw_output": "{\n  \"selection\": \"dosage\",\n  \"reason\": \"The rank-1 near-word candidate 'dosage' fits the context and is the most semantically and syntactically correct option.\",\n  \"confidence\": 0.923\n}"
+    }
+  }
+]

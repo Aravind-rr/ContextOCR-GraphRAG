@@ -1,0 +1,11 @@
+{
+  "status": "ILLUSTRATIVE_NOT_ACTUAL",
+  "generated_at": "2026-10-13T09:54:53.978731+00:00",
+  "document_id": "IMG004",
+  "input_filename": "IMG004_tax_invoice.png",
+  "injected_errors": 0,
+  "illustratively_corrected_errors": 0,
+  "illustratively_unresolved_errors": 0,
+  "pdf_path": "output/pdf/illustrative_evaluation/IMG004_illustrative_corrected.pdf",
+  "text_path": "evaluation/illustrative_runs/IMG004/illustrative_corrected.txt"
+}

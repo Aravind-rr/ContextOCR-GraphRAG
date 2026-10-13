@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Workshop Participation Certificate
+Digital Systems Workshop
+Reference: CERT-2026-084
+Date: 07 September 2026
+Recipient: Vikram Sample
+Programme: Responsible AI Workshop
+Result: Participated
+Session | Hours | Status
+AI foundations | 3 | Attended
+Ethics laboratory | 2 | Attended
+Participation | 5 | Verified
+NOTES
+Participation requirements were completed in full.
+The named recipient is fictional.
+Synthetic evaluation data - not a real record

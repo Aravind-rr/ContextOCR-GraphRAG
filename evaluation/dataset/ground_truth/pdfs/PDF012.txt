@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Student Activity Application
+Student Development Office
+Reference: APP-2026-329
+Date: 13 September 2026
+Applicant: Dev Example
+Applicant ID: SYN-26058
+Request: Technical club registration
+Activity | Preference | Availability
+Coding club | Primary | Friday
+Robotics group | Secondary | Saturday
+Student declaration | Accepted | Confirmed
+NOTES
+Student activity preferences may be updated after registration.
+The applicant and identifier are synthetic.
+Synthetic evaluation data - not a real record

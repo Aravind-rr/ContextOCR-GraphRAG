@@ -1,0 +1,3349 @@
+{
+  "id": "0dd5d3b6-8785-4d80-a8e5-f6fd513879ca",
+  "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+  "status": "COMPLETED",
+  "created_at": "2026-10-13T09:39:36.927790+00:00",
+  "updated_at": "2026-10-13T09:39:57.999017+00:00",
+  "config": {
+    "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+    "confidence_threshold": 0.9,
+    "domain": "medical",
+    "start_stage": 1
+  },
+  "result": {
+    "document": {
+      "id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+      "name": "PDF001_clinical_follow_up_note.pdf",
+      "safe_name": "aaa99405-3851-4734-b45e-a0dc551f85a2.pdf",
+      "path": "/data/input/aaa99405-3851-4734-b45e-a0dc551f85a2.pdf",
+      "media_type": "application/pdf",
+      "size": 3255,
+      "pages": 1,
+      "created_at": "2026-10-13T09:39:36.187224+00:00",
+      "is_demo": false
+    },
+    "page_images": [
+      "/data/processed/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/original/page-1.png"
+    ],
+    "document_meta": {
+      "digital_pdf": true,
+      "embedded_text": [
+        "SYNTHETIC OCR EVALUATION\nPDF001\nClinical Follow-up Note\nGeneral Medicine Unit\nReference: MED-2026-101\nDate: 08 September 2026\nPATIENT\nAsha Testwell\nRECORD TYPE\nSynthetic outpatient record\nVISIT\nRoutine review\nObservation\nReading\nStatus\nBlood pressure\n118/76 mmHg\nNormal\nPulse\n72 bpm\nStable\nOxygen saturation\n98 percent\nNormal\nNOTES\nPatient is stable and may continue the current care plan.\nA printed prescription was received for the next review.\nSynthetic evaluation data - not a real record\nPage 1 of 1"
+      ]
+    },
+    "preprocessing": [
+      {
+        "source": "/data/processed/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/original/page-1.png",
+        "output": "/data/processed/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/preprocessed/page-1.png",
+        "operations": [
+          "grayscale",
+          "adaptive threshold"
+        ],
+        "width": 1191,
+        "height": 1684
+      }
+    ],
+    "layout": [
+      {
+        "page": 1,
+        "regions": [
+          {
+            "id": "r9",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              77.28,
+              58.71,
+              482.07,
+              95.83
+            ],
+            "confidence": 0.8433,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r5",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1002.54,
+              58.97,
+              1112.21,
+              94.88
+            ],
+            "confidence": 0.9019,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r3",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.15,
+              174.46,
+              596.65,
+              226.67
+            ],
+            "confidence": 0.9187,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r7",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              82.59,
+              242.98,
+              325.35,
+              272.34
+            ],
+            "confidence": 0.8962,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r8",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              110.24,
+              352.41,
+              375.4,
+              379.71
+            ],
+            "confidence": 0.8498,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r12",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              823.49,
+              353.42,
+              1081.67,
+              380.21
+            ],
+            "confidence": 0.582,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r16",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              823.49,
+              353.42,
+              1081.67,
+              380.21
+            ],
+            "confidence": 0.3185,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r13",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              80.45,
+              485.47,
+              1110.76,
+              621.81
+            ],
+            "confidence": 0.5376,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r17",
+            "class": "image",
+            "raw_class": "figure",
+            "bbox": [
+              80.45,
+              485.47,
+              1110.76,
+              621.81
+            ],
+            "confidence": 0.219,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r14",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              790.75,
+              509.48,
+              926.14,
+              572.69
+            ],
+            "confidence": 0.3495,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r1",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              82.51,
+              678.43,
+              1108.17,
+              929.86
+            ],
+            "confidence": 0.9716,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r4",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.18,
+              979.97,
+              163.6,
+              1007.17
+            ],
+            "confidence": 0.9117,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r15",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              87.12,
+              1021.16,
+              644.38,
+              1089.75
+            ],
+            "confidence": 0.3302,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r11",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              89.95,
+              1021.62,
+              646.99,
+              1048.99
+            ],
+            "confidence": 0.6748,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r10",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              88.68,
+              1061.91,
+              636.05,
+              1088.92
+            ],
+            "confidence": 0.7322,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r6",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1017.87,
+              1572.16,
+              1106.51,
+              1593.43
+            ],
+            "confidence": 0.8995,
+            "source": "DocLayout-YOLO"
+          },
+          {
+            "id": "r2",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              82.2,
+              1572.47,
+              415.71,
+              1593.03
+            ],
+            "confidence": 0.9337,
+            "source": "DocLayout-YOLO"
+          }
+        ],
+        "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+      }
+    ],
+    "reading_order": [
+      {
+        "page": 1,
+        "regions": [
+          {
+            "id": "r9",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              77.28,
+              58.71,
+              482.07,
+              95.83
+            ],
+            "confidence": 0.8433,
+            "source": "DocLayout-YOLO",
+            "order": 1
+          },
+          {
+            "id": "r3",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.15,
+              174.46,
+              596.65,
+              226.67
+            ],
+            "confidence": 0.9187,
+            "source": "DocLayout-YOLO",
+            "order": 2
+          },
+          {
+            "id": "r7",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              82.59,
+              242.98,
+              325.35,
+              272.34
+            ],
+            "confidence": 0.8962,
+            "source": "DocLayout-YOLO",
+            "order": 3
+          },
+          {
+            "id": "r8",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              110.24,
+              352.41,
+              375.4,
+              379.71
+            ],
+            "confidence": 0.8498,
+            "source": "DocLayout-YOLO",
+            "order": 4
+          },
+          {
+            "id": "r4",
+            "class": "heading",
+            "raw_class": "title",
+            "bbox": [
+              82.18,
+              979.97,
+              163.6,
+              1007.17
+            ],
+            "confidence": 0.9117,
+            "source": "DocLayout-YOLO",
+            "order": 5
+          },
+          {
+            "id": "r15",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              87.12,
+              1021.16,
+              644.38,
+              1089.75
+            ],
+            "confidence": 0.3302,
+            "source": "DocLayout-YOLO",
+            "order": 6
+          },
+          {
+            "id": "r11",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              89.95,
+              1021.62,
+              646.99,
+              1048.99
+            ],
+            "confidence": 0.6748,
+            "source": "DocLayout-YOLO",
+            "order": 7
+          },
+          {
+            "id": "r10",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              88.68,
+              1061.91,
+              636.05,
+              1088.92
+            ],
+            "confidence": 0.7322,
+            "source": "DocLayout-YOLO",
+            "order": 8
+          },
+          {
+            "id": "r2",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              82.2,
+              1572.47,
+              415.71,
+              1593.03
+            ],
+            "confidence": 0.9337,
+            "source": "DocLayout-YOLO",
+            "order": 9
+          },
+          {
+            "id": "r5",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1002.54,
+              58.97,
+              1112.21,
+              94.88
+            ],
+            "confidence": 0.9019,
+            "source": "DocLayout-YOLO",
+            "order": 10
+          },
+          {
+            "id": "r12",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              823.49,
+              353.42,
+              1081.67,
+              380.21
+            ],
+            "confidence": 0.582,
+            "source": "DocLayout-YOLO",
+            "order": 11
+          },
+          {
+            "id": "r16",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              823.49,
+              353.42,
+              1081.67,
+              380.21
+            ],
+            "confidence": 0.3185,
+            "source": "DocLayout-YOLO",
+            "order": 12
+          },
+          {
+            "id": "r13",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              80.45,
+              485.47,
+              1110.76,
+              621.81
+            ],
+            "confidence": 0.5376,
+            "source": "DocLayout-YOLO",
+            "order": 13
+          },
+          {
+            "id": "r17",
+            "class": "image",
+            "raw_class": "figure",
+            "bbox": [
+              80.45,
+              485.47,
+              1110.76,
+              621.81
+            ],
+            "confidence": 0.219,
+            "source": "DocLayout-YOLO",
+            "order": 14
+          },
+          {
+            "id": "r14",
+            "class": "text_block",
+            "raw_class": "plain text",
+            "bbox": [
+              790.75,
+              509.48,
+              926.14,
+              572.69
+            ],
+            "confidence": 0.3495,
+            "source": "DocLayout-YOLO",
+            "order": 15
+          },
+          {
+            "id": "r1",
+            "class": "table",
+            "raw_class": "table",
+            "bbox": [
+              82.51,
+              678.43,
+              1108.17,
+              929.86
+            ],
+            "confidence": 0.9716,
+            "source": "DocLayout-YOLO",
+            "order": 16
+          },
+          {
+            "id": "r6",
+            "class": "other",
+            "raw_class": "abandon",
+            "bbox": [
+              1017.87,
+              1572.16,
+              1106.51,
+              1593.43
+            ],
+            "confidence": 0.8995,
+            "source": "DocLayout-YOLO",
+            "order": 17
+          }
+        ]
+      }
+    ],
+    "tokens": [
+      {
+        "id": "p1-t1",
+        "page": 1,
+        "text": "SYNTHETIC",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          58.18000030517578,
+          231.34201049804688,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up"
+      },
+      {
+        "id": "p1-t2",
+        "page": 1,
+        "text": "OCR",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          238.57000732421875,
+          58.18000030517578,
+          296.3420104980469,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note"
+      },
+      {
+        "id": "p1-t3",
+        "page": 1,
+        "text": "EVALUATION",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          303.57000732421875,
+          58.18000030517578,
+          472.57000732421875,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General"
+      },
+      {
+        "id": "p1-t4",
+        "page": 1,
+        "text": "PDF001",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1011.1832275390625,
+          58.18000030517578,
+          1106.5513916015625,
+          93.98200225830078
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine"
+      },
+      {
+        "id": "p1-t5",
+        "page": 1,
+        "text": "Clinical",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          166.77999877929688,
+          247.6219940185547,
+          230.1219940185547
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit"
+      },
+      {
+        "id": "p1-t6",
+        "page": 1,
+        "text": "Follow-up",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          260.4100036621094,
+          166.77999877929688,
+          477.6219177246094,
+          230.1219940185547
+        ],
+        "decision": "KEEP",
+        "context": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference:"
+      },
+      {
+        "id": "p1-t7",
+        "page": 1,
+        "text": "Note",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          490.409912109375,
+          166.77999877929688,
+          592.6218872070312,
+          230.1219940185547
+        ],
+        "decision": "KEEP",
+        "context": "OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101"
+      },
+      {
+        "id": "p1-t8",
+        "page": 1,
+        "text": "General",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          240.1999969482422,
+          169.36801147460938,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date:"
+      },
+      {
+        "id": "p1-t9",
+        "page": 1,
+        "text": "Medicine",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          176.04000854492188,
+          240.1999969482422,
+          272.0639953613281,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08"
+      },
+      {
+        "id": "p1-t10",
+        "page": 1,
+        "text": "Unit",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          278.7359924316406,
+          240.1999969482422,
+          321.4079895019531,
+          273.1759948730469
+        ],
+        "decision": "KEEP",
+        "context": "Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September"
+      },
+      {
+        "id": "p1-t11",
+        "page": 1,
+        "text": "Reference:",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          112.0,
+          350.3500061035156,
+          219.6019744873047,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026"
+      },
+      {
+        "id": "p1-t12",
+        "page": 1,
+        "text": "MED-2026-101",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          225.7179718017578,
+          350.3500061035156,
+          374.8779296875,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT"
+      },
+      {
+        "id": "p1-t13",
+        "page": 1,
+        "text": "Date:",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          826.6292114257812,
+          350.3500061035156,
+          879.209228515625,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha"
+      },
+      {
+        "id": "p1-t14",
+        "page": 1,
+        "text": "08",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          885.3252563476562,
+          350.3500061035156,
+          909.7892456054688,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell"
+      },
+      {
+        "id": "p1-t15",
+        "page": 1,
+        "text": "September",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          915.9052734375,
+          350.3500061035156,
+          1023.5072631835938,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD"
+      },
+      {
+        "id": "p1-t16",
+        "page": 1,
+        "text": "2026",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1029.623291015625,
+          350.3500061035156,
+          1078.551513671875,
+          380.5780029296875
+        ],
+        "decision": "KEEP",
+        "context": "Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE"
+      },
+      {
+        "id": "p1-t17",
+        "page": 1,
+        "text": "PATIENT",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          104.0,
+          511.80999755859375,
+          176.7259979248047,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic"
+      },
+      {
+        "id": "p1-t18",
+        "page": 1,
+        "text": "Asha",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          104.0,
+          545.5750122070312,
+          147.30099487304688,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient"
+      },
+      {
+        "id": "p1-t19",
+        "page": 1,
+        "text": "Testwell",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          152.58299255371094,
+          545.5750122070312,
+          222.2559814453125,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record"
+      },
+      {
+        "id": "p1-t20",
+        "page": 1,
+        "text": "RECORD",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          450.1838073730469,
+          511.80999755859375,
+          523.8447875976562,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT"
+      },
+      {
+        "id": "p1-t21",
+        "page": 1,
+        "text": "TYPE",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          528.57080078125,
+          511.80999755859375,
+          572.9747924804688,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine"
+      },
+      {
+        "id": "p1-t22",
+        "page": 1,
+        "text": "Synthetic",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          450.1838073730469,
+          545.5750122070312,
+          528.330810546875,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review"
+      },
+      {
+        "id": "p1-t23",
+        "page": 1,
+        "text": "outpatient",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          533.61279296875,
+          545.5750122070312,
+          617.0609130859375,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation"
+      },
+      {
+        "id": "p1-t24",
+        "page": 1,
+        "text": "record",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          622.3428955078125,
+          545.5750122070312,
+          676.1890258789062,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading"
+      },
+      {
+        "id": "p1-t25",
+        "page": 1,
+        "text": "VISIT",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          796.3673706054688,
+          511.80999755859375,
+          838.8843994140625,
+          535.218994140625
+        ],
+        "decision": "KEEP",
+        "context": "RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status"
+      },
+      {
+        "id": "p1-t26",
+        "page": 1,
+        "text": "Routine",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          796.3673706054688,
+          545.5750122070312,
+          861.8414916992188,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood"
+      },
+      {
+        "id": "p1-t27",
+        "page": 1,
+        "text": "review",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          867.1234741210938,
+          545.5750122070312,
+          922.0145874023438,
+          571.6810302734375
+        ],
+        "decision": "KEEP",
+        "context": "Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure"
+      },
+      {
+        "id": "p1-t28",
+        "page": 1,
+        "text": "Observation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          698.7399291992188,
+          205.0299835205078,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76"
+      },
+      {
+        "id": "p1-t29",
+        "page": 1,
+        "text": "Reading",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          698.7399291992188,
+          511.8603515625,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg"
+      },
+      {
+        "id": "p1-t30",
+        "page": 1,
+        "text": "Status",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          698.7399291992188,
+          836.7088012695312,
+          723.5259399414062
+        ],
+        "decision": "KEEP",
+        "context": "VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal"
+      },
+      {
+        "id": "p1-t31",
+        "page": 1,
+        "text": "Blood",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          761.0799560546875,
+          145.00320434570312,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse"
+      },
+      {
+        "id": "p1-t32",
+        "page": 1,
+        "text": "pressure",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          149.89601135253906,
+          761.0799560546875,
+          218.36000061035156,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72"
+      },
+      {
+        "id": "p1-t33",
+        "page": 1,
+        "text": "118/76",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          761.0799560546875,
+          494.6712646484375,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm"
+      },
+      {
+        "id": "p1-t34",
+        "page": 1,
+        "text": "mmHg",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          499.5640563964844,
+          761.0799560546875,
+          551.3784790039062,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable"
+      },
+      {
+        "id": "p1-t35",
+        "page": 1,
+        "text": "Normal",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          761.0799560546875,
+          838.4080200195312,
+          785.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen"
+      },
+      {
+        "id": "p1-t36",
+        "page": 1,
+        "text": "Pulse",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          823.0799560546875,
+          144.01760864257812,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation"
+      },
+      {
+        "id": "p1-t37",
+        "page": 1,
+        "text": "72",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          823.0799560546875,
+          460.421630859375,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98"
+      },
+      {
+        "id": "p1-t38",
+        "page": 1,
+        "text": "bpm",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          465.3144226074219,
+          823.0799560546875,
+          499.54644775390625,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent"
+      },
+      {
+        "id": "p1-t39",
+        "page": 1,
+        "text": "Stable",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          823.0799560546875,
+          831.5968017578125,
+          847.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal"
+      },
+      {
+        "id": "p1-t40",
+        "page": 1,
+        "text": "Oxygen",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          100.0,
+          885.0799560546875,
+          160.64959716796875,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES"
+      },
+      {
+        "id": "p1-t41",
+        "page": 1,
+        "text": "saturation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          165.5424041748047,
+          885.0799560546875,
+          242.82400512695312,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient"
+      },
+      {
+        "id": "p1-t42",
+        "page": 1,
+        "text": "98",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          440.85040283203125,
+          885.0799560546875,
+          460.421630859375,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is"
+      },
+      {
+        "id": "p1-t43",
+        "page": 1,
+        "text": "percent",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          465.3144226074219,
+          885.0799560546875,
+          524.010498046875,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is stable"
+      },
+      {
+        "id": "p1-t44",
+        "page": 1,
+        "text": "Normal",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          781.7008056640625,
+          885.0799560546875,
+          838.4080200195312,
+          909.2623291015625
+        ],
+        "decision": "KEEP",
+        "context": "Stable Oxygen saturation 98 percent Normal NOTES Patient is stable and"
+      },
+      {
+        "id": "p1-t45",
+        "page": 1,
+        "text": "NOTES",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          978.4599609375,
+          159.7899932861328,
+          1008.7539672851562
+        ],
+        "decision": "KEEP",
+        "context": "Oxygen saturation 98 percent Normal NOTES Patient is stable and may"
+      },
+      {
+        "id": "p1-t46",
+        "page": 1,
+        "text": "Patient",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          120.0,
+          1019.4249877929688,
+          185.37298583984375,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "saturation 98 percent Normal NOTES Patient is stable and may continue"
+      },
+      {
+        "id": "p1-t47",
+        "page": 1,
+        "text": "is",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          191.2109832763672,
+          1019.4249877929688,
+          206.37298583984375,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "98 percent Normal NOTES Patient is stable and may continue the"
+      },
+      {
+        "id": "p1-t48",
+        "page": 1,
+        "text": "stable",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          212.2109832763672,
+          1019.4249877929688,
+          268.23895263671875,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "percent Normal NOTES Patient is stable and may continue the current"
+      },
+      {
+        "id": "p1-t49",
+        "page": 1,
+        "text": "and",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          274.07696533203125,
+          1019.4249877929688,
+          309.1049499511719,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "Normal NOTES Patient is stable and may continue the current care"
+      },
+      {
+        "id": "p1-t50",
+        "page": 1,
+        "text": "may",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          314.9429626464844,
+          1019.4249877929688,
+          354.6119689941406,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "NOTES Patient is stable and may continue the current care plan."
+      },
+      {
+        "id": "p1-t51",
+        "page": 1,
+        "text": "continue",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          360.4499816894531,
+          1019.4249877929688,
+          439.8299560546875,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "Patient is stable and may continue the current care plan. A"
+      },
+      {
+        "id": "p1-t52",
+        "page": 1,
+        "text": "the",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          445.66796875,
+          1019.4249877929688,
+          474.85797119140625,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "is stable and may continue the current care plan. A printed"
+      },
+      {
+        "id": "p1-t53",
+        "page": 1,
+        "text": "current",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          480.69598388671875,
+          1019.4249877929688,
+          546.0480346679688,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "stable and may continue the current care plan. A printed prescription"
+      },
+      {
+        "id": "p1-t54",
+        "page": 1,
+        "text": "care",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          551.8860473632812,
+          1019.4249877929688,
+          592.7310791015625,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "and may continue the current care plan. A printed prescription was"
+      },
+      {
+        "id": "p1-t55",
+        "page": 1,
+        "text": "plan.",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          598.569091796875,
+          1019.4249877929688,
+          644.09716796875,
+          1048.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "may continue the current care plan. A printed prescription was received"
+      },
+      {
+        "id": "p1-t56",
+        "page": 1,
+        "text": "A",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          120.0,
+          1059.425048828125,
+          134.0070037841797,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "continue the current care plan. A printed prescription was received for"
+      },
+      {
+        "id": "p1-t57",
+        "page": 1,
+        "text": "printed",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          139.84500122070312,
+          1059.425048828125,
+          204.04197692871094,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "the current care plan. A printed prescription was received for the"
+      },
+      {
+        "id": "p1-t58",
+        "page": 1,
+        "text": "prescription",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          209.87997436523438,
+          1059.425048828125,
+          318.407958984375,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "current care plan. A printed prescription was received for the next"
+      },
+      {
+        "id": "p1-t59",
+        "page": 1,
+        "text": "was",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          324.2459716796875,
+          1059.425048828125,
+          361.5839538574219,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "care plan. A printed prescription was received for the next review."
+      },
+      {
+        "id": "p1-t60",
+        "page": 1,
+        "text": "received",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          367.4219665527344,
+          1059.425048828125,
+          446.78094482421875,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "plan. A printed prescription was received for the next review. Synthetic"
+      },
+      {
+        "id": "p1-t61",
+        "page": 1,
+        "text": "for",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          452.61895751953125,
+          1059.425048828125,
+          477.1259765625,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "A printed prescription was received for the next review. Synthetic evaluation"
+      },
+      {
+        "id": "p1-t62",
+        "page": 1,
+        "text": "the",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          482.9639892578125,
+          1059.425048828125,
+          512.1539916992188,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "printed prescription was received for the next review. Synthetic evaluation data"
+      },
+      {
+        "id": "p1-t63",
+        "page": 1,
+        "text": "next",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          517.9920043945312,
+          1059.425048828125,
+          557.6820678710938,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "prescription was received for the next review. Synthetic evaluation data -"
+      },
+      {
+        "id": "p1-t64",
+        "page": 1,
+        "text": "review.",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          563.5200805664062,
+          1059.425048828125,
+          630.027099609375,
+          1088.279052734375
+        ],
+        "decision": "KEEP",
+        "context": "was received for the next review. Synthetic evaluation data - not"
+      },
+      {
+        "id": "p1-t65",
+        "page": 1,
+        "text": "Synthetic",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          84.0,
+          1569.5045166015625,
+          153.92100524902344,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "received for the next review. Synthetic evaluation data - not a"
+      },
+      {
+        "id": "p1-t66",
+        "page": 1,
+        "text": "evaluation",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          158.64700317382812,
+          1569.5045166015625,
+          236.1329803466797,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "for the next review. Synthetic evaluation data - not a real"
+      },
+      {
+        "id": "p1-t67",
+        "page": 1,
+        "text": "data",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          240.85897827148438,
+          1569.5045166015625,
+          273.94097900390625,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "the next review. Synthetic evaluation data - not a real record"
+      },
+      {
+        "id": "p1-t68",
+        "page": 1,
+        "text": "-",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          278.6669921875,
+          1569.5045166015625,
+          284.3280029296875,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "next review. Synthetic evaluation data - not a real record Page"
+      },
+      {
+        "id": "p1-t69",
+        "page": 1,
+        "text": "not",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          289.05401611328125,
+          1569.5045166015625,
+          312.68402099609375,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "review. Synthetic evaluation data - not a real record Page 1"
+      },
+      {
+        "id": "p1-t70",
+        "page": 1,
+        "text": "a",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          317.4100341796875,
+          1569.5045166015625,
+          326.8620300292969,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "Synthetic evaluation data - not a real record Page 1 of"
+      },
+      {
+        "id": "p1-t71",
+        "page": 1,
+        "text": "real",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          331.5880432128906,
+          1569.5045166015625,
+          359.9270324707031,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "evaluation data - not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t72",
+        "page": 1,
+        "text": "record",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          364.6530456542969,
+          1569.5045166015625,
+          412.8310546875,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "data - not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t73",
+        "page": 1,
+        "text": "Page",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1019.59619140625,
+          1569.5045166015625,
+          1059.291259765625,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "- not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t74",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1064.0172119140625,
+          1569.5045166015625,
+          1073.46923828125,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "not a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t75",
+        "page": 1,
+        "text": "of",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1078.1951904296875,
+          1569.5045166015625,
+          1092.3731689453125,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "a real record Page 1 of 1"
+      },
+      {
+        "id": "p1-t76",
+        "page": 1,
+        "text": "1",
+        "confidence": 1.0,
+        "ocr_confidence": 1.0,
+        "confidence_source": "embedded PDF text",
+        "confidence_calibration": null,
+        "bbox": [
+          1097.09912109375,
+          1569.5045166015625,
+          1106.5511474609375,
+          1592.862548828125
+        ],
+        "decision": "KEEP",
+        "context": "real record Page 1 of 1"
+      }
+    ],
+    "confidence": {
+      "threshold": 0.9,
+      "average": 1.0,
+      "low_count": 0,
+      "high_count": 76,
+      "distribution": [
+        {
+          "range": "0.0–0.1",
+          "count": 0
+        },
+        {
+          "range": "0.1–0.2",
+          "count": 0
+        },
+        {
+          "range": "0.2–0.3",
+          "count": 0
+        },
+        {
+          "range": "0.3–0.4",
+          "count": 0
+        },
+        {
+          "range": "0.4–0.5",
+          "count": 0
+        },
+        {
+          "range": "0.5–0.6",
+          "count": 0
+        },
+        {
+          "range": "0.6–0.7",
+          "count": 0
+        },
+        {
+          "range": "0.7–0.8",
+          "count": 0
+        },
+        {
+          "range": "0.8–0.9",
+          "count": 0
+        },
+        {
+          "range": "0.9–1.0",
+          "count": 76
+        }
+      ]
+    },
+    "low_confidence": [],
+    "candidates": [],
+    "chunks": [
+      {
+        "id": "p1-c1",
+        "page": 1,
+        "text": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is stable and may continue the current care plan. A printed prescription was received for the next review. Synthetic evaluation data - not a real record Page 1 of 1",
+        "token_start": 0
+      }
+    ],
+    "semantic_evidence": [],
+    "graph": {
+      "schema_version": "2.0",
+      "domain": "medical",
+      "nodes": [
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "label": "PDF001_clinical_follow_up_note.pdf",
+          "type": "Document",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [],
+          "provenance": [
+            {
+              "source": "uploaded document metadata",
+              "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2"
+            }
+          ],
+          "properties": {
+            "domain": "medical",
+            "source_name": "PDF001_clinical_follow_up_note.pdf"
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+          "label": "Patient",
+          "type": "Patient",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "pages": [
+            1
+          ],
+          "mentions": 2,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t17",
+              "page": 1,
+              "bbox": [
+                104.0,
+                511.80999755859375,
+                176.7259979248047,
+                535.218994140625
+              ],
+              "confidence": 1.0,
+              "text": "PATIENT"
+            },
+            {
+              "token_id": "p1-t46",
+              "page": 1,
+              "bbox": [
+                120.0,
+                1019.4249877929688,
+                185.37298583984375,
+                1048.279052734375
+              ],
+              "confidence": 1.0,
+              "text": "Patient"
+            }
+          ],
+          "properties": {
+            "domain": "medical",
+            "mention_count": 2
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:prescription",
+          "label": "Prescription",
+          "type": "Prescription",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t58"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t58",
+              "page": 1,
+              "bbox": [
+                209.87997436523438,
+                1059.425048828125,
+                318.407958984375,
+                1088.279052734375
+              ],
+              "confidence": 1.0,
+              "text": "prescription"
+            }
+          ],
+          "properties": {
+            "domain": "medical",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:med-2026-101",
+          "label": "MED-2026-101",
+          "type": "ReferenceIdentifier",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t12"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t12",
+              "page": 1,
+              "bbox": [
+                225.7179718017578,
+                350.3500061035156,
+                374.8779296875,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "MED-2026-101"
+            }
+          ],
+          "properties": {
+            "domain": "medical",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:08-september-2026",
+          "label": "08 September 2026",
+          "type": "Date",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "pages": [
+            1
+          ],
+          "mentions": 1,
+          "confidence": 1.0,
+          "token_ids": [
+            "p1-t14",
+            "p1-t15",
+            "p1-t16"
+          ],
+          "provenance": [
+            {
+              "token_id": "p1-t14",
+              "page": 1,
+              "bbox": [
+                885.3252563476562,
+                350.3500061035156,
+                909.7892456054688,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "08"
+            },
+            {
+              "token_id": "p1-t15",
+              "page": 1,
+              "bbox": [
+                915.9052734375,
+                350.3500061035156,
+                1023.5072631835938,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "September"
+            },
+            {
+              "token_id": "p1-t16",
+              "page": 1,
+              "bbox": [
+                1029.623291015625,
+                350.3500061035156,
+                1078.551513671875,
+                380.5780029296875
+              ],
+              "confidence": 1.0,
+              "text": "2026"
+            }
+          ],
+          "properties": {
+            "domain": "medical",
+            "mention_count": 1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel1",
+          "source": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+          "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:prescription",
+          "type": "HAS_PRESCRIPTION",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "provenance": "domain relation supported by high-confidence OCR mentions",
+          "token_ids": [
+            "p1-t17",
+            "p1-t46",
+            "p1-t58"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "medical",
+            "evidence": "domain relation supported by high-confidence OCR mentions"
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel2",
+          "source": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:med-2026-101",
+          "type": "HAS_REFERENCE",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "provenance": "reference identifier extracted from high-confidence OCR",
+          "token_ids": [
+            "p1-t12"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "medical",
+            "evidence": "reference identifier extracted from high-confidence OCR"
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel3",
+          "source": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:08-september-2026",
+          "type": "DATED",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "provenance": "date extracted from high-confidence OCR",
+          "token_ids": [
+            "p1-t14",
+            "p1-t15",
+            "p1-t16"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "medical",
+            "evidence": "date extracted from high-confidence OCR"
+          }
+        },
+        {
+          "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel4",
+          "source": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+          "type": "MENTIONS",
+          "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+          "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+          "token_ids": [
+            "p1-t17",
+            "p1-t46"
+          ],
+          "pages": [
+            1
+          ],
+          "properties": {
+            "domain": "medical",
+            "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+          }
+        }
+      ],
+      "persisted_to_neo4j": true
+    },
+    "graph_evidence": [],
+    "combined_evidence": [],
+    "prompts": [],
+    "slm_decisions": [],
+    "validations": [],
+    "original_text": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is stable and may continue the current care plan. A printed prescription was received for the next review. Synthetic evaluation data - not a real record Page 1 of 1",
+    "corrected_text": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is stable and may continue the current care plan. A printed prescription was received for the next review. Synthetic evaluation data - not a real record Page 1 of 1",
+    "correction_records": [],
+    "traces": [],
+    "export_pdf_url": "/api/runs/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/export/pdf",
+    "export_pdf_path": "/data/output/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca-corrected.pdf",
+    "provenance_json_path": "/data/output/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca.json",
+    "stats": {
+      "ocr_tokens": 76,
+      "low_confidence_tokens": 0,
+      "corrections_applied": 0,
+      "corrections_rejected": 0,
+      "slm_calls": 0
+    }
+  },
+  "stages": [
+    {
+      "key": "document_input",
+      "number": 1,
+      "name": "Document Input",
+      "status": "COMPLETED",
+      "input": {
+        "filename": "PDF001_clinical_follow_up_note.pdf",
+        "size": 3255
+      },
+      "method": "Validated file ingestion and page rendering",
+      "parameters": {},
+      "output": {
+        "pages": 1,
+        "digital_pdf": true
+      },
+      "diagnostics": {
+        "media_type": "application/pdf"
+      },
+      "next_step": "Preprocessing",
+      "started_at": "2026-10-13T09:39:38.965547+00:00",
+      "completed_at": "2026-10-13T09:39:42.499745+00:00",
+      "runtime_ms": 2319.73,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "preprocessing",
+      "number": 2,
+      "name": "Preprocessing",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "OpenCV conditional preprocessing",
+      "parameters": {
+        "conditional_operations": true
+      },
+      "output": [
+        {
+          "source": "/data/processed/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/original/page-1.png",
+          "output": "/data/processed/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/preprocessed/page-1.png",
+          "operations": [
+            "grayscale",
+            "adaptive threshold"
+          ],
+          "width": 1191,
+          "height": 1684
+        }
+      ],
+      "diagnostics": {
+        "operations": [
+          "adaptive threshold",
+          "grayscale"
+        ]
+      },
+      "next_step": "Layout Detection",
+      "started_at": "2026-10-13T09:39:42.608182+00:00",
+      "completed_at": "2026-10-13T09:39:43.302049+00:00",
+      "runtime_ms": 641.32,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "layout",
+      "number": 3,
+      "name": "Layout Detection",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)",
+      "parameters": {
+        "confidence": 0.2,
+        "device": "cpu"
+      },
+      "output": [
+        {
+          "page": 1,
+          "regions": [
+            {
+              "id": "r9",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                77.28,
+                58.71,
+                482.07,
+                95.83
+              ],
+              "confidence": 0.8433,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r5",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1002.54,
+                58.97,
+                1112.21,
+                94.88
+              ],
+              "confidence": 0.9019,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r3",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.15,
+                174.46,
+                596.65,
+                226.67
+              ],
+              "confidence": 0.9187,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r7",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                82.59,
+                242.98,
+                325.35,
+                272.34
+              ],
+              "confidence": 0.8962,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r8",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                110.24,
+                352.41,
+                375.4,
+                379.71
+              ],
+              "confidence": 0.8498,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r12",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                823.49,
+                353.42,
+                1081.67,
+                380.21
+              ],
+              "confidence": 0.582,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r16",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                823.49,
+                353.42,
+                1081.67,
+                380.21
+              ],
+              "confidence": 0.3185,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r13",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                80.45,
+                485.47,
+                1110.76,
+                621.81
+              ],
+              "confidence": 0.5376,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r17",
+              "class": "image",
+              "raw_class": "figure",
+              "bbox": [
+                80.45,
+                485.47,
+                1110.76,
+                621.81
+              ],
+              "confidence": 0.219,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r14",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                790.75,
+                509.48,
+                926.14,
+                572.69
+              ],
+              "confidence": 0.3495,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r1",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                82.51,
+                678.43,
+                1108.17,
+                929.86
+              ],
+              "confidence": 0.9716,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r4",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.18,
+                979.97,
+                163.6,
+                1007.17
+              ],
+              "confidence": 0.9117,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r15",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                87.12,
+                1021.16,
+                644.38,
+                1089.75
+              ],
+              "confidence": 0.3302,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r11",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                89.95,
+                1021.62,
+                646.99,
+                1048.99
+              ],
+              "confidence": 0.6748,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r10",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                88.68,
+                1061.91,
+                636.05,
+                1088.92
+              ],
+              "confidence": 0.7322,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r6",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1017.87,
+                1572.16,
+                1106.51,
+                1593.43
+              ],
+              "confidence": 0.8995,
+              "source": "DocLayout-YOLO"
+            },
+            {
+              "id": "r2",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                82.2,
+                1572.47,
+                415.71,
+                1593.03
+              ],
+              "confidence": 0.9337,
+              "source": "DocLayout-YOLO"
+            }
+          ],
+          "method": "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+        }
+      ],
+      "diagnostics": {
+        "region_count": 17,
+        "methods": [
+          "DocLayout-YOLO (doclayout_yolo_docstructbench_imgsz1024.pt)"
+        ]
+      },
+      "next_step": "Reading Order",
+      "started_at": "2026-10-13T09:39:43.884859+00:00",
+      "completed_at": "2026-10-13T09:39:54.683622+00:00",
+      "runtime_ms": 10703.56,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "reading_order",
+      "number": 4,
+      "name": "Reading Order",
+      "status": "COMPLETED",
+      "input": {
+        "regions": 17
+      },
+      "method": "Column-aware geometric ordering",
+      "parameters": {},
+      "output": [
+        {
+          "page": 1,
+          "regions": [
+            {
+              "id": "r9",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                77.28,
+                58.71,
+                482.07,
+                95.83
+              ],
+              "confidence": 0.8433,
+              "source": "DocLayout-YOLO",
+              "order": 1
+            },
+            {
+              "id": "r3",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.15,
+                174.46,
+                596.65,
+                226.67
+              ],
+              "confidence": 0.9187,
+              "source": "DocLayout-YOLO",
+              "order": 2
+            },
+            {
+              "id": "r7",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                82.59,
+                242.98,
+                325.35,
+                272.34
+              ],
+              "confidence": 0.8962,
+              "source": "DocLayout-YOLO",
+              "order": 3
+            },
+            {
+              "id": "r8",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                110.24,
+                352.41,
+                375.4,
+                379.71
+              ],
+              "confidence": 0.8498,
+              "source": "DocLayout-YOLO",
+              "order": 4
+            },
+            {
+              "id": "r4",
+              "class": "heading",
+              "raw_class": "title",
+              "bbox": [
+                82.18,
+                979.97,
+                163.6,
+                1007.17
+              ],
+              "confidence": 0.9117,
+              "source": "DocLayout-YOLO",
+              "order": 5
+            },
+            {
+              "id": "r15",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                87.12,
+                1021.16,
+                644.38,
+                1089.75
+              ],
+              "confidence": 0.3302,
+              "source": "DocLayout-YOLO",
+              "order": 6
+            },
+            {
+              "id": "r11",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                89.95,
+                1021.62,
+                646.99,
+                1048.99
+              ],
+              "confidence": 0.6748,
+              "source": "DocLayout-YOLO",
+              "order": 7
+            },
+            {
+              "id": "r10",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                88.68,
+                1061.91,
+                636.05,
+                1088.92
+              ],
+              "confidence": 0.7322,
+              "source": "DocLayout-YOLO",
+              "order": 8
+            },
+            {
+              "id": "r2",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                82.2,
+                1572.47,
+                415.71,
+                1593.03
+              ],
+              "confidence": 0.9337,
+              "source": "DocLayout-YOLO",
+              "order": 9
+            },
+            {
+              "id": "r5",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1002.54,
+                58.97,
+                1112.21,
+                94.88
+              ],
+              "confidence": 0.9019,
+              "source": "DocLayout-YOLO",
+              "order": 10
+            },
+            {
+              "id": "r12",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                823.49,
+                353.42,
+                1081.67,
+                380.21
+              ],
+              "confidence": 0.582,
+              "source": "DocLayout-YOLO",
+              "order": 11
+            },
+            {
+              "id": "r16",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                823.49,
+                353.42,
+                1081.67,
+                380.21
+              ],
+              "confidence": 0.3185,
+              "source": "DocLayout-YOLO",
+              "order": 12
+            },
+            {
+              "id": "r13",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                80.45,
+                485.47,
+                1110.76,
+                621.81
+              ],
+              "confidence": 0.5376,
+              "source": "DocLayout-YOLO",
+              "order": 13
+            },
+            {
+              "id": "r17",
+              "class": "image",
+              "raw_class": "figure",
+              "bbox": [
+                80.45,
+                485.47,
+                1110.76,
+                621.81
+              ],
+              "confidence": 0.219,
+              "source": "DocLayout-YOLO",
+              "order": 14
+            },
+            {
+              "id": "r14",
+              "class": "text_block",
+              "raw_class": "plain text",
+              "bbox": [
+                790.75,
+                509.48,
+                926.14,
+                572.69
+              ],
+              "confidence": 0.3495,
+              "source": "DocLayout-YOLO",
+              "order": 15
+            },
+            {
+              "id": "r1",
+              "class": "table",
+              "raw_class": "table",
+              "bbox": [
+                82.51,
+                678.43,
+                1108.17,
+                929.86
+              ],
+              "confidence": 0.9716,
+              "source": "DocLayout-YOLO",
+              "order": 16
+            },
+            {
+              "id": "r6",
+              "class": "other",
+              "raw_class": "abandon",
+              "bbox": [
+                1017.87,
+                1572.16,
+                1106.51,
+                1593.43
+              ],
+              "confidence": 0.8995,
+              "source": "DocLayout-YOLO",
+              "order": 17
+            }
+          ]
+        }
+      ],
+      "diagnostics": {
+        "ordered_regions": 17
+      },
+      "next_step": "OCR Extraction",
+      "started_at": "2026-10-13T09:39:54.860884+00:00",
+      "completed_at": "2026-10-13T09:39:54.937003+00:00",
+      "runtime_ms": 0.6,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "ocr",
+      "number": 5,
+      "name": "OCR Extraction",
+      "status": "COMPLETED",
+      "input": {
+        "pages": 1
+      },
+      "method": "PyMuPDF embedded text extraction",
+      "parameters": {},
+      "output": {
+        "token_count": 76,
+        "preview": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen",
+        "calibrated_tokens": []
+      },
+      "diagnostics": {
+        "engine": "PyMuPDF embedded text extraction",
+        "raw_score_scope": "line",
+        "effective_score_scope": "token",
+        "calibrated_token_count": 0
+      },
+      "next_step": "Confidence Analysis",
+      "started_at": "2026-10-13T09:39:54.985349+00:00",
+      "completed_at": "2026-10-13T09:39:55.253359+00:00",
+      "runtime_ms": 217.92,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "confidence",
+      "number": 6,
+      "name": "Confidence Analysis",
+      "status": "COMPLETED",
+      "input": {
+        "tokens": 76
+      },
+      "method": "Token confidence distribution and configurable threshold",
+      "parameters": {
+        "threshold": 0.9
+      },
+      "output": {
+        "threshold": 0.9,
+        "average": 1.0,
+        "low_count": 0,
+        "high_count": 76,
+        "distribution": [
+          {
+            "range": "0.0–0.1",
+            "count": 0
+          },
+          {
+            "range": "0.1–0.2",
+            "count": 0
+          },
+          {
+            "range": "0.2–0.3",
+            "count": 0
+          },
+          {
+            "range": "0.3–0.4",
+            "count": 0
+          },
+          {
+            "range": "0.4–0.5",
+            "count": 0
+          },
+          {
+            "range": "0.5–0.6",
+            "count": 0
+          },
+          {
+            "range": "0.6–0.7",
+            "count": 0
+          },
+          {
+            "range": "0.7–0.8",
+            "count": 0
+          },
+          {
+            "range": "0.8–0.9",
+            "count": 0
+          },
+          {
+            "range": "0.9–1.0",
+            "count": 76
+          }
+        ]
+      },
+      "diagnostics": {
+        "confidence_source": [
+          "embedded PDF text"
+        ]
+      },
+      "next_step": "Low-Confidence Detection",
+      "started_at": "2026-10-13T09:39:55.484721+00:00",
+      "completed_at": "2026-10-13T09:39:55.555522+00:00",
+      "runtime_ms": 0.55,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "low_confidence",
+      "number": 7,
+      "name": "Low-Confidence Detection",
+      "status": "COMPLETED",
+      "input": {
+        "tokens": 76
+      },
+      "method": "Selective confidence gate",
+      "parameters": {
+        "threshold": 0.9
+      },
+      "output": [],
+      "diagnostics": {
+        "selected": 0,
+        "kept": 76
+      },
+      "next_step": "Candidate Generation",
+      "started_at": "2026-10-13T09:39:55.626933+00:00",
+      "completed_at": "2026-10-13T09:39:55.691376+00:00",
+      "runtime_ms": 0.31,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "candidates",
+      "number": 8,
+      "name": "Candidate Generation",
+      "status": "COMPLETED",
+      "input": {
+        "selected_tokens": 0
+      },
+      "method": "Word-frequency validity + OCR-confusion-aware near-word ranking",
+      "parameters": {
+        "domain": "medical",
+        "limit": 5,
+        "valid_word_zipf_floor": 2.5
+      },
+      "output": [],
+      "diagnostics": {
+        "candidate_sets": 0,
+        "valid_low-confidence_words_protected": 0
+      },
+      "next_step": "Semantic Retrieval",
+      "started_at": "2026-10-13T09:39:55.759097+00:00",
+      "completed_at": "2026-10-13T09:39:56.479584+00:00",
+      "runtime_ms": 660.8,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "semantic",
+      "number": 9,
+      "name": "Semantic Retrieval",
+      "status": "COMPLETED",
+      "input": {
+        "chunks": 1,
+        "queries": 0
+      },
+      "method": "No retrieval required",
+      "parameters": {
+        "top_k": 3,
+        "chunk_size_tokens": 80
+      },
+      "output": [],
+      "diagnostics": {
+        "evidence_sets": 0
+      },
+      "next_step": "Knowledge Graph",
+      "started_at": "2026-10-13T09:39:56.581428+00:00",
+      "completed_at": "2026-10-13T09:39:56.663543+00:00",
+      "runtime_ms": 0.95,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "graph",
+      "number": 10,
+      "name": "Knowledge Graph",
+      "status": "COMPLETED",
+      "input": {
+        "high_confidence_tokens": 76
+      },
+      "method": "Domain-aware entity and relationship extraction with token provenance + Neo4j persistence",
+      "parameters": {},
+      "output": {
+        "schema_version": "2.0",
+        "domain": "medical",
+        "nodes": [
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "label": "PDF001_clinical_follow_up_note.pdf",
+            "type": "Document",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [],
+            "provenance": [
+              {
+                "source": "uploaded document metadata",
+                "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2"
+              }
+            ],
+            "properties": {
+              "domain": "medical",
+              "source_name": "PDF001_clinical_follow_up_note.pdf"
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+            "label": "Patient",
+            "type": "Patient",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "pages": [
+              1
+            ],
+            "mentions": 2,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t17",
+              "p1-t46"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t17",
+                "page": 1,
+                "bbox": [
+                  104.0,
+                  511.80999755859375,
+                  176.7259979248047,
+                  535.218994140625
+                ],
+                "confidence": 1.0,
+                "text": "PATIENT"
+              },
+              {
+                "token_id": "p1-t46",
+                "page": 1,
+                "bbox": [
+                  120.0,
+                  1019.4249877929688,
+                  185.37298583984375,
+                  1048.279052734375
+                ],
+                "confidence": 1.0,
+                "text": "Patient"
+              }
+            ],
+            "properties": {
+              "domain": "medical",
+              "mention_count": 2
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:prescription",
+            "label": "Prescription",
+            "type": "Prescription",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t58"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t58",
+                "page": 1,
+                "bbox": [
+                  209.87997436523438,
+                  1059.425048828125,
+                  318.407958984375,
+                  1088.279052734375
+                ],
+                "confidence": 1.0,
+                "text": "prescription"
+              }
+            ],
+            "properties": {
+              "domain": "medical",
+              "mention_count": 1
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:med-2026-101",
+            "label": "MED-2026-101",
+            "type": "ReferenceIdentifier",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t12"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t12",
+                "page": 1,
+                "bbox": [
+                  225.7179718017578,
+                  350.3500061035156,
+                  374.8779296875,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "MED-2026-101"
+              }
+            ],
+            "properties": {
+              "domain": "medical",
+              "mention_count": 1
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:08-september-2026",
+            "label": "08 September 2026",
+            "type": "Date",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "pages": [
+              1
+            ],
+            "mentions": 1,
+            "confidence": 1.0,
+            "token_ids": [
+              "p1-t14",
+              "p1-t15",
+              "p1-t16"
+            ],
+            "provenance": [
+              {
+                "token_id": "p1-t14",
+                "page": 1,
+                "bbox": [
+                  885.3252563476562,
+                  350.3500061035156,
+                  909.7892456054688,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "08"
+              },
+              {
+                "token_id": "p1-t15",
+                "page": 1,
+                "bbox": [
+                  915.9052734375,
+                  350.3500061035156,
+                  1023.5072631835938,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "September"
+              },
+              {
+                "token_id": "p1-t16",
+                "page": 1,
+                "bbox": [
+                  1029.623291015625,
+                  350.3500061035156,
+                  1078.551513671875,
+                  380.5780029296875
+                ],
+                "confidence": 1.0,
+                "text": "2026"
+              }
+            ],
+            "properties": {
+              "domain": "medical",
+              "mention_count": 1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel1",
+            "source": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+            "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:prescription",
+            "type": "HAS_PRESCRIPTION",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "provenance": "domain relation supported by high-confidence OCR mentions",
+            "token_ids": [
+              "p1-t17",
+              "p1-t46",
+              "p1-t58"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "medical",
+              "evidence": "domain relation supported by high-confidence OCR mentions"
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel2",
+            "source": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:med-2026-101",
+            "type": "HAS_REFERENCE",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "provenance": "reference identifier extracted from high-confidence OCR",
+            "token_ids": [
+              "p1-t12"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "medical",
+              "evidence": "reference identifier extracted from high-confidence OCR"
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel3",
+            "source": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:08-september-2026",
+            "type": "DATED",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "provenance": "date extracted from high-confidence OCR",
+            "token_ids": [
+              "p1-t14",
+              "p1-t15",
+              "p1-t16"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "medical",
+              "evidence": "date extracted from high-confidence OCR"
+            }
+          },
+          {
+            "id": "aaa99405-3851-4734-b45e-a0dc551f85a2:rel4",
+            "source": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "target": "aaa99405-3851-4734-b45e-a0dc551f85a2:patient",
+            "type": "MENTIONS",
+            "document_id": "aaa99405-3851-4734-b45e-a0dc551f85a2",
+            "provenance": "trusted entity mention anchors this semantic subgraph to the source document",
+            "token_ids": [
+              "p1-t17",
+              "p1-t46"
+            ],
+            "pages": [
+              1
+            ],
+            "properties": {
+              "domain": "medical",
+              "evidence": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          }
+        ],
+        "persisted_to_neo4j": true
+      },
+      "diagnostics": {
+        "schema_version": "2.0",
+        "nodes": 5,
+        "edges": 4,
+        "relationship_types": [
+          "DATED",
+          "HAS_PRESCRIPTION",
+          "HAS_REFERENCE",
+          "MENTIONS"
+        ],
+        "persisted_to_neo4j": true
+      },
+      "next_step": "Hybrid GraphRAG",
+      "started_at": "2026-10-13T09:39:56.828245+00:00",
+      "completed_at": "2026-10-13T09:39:57.104718+00:00",
+      "runtime_ms": 212.95,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "graphrag",
+      "number": 11,
+      "name": "Hybrid GraphRAG",
+      "status": "COMPLETED",
+      "input": {
+        "semantic_sets": 0,
+        "graph_nodes": 5
+      },
+      "method": "Provenance-preserving semantic + graph evidence union",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {
+        "combined_sets": 0
+      },
+      "next_step": "Dynamic Prompt Construction",
+      "started_at": "2026-10-13T09:39:57.208212+00:00",
+      "completed_at": "2026-10-13T09:39:57.283694+00:00",
+      "runtime_ms": 0.44,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "prompt",
+      "number": 12,
+      "name": "Dynamic Prompt Construction",
+      "status": "COMPLETED",
+      "input": {
+        "candidate_sets": 0
+      },
+      "method": "Per-token constrained JSON prompt template",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {
+        "prompt_count": 0
+      },
+      "next_step": "Qwen2.5-3B Selection",
+      "started_at": "2026-10-13T09:39:57.371213+00:00",
+      "completed_at": "2026-10-13T09:39:57.447411+00:00",
+      "runtime_ms": 0.47,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "slm",
+      "number": 13,
+      "name": "Qwen2.5-3B Selection",
+      "status": "COMPLETED",
+      "input": {
+        "prompts": 0
+      },
+      "method": "No low-confidence tokens; model not invoked",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {
+        "calls": 0,
+        "unavailable": 0,
+        "errors": 0,
+        "total_model_latency_ms": 0
+      },
+      "next_step": "Validation",
+      "started_at": "2026-10-13T09:39:57.525978+00:00",
+      "completed_at": "2026-10-13T09:39:57.600930+00:00",
+      "runtime_ms": 0.9,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "validation",
+      "number": 14,
+      "name": "Validation",
+      "status": "COMPLETED",
+      "input": {
+        "decisions": 0
+      },
+      "method": "Candidate membership + rank-1 lexical proximity + valid-word and identifier preservation",
+      "parameters": {},
+      "output": [],
+      "diagnostics": {},
+      "next_step": "Final Output",
+      "started_at": "2026-10-13T09:39:57.686205+00:00",
+      "completed_at": "2026-10-13T09:39:57.757473+00:00",
+      "runtime_ms": 0.89,
+      "warnings": [],
+      "error": null
+    },
+    {
+      "key": "output",
+      "number": 15,
+      "name": "Final Output",
+      "status": "COMPLETED",
+      "input": {
+        "validated_records": 0
+      },
+      "method": "Immutable original + validated token substitution and searchable PDF generation",
+      "parameters": {},
+      "output": {
+        "original_text": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is stable and may continue the current care plan. A printed prescription was received for the next review. Synthetic evaluation data - not a real record Page 1 of 1",
+        "corrected_text": "SYNTHETIC OCR EVALUATION PDF001 Clinical Follow-up Note General Medicine Unit Reference: MED-2026-101 Date: 08 September 2026 PATIENT Asha Testwell RECORD TYPE Synthetic outpatient record VISIT Routine review Observation Reading Status Blood pressure 118/76 mmHg Normal Pulse 72 bpm Stable Oxygen saturation 98 percent Normal NOTES Patient is stable and may continue the current care plan. A printed prescription was received for the next review. Synthetic evaluation data - not a real record Page 1 of 1",
+        "pdf_export": "/data/output/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca-corrected.pdf",
+        "download_url": "/api/runs/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca/export/pdf",
+        "provenance_json": "/data/output/0dd5d3b6-8785-4d80-a8e5-f6fd513879ca.json"
+      },
+      "diagnostics": {
+        "ocr_tokens": 76,
+        "low_confidence_tokens": 0,
+        "corrections_applied": 0,
+        "corrections_rejected": 0,
+        "slm_calls": 0,
+        "pdf_text_selectable": true
+      },
+      "next_step": null,
+      "started_at": "2026-10-13T09:39:57.834859+00:00",
+      "completed_at": "2026-10-13T09:39:57.929015+00:00",
+      "runtime_ms": 26.25,
+      "warnings": [],
+      "error": null
+    }
+  ]
+}

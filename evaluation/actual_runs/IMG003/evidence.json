@@ -1,0 +1,754 @@
+{
+  "semantic": [
+    {
+      "token_id": "p1-t22",
+      "query": "September 2026 RECORD TYPE VISIT PATLENT Mira Example Synthetic medication record",
+      "results": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+          "token_start": 0,
+          "similarity": 0.7160847187042236,
+          "source": "page 1"
+        },
+        {
+          "id": "p1-c2",
+          "page": 1,
+          "text": "record",
+          "token_start": 80,
+          "similarity": 0.49062734842300415,
+          "source": "page 1"
+        }
+      ]
+    },
+    {
+      "token_id": "p1-t33",
+      "query": "Dosage reconciliation Medicine Dosage ( nstruction Sample tablet A 5mg After",
+      "results": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+          "token_start": 0,
+          "similarity": 0.6872599124908447,
+          "source": "page 1"
+        },
+        {
+          "id": "p1-c2",
+          "page": 1,
+          "text": "record",
+          "token_start": 80,
+          "similarity": 0.3484787940979004,
+          "source": "page 1"
+        }
+      ]
+    },
+    {
+      "token_id": "p1-t55",
+      "query": "Bring prescription NOTES • The dossage list was reviewed for clarity",
+      "results": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+          "token_start": 0,
+          "similarity": 0.6585006713867188,
+          "source": "page 1"
+        },
+        {
+          "id": "p1-c2",
+          "page": 1,
+          "text": "record",
+          "token_start": 80,
+          "similarity": 0.4302965998649597,
+          "source": "page 1"
+        }
+      ]
+    }
+  ],
+  "graph": [
+    {
+      "token_id": "p1-t22",
+      "results": [
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+            "label": "Patient",
+            "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "IMG001_clinical_follow_up_note.png",
+                "label": "IMG001_clinical_follow_up_note.png",
+                "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+                "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+            "label": "Patient",
+            "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t66"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 0.9724271893501282,
+                "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:prescription",
+                "label": "Prescription",
+                "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+            "label": "Patient",
+            "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "IMG001_clinical_follow_up_note.png",
+                "label": "IMG001_clinical_follow_up_note.png",
+                "id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+                "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+            "label": "Patient",
+            "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t66"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 0.9724271893501282,
+                "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:prescription",
+                "label": "Prescription",
+                "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t17",
+              "p1-t46"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+            "label": "Patient",
+            "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "PDF001_clinical_follow_up_note.pdf",
+                "label": "PDF001_clinical_follow_up_note.pdf",
+                "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+                "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t17",
+              "p1-t46"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+            "label": "Patient",
+            "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t58"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 1.0,
+                "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:prescription",
+                "label": "Prescription",
+                "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t58\", \"page\": 1, \"bbox\": [209.87997436523438, 1059.425048828125, 318.407958984375, 1088.279052734375], \"confidence\": 1.0, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+            "label": "Patient",
+            "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "IMG001_clinical_follow_up_note.png",
+                "label": "IMG001_clinical_follow_up_note.png",
+                "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+                "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+            "label": "Patient",
+            "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t66"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 0.9724271893501282,
+                "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:prescription",
+                "label": "Prescription",
+                "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        }
+      ]
+    },
+    {
+      "token_id": "p1-t33",
+      "results": []
+    },
+    {
+      "token_id": "p1-t55",
+      "results": []
+    }
+  ],
+  "combined": [
+    {
+      "token_id": "p1-t22",
+      "semantic": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+          "token_start": 0,
+          "similarity": 0.7160847187042236,
+          "source": "page 1"
+        },
+        {
+          "id": "p1-c2",
+          "page": 1,
+          "text": "record",
+          "token_start": 80,
+          "similarity": 0.49062734842300415,
+          "source": "page 1"
+        }
+      ],
+      "graph": [
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+            "label": "Patient",
+            "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "IMG001_clinical_follow_up_note.png",
+                "label": "IMG001_clinical_follow_up_note.png",
+                "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+                "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:patient",
+            "label": "Patient",
+            "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t66"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 0.9724271893501282,
+                "id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71:prescription",
+                "label": "Prescription",
+                "document_id": "9d3ad9b8-3707-4044-aa55-dffed3b17a71",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+            "label": "Patient",
+            "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "IMG001_clinical_follow_up_note.png",
+                "label": "IMG001_clinical_follow_up_note.png",
+                "id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+                "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:patient",
+            "label": "Patient",
+            "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t66"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 0.9724271893501282,
+                "id": "ce7c539b-4e7f-4585-99ec-431151c04d04:prescription",
+                "label": "Prescription",
+                "document_id": "ce7c539b-4e7f-4585-99ec-431151c04d04",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t17",
+              "p1-t46"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+            "label": "Patient",
+            "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "PDF001_clinical_follow_up_note.pdf",
+                "label": "PDF001_clinical_follow_up_note.pdf",
+                "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+                "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t17",
+              "p1-t46"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:patient",
+            "label": "Patient",
+            "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t17\", \"page\": 1, \"bbox\": [104.0, 511.80999755859375, 176.7259979248047, 535.218994140625], \"confidence\": 1.0, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t46\", \"page\": 1, \"bbox\": [120.0, 1019.4249877929688, 185.37298583984375, 1048.279052734375], \"confidence\": 1.0, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t58"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 1.0,
+                "id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206:prescription",
+                "label": "Prescription",
+                "document_id": "182e5ba3-9ebb-46d4-964b-2d312dcf6206",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t58\", \"page\": 1, \"bbox\": [209.87997436523438, 1059.425048828125, 318.407958984375, 1088.279052734375], \"confidence\": 1.0, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+            "label": "Patient",
+            "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "MENTIONS",
+              "neighbor": {
+                "domain": "medical",
+                "name": "IMG001_clinical_follow_up_note.png",
+                "label": "IMG001_clinical_follow_up_note.png",
+                "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+                "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+                "type": "Document"
+              },
+              "provenance": "trusted entity mention anchors this semantic subgraph to the source document"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        },
+        {
+          "candidate": "Patient",
+          "entity": {
+            "token_ids": [
+              "p1-t20",
+              "p1-t52"
+            ],
+            "properties_json": "{\"domain\": \"medical\", \"mention_count\": 2}",
+            "pages": [
+              1
+            ],
+            "confidence": 0.9826856255531311,
+            "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:patient",
+            "label": "Patient",
+            "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+            "type": "Patient",
+            "provenance_json": "[{\"token_id\": \"p1-t20\", \"page\": 1, \"bbox\": [72.0, 428.0, 147.0, 453.0], \"confidence\": 0.9962053894996643, \"text\": \"PATIENT\"}, {\"token_id\": \"p1-t52\", \"page\": 1, \"bbox\": [96.0, 891.0, 168.0, 920.0], \"confidence\": 0.9826856255531311, \"text\": \"Patient\"}]"
+          },
+          "relationships": [
+            {
+              "type": "HAS_PRESCRIPTION",
+              "neighbor": {
+                "token_ids": [
+                  "p1-t66"
+                ],
+                "properties_json": "{\"domain\": \"medical\", \"mention_count\": 1}",
+                "pages": [
+                  1
+                ],
+                "confidence": 0.9724271893501282,
+                "id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648:prescription",
+                "label": "Prescription",
+                "document_id": "33a7f11d-1854-4d2a-977e-e5b4e5f52648",
+                "type": "Prescription",
+                "provenance_json": "[{\"token_id\": \"p1-t66\", \"page\": 1, \"bbox\": [201.0, 936.0, 326.0, 968.0], \"confidence\": 0.9724271893501282, \"text\": \"prescription\"}]"
+              },
+              "provenance": "domain relation supported by high-confidence OCR mentions"
+            }
+          ],
+          "source": "Neo4j graph retrieval"
+        }
+      ]
+    },
+    {
+      "token_id": "p1-t33",
+      "semantic": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+          "token_start": 0,
+          "similarity": 0.6872599124908447,
+          "source": "page 1"
+        },
+        {
+          "id": "p1-c2",
+          "page": 1,
+          "text": "record",
+          "token_start": 80,
+          "similarity": 0.3484787940979004,
+          "source": "page 1"
+        }
+      ],
+      "graph": []
+    },
+    {
+      "token_id": "p1-t55",
+      "semantic": [
+        {
+          "id": "p1-c1",
+          "page": 1,
+          "text": "SYNTHETIC OCR EVALUATION IMG003 Medication Review Record Medication Safety Desk Reference : MED-2026-127 Date : 14 September 2026 RECORD TYPE VISIT Mira Example Synthetic medication record Dosage reconciliation Medicine Dosage ( Sample tablet A 5mg After breakfast 10 mg At night Sample capsule B Review 7 days Bring prescription NOTES • The list was reviewed for clarity and timing . • This record contains no real medical information . Page 1 of 1 Synthetic evaluation data - not a real",
+          "token_start": 0,
+          "similarity": 0.6585006713867188,
+          "source": "page 1"
+        },
+        {
+          "id": "p1-c2",
+          "page": 1,
+          "text": "record",
+          "token_start": 80,
+          "similarity": 0.4302965998649597,
+          "source": "page 1"
+        }
+      ],
+      "graph": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "ILLUSTRATIVE_NOT_ACTUAL",
+  "generated_at": "2026-10-13T09:54:53.978731+00:00",
+  "document_id": "PDF005",
+  "input_filename": "PDF005_service_receipt.pdf",
+  "injected_errors": 2,
+  "illustratively_corrected_errors": 1,
+  "illustratively_unresolved_errors": 1,
+  "pdf_path": "output/pdf/illustrative_evaluation/PDF005_illustrative_corrected.pdf",
+  "text_path": "evaluation/illustrative_runs/PDF005/illustrative_corrected.txt"
+}

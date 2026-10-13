@@ -1,0 +1,16 @@
+SYNTHETIC OCR EVALUATION DOCUMENT
+Research Access Application
+Institutional Research Facility
+Reference: APP-2026-318
+Date: 09 September 2026
+Applicant: Sara Sample
+Applicant ID: SYN-26044
+Request: Dataset laboratory access
+Resource | Access level | Duration
+Research dataset | Read only | 90 days
+Secure workspace | Supervised | 30 hours
+Approval | Pending review | Not granted
+NOTES
+Research approval is required before any dataset is accessed.
+No access has been granted by this form.
+Synthetic evaluation data - not a real record

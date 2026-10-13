@@ -209,7 +209,7 @@ class LlamaServerManager:
             return False, "LLAMA_SERVER_EXECUTABLE is unavailable"
         return True, f"{model.name} via local llama.cpp"
 
-    def ensure_running(self, settings: Settings | None = None, timeout: int = 90) -> None:
+    def ensure_running(self, settings: Settings | None = None, timeout: int = 180) -> None:
         config = settings or get_settings()
         if self.is_running(config):
             return
@@ -219,23 +219,28 @@ class LlamaServerManager:
         with self.lock:
             if self.is_running(config):
                 return
-            executable = str(Path(config.llama_server_executable or "").resolve())
-            model = str(Path(config.slm_model_path or "").resolve())
-            port = config.llama_server_url.rstrip("/").rsplit(":", 1)[-1]
-            args = [executable, "-m", model, "--host", "127.0.0.1", "--port", port,
-                    "-ngl", str(config.slm_gpu_layers), "-c", str(config.slm_context_size),
-                    "--jinja", "--no-webui"]
-            api_key = os.getenv("LLAMA_SERVER_API_KEY")
-            if api_key:
-                args.extend(["--api-key", api_key])
-            creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
-            self.process = subprocess.Popen(
-                args,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                text=True,
-                creationflags=creationflags,
-            )
+            # A CPU-only cold start can exceed 90 seconds on Docker Desktop.
+            # If a prior caller timed out while the same process was still
+            # loading, keep waiting for it instead of starting a competing
+            # server on the same port.
+            if self.process is None or self.process.poll() is not None:
+                executable = str(Path(config.llama_server_executable or "").resolve())
+                model = str(Path(config.slm_model_path or "").resolve())
+                port = config.llama_server_url.rstrip("/").rsplit(":", 1)[-1]
+                args = [executable, "-m", model, "--host", "127.0.0.1", "--port", port,
+                        "-ngl", str(config.slm_gpu_layers), "-c", str(config.slm_context_size),
+                        "--jinja", "--no-webui"]
+                api_key = os.getenv("LLAMA_SERVER_API_KEY")
+                if api_key:
+                    args.extend(["--api-key", api_key])
+                creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+                self.process = subprocess.Popen(
+                    args,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    text=True,
+                    creationflags=creationflags,
+                )
             deadline = time.monotonic() + timeout
             while time.monotonic() < deadline:
                 if self.process.poll() is not None:
@@ -246,6 +251,7 @@ class LlamaServerManager:
                     return
                 time.sleep(0.5)
             self.last_error = "Timed out waiting for local Qwen server"
+            self.stop()
             raise RuntimeError(self.last_error)
 
     def complete(self, prompt: str, settings: Settings | None = None) -> tuple[str, dict[str, Any]]:

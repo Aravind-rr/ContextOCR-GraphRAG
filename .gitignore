@@ -19,6 +19,7 @@ data/input/*
 data/processed/*
 data/output/*
 data/evaluations/*
+data/*.db
 !data/**/.gitkeep
 backend/ocr_graphrag.db
 backend/data/
